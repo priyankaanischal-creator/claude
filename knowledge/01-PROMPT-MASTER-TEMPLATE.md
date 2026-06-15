@@ -1,98 +1,159 @@
-# PROMPT MASTER TEMPLATE (Knowledge File)
+# 01 — PROMPT MASTER TEMPLATE (Knowledge File)
 
-This file defines the EXACT structure Claude must follow when writing the image
-prompt. Fill every `[ ]` with real, vivid details. Never leave a blank.
+This file gives the EXACT skeletons Claude must follow when writing the image
+prompt. Fill every `[ ]` with vivid, specific detail. **Never leave a blank.**
 
----
-
-## ▶ 2-CHARACTER TEMPLATE (use when user gives 2 names)
-
-```
-Ultra-realistic vertical movie poster in STRICT 4:5 portrait aspect ratio,
-full frame, no extra margins or borders.
-
-The image shows TWO people side by side, SEAMLESSLY blended into ONE single
-continuous [THEME] scene with a smooth natural transition. There is NO dividing
-line, NO border, NO split bar between them — it looks like one continuous poster.
-
-LEFT SIDE:
-- TOP / BACKGROUND: [PERSON 1] portrayed as [CHARACTER 1], [costume details],
-  [pose], [expression], [theme-matched background detail].
-- FOREGROUND / BOTTOM: the SAME [PERSON 1] as their REAL self, [normal outfit],
-  natural face, realistic photo cut-out.
-- A Facebook "Love/Heart" ❤️ icon placed between the two layers.
-- NAME at the very bottom: "[PERSON 1 NAME]" in [font style + color + glow],
-  large and crystal clear.
-
-RIGHT SIDE:
-- TOP / BACKGROUND: [PERSON 2] portrayed as [CHARACTER 2], [costume details],
-  [pose], [expression], [theme-matched background detail].
-- FOREGROUND / BOTTOM: the SAME [PERSON 2] as their REAL self, [normal outfit],
-  natural face, realistic photo cut-out.
-- A Facebook "Like" 👍 icon placed between the two layers.
-- NAME at the very bottom: "[PERSON 2 NAME]" in [font style + color + glow],
-  large and crystal clear.
-
-STYLE: [theme background mood], cinematic dramatic lighting.
-Shot on Sony A7R IV, 85mm lens, shallow depth of field, realistic skin texture,
-natural skin pores, cinematic color grading, volumetric lighting, 8k
-ultra-detailed, photorealistic, award-winning movie poster design, sharp focus.
-Avoid: any divider line, border, split bar, cartoonish look, plastic skin,
-deformed hands, distorted faces, blurry or unreadable text, watermark,
-oversaturated colors.
-```
+Three skeletons: **2-character**, **3-character**, **4-character (2×2 grid)**.
+Every skeleton already contains the **CROP-SAFE 4:5 block** — keep it word-for-word
+and only swap the `[colour]`/`[detail]` parts.
 
 ---
 
-## ▶ 3-CHARACTER TEMPLATE (use when user gives 3 names)
-
+## ⭐ THE CROP-SAFE 4:5 BLOCK (goes at the TOP of EVERY prompt)
 ```
-Ultra-realistic vertical movie poster in STRICT 4:5 portrait aspect ratio,
-full frame, no extra margins or borders.
+Create a vertical portrait image. Design ALL content inside a centred 4:5 safe
+zone (final crop = 1080 x 1350 px, ratio 4:5). The source canvas may render
+TALLER than 4:5, so the TOP and BOTTOM strips WILL be cropped off — therefore:
+- TOP ~15% = a solid [BAND COLOUR] band with NOTHING important in it.
+- BOTTOM ~15% = a solid [BAND COLOUR] band with NOTHING important in it.
+- Put the headline BELOW the top band; put all name labels ABOVE the bottom band.
+- Keep every person's head and feet/hemline well inside the central zone.
+- The left and right edges are safe (only top/bottom get cropped).
+Make the top/bottom band colour match the design so a crop looks seamless.
+```
+> Set `[BAND COLOUR]` to match the chosen header/theme (navy theme → navy bands,
+> cream theme → cream bands, black theme → black bands, etc.).
 
-The image shows THREE people side by side, SEAMLESSLY blended into ONE single
-continuous [THEME] scene with smooth natural transitions. There is NO dividing
-line, NO border, NO split bars anywhere — it looks like one continuous poster.
+---
 
-PERSON 1 (LEFT):
-- TOP / BACKGROUND: [PERSON 1] portrayed as [CHARACTER 1], [costume], [pose],
-  [expression], [background detail].
-- FOREGROUND / BOTTOM: the SAME [PERSON 1] as their REAL self, [outfit],
-  natural face, realistic photo cut-out.
-- A Facebook "Love/Heart" ❤️ icon between the two layers.
-- NAME: "[PERSON 1 NAME]" in [font style + color + glow], large and clear.
+## ▶ 2-CHARACTER SKELETON (user gave 2 names)
+```
+[CROP-SAFE 4:5 BLOCK with band colour = [BAND COLOUR]]
 
-PERSON 2 (CENTER):
-- TOP / BACKGROUND: [PERSON 2] portrayed as [CHARACTER 2], [costume], [pose],
-  [expression], [background detail].
-- FOREGROUND / BOTTOM: the SAME [PERSON 2] as their REAL self, [outfit],
-  natural face, realistic photo cut-out.
-- A Facebook "Like" 👍 icon between the two layers.
-- NAME: "[PERSON 2 NAME]" in [font style + color + glow], large and clear.
+THEME: [ERA/STYLE] • [COLOUR PALETTE] • [overall mood].
 
-PERSON 3 (RIGHT):
-- TOP / BACKGROUND: [PERSON 3] portrayed as [CHARACTER 3], [costume], [pose],
-  [expression], [background detail].
-- FOREGROUND / BOTTOM: the SAME [PERSON 3] as their REAL self, [outfit],
-  natural face, realistic photo cut-out.
-- A Facebook "Wow" 😮 icon between the two layers.
-- NAME: "[PERSON 3 NAME]" in [font style + color + glow], large and clear.
+LAYOUT: The central safe zone is split vertically into TWO equal panels with a
+[thin gold / silver / white / no] divider.
 
-STYLE: [theme background mood], cinematic dramatic lighting.
-Shot on Canon EOS R5, 85mm lens, shallow depth of field, realistic skin texture,
-natural skin pores, cinematic color grading, volumetric lighting, 8k
-ultra-detailed, photorealistic, award-winning movie poster design, sharp focus.
-Avoid: any divider line, border, split bar, cartoonish look, plastic skin,
-deformed hands, distorted faces, blurry or unreadable text, watermark,
-oversaturated colors.
+HEADLINE (upper-central area, below the top band): a [HEADER STYLE] band with
+[ornament + small crown?] and [FONT] text reading "[HEADLINE WORDING]". Keep the
+text centred and away from the side edges.
+
+LEFT PANEL (A):
+- Photorealistic [full-body / seated / candid] portrait of [PERSON 1 — accurate
+  description: approx age, hair, build], wearing [OUTFIT 1 details: colour,
+  garment, accessories, hat/jewellery]. [POSE], [EXPRESSION].
+- Background: [SCENE/LOCATION detail 1], [lighting].
+
+RIGHT PANEL (B):
+- Photorealistic [same pose type] portrait of [PERSON 2 — accurate description],
+  wearing [OUTFIT 2 — same family/style as panel 1 for harmony], [POSE], [EXPRESSION].
+- Background: [SCENE/LOCATION detail 2 — same setting family for consistency], [lighting].
+
+NAME LABELS (lower-central area, above the bottom band): [LABEL STYLE] for each —
+Left: [voting marker e.g. circle "A" / 👍 / "1st"] + "[PERSON 1 NAME]" in
+[font + colour]. Right: [voting marker e.g. circle "B" / ❤️ / "2nd"] +
+"[PERSON 2 NAME]" in [font + colour]. [Optional subtitle/title under each name.]
+
+STYLE: photorealistic editorial portrait photography, 85mm lens, soft CONSISTENT
+lighting across both panels, identical pose and framing, ultra-detailed, 8K.
+Avoid: wrong aspect ratio, important content near the very top or bottom edge,
+distorted faces, extra fingers, blurry or unreadable text, watermark.
 ```
 
 ---
 
-## FILLING TIPS
-- `[costume details]`: be specific — colors, material, armor pieces, weapons, accessories.
-- `[pose]`: e.g. arms crossed, sword raised overhead, crouching, hands on hips, battle cry.
-- `[expression]`: fierce, calm, smirking, intense, joyful, menacing.
-- `[background detail]`: a concrete element of the theme (e.g. "gothic castle with full moon", "neon cyberpunk street with rain").
-- `[normal outfit]` for real self: suit, t-shirt, jersey, gown, casual jacket.
-- Always keep the realism block + avoid block + 4:5 line exactly as written.
+## ▶ 3-CHARACTER SKELETON (user gave 3 names)
+```
+[CROP-SAFE 4:5 BLOCK with band colour = [BAND COLOUR]]
+
+THEME: [ERA/STYLE] • [COLOUR PALETTE] • [overall mood].
+
+LAYOUT: The central safe zone is split into THREE equal vertical panels with
+[thin gold / white / no] dividers.
+
+HEADLINE (upper-central area, below the top band): a [HEADER STYLE] band with
+[ornament + small crown?] and [FONT] text reading "[HEADLINE WORDING]" (may be on
+two lines, second line a different accent colour). Centred, away from side edges.
+
+LEFT PANEL:
+- Photorealistic [pose type] portrait of [PERSON 1 — accurate description],
+  wearing [OUTFIT 1], [POSE], [EXPRESSION]. Background: [SCENE detail 1], [lighting].
+
+CENTER PANEL:
+- Photorealistic [same pose type] portrait of [PERSON 2 — accurate description],
+  wearing [OUTFIT 2 — same style family], [POSE], [EXPRESSION].
+  Background: [same SCENE family], [lighting].
+
+RIGHT PANEL:
+- Photorealistic [same pose type] portrait of [PERSON 3 — accurate description],
+  wearing [OUTFIT 3 — same style family], [POSE], [EXPRESSION].
+  Background: [same SCENE family for consistency], [lighting].
+
+NAME LABELS (lower-central area, above the bottom band): three [LABEL STYLE] boxes —
+"[PERSON 1 NAME]" ([colour 1]), "[PERSON 2 NAME]" ([colour 2]),
+"[PERSON 3 NAME]" ([colour 3]); with [voting markers: A/B/C OR 👍❤️😮 OR 5-star
+rows OR small crowns]. [Optional title under each name.]
+
+STYLE: photorealistic editorial portrait photography, 85mm lens, soft CONSISTENT
+lighting across all three panels, identical pose and framing, ultra-detailed, 8K.
+Avoid: wrong aspect ratio, important content near the very top or bottom edge,
+distorted faces, extra fingers, blurry or unreadable text, watermark.
+```
+
+---
+
+## ▶ 4-CHARACTER SKELETON (user gave 4 names → 2×2 grid)
+```
+[CROP-SAFE 4:5 BLOCK with band colour = [BAND COLOUR]]
+
+THEME: [ERA/STYLE] • [COLOUR PALETTE] • [overall mood].
+
+LAYOUT: The central safe zone is a 2x2 GRID of four equal panels with [thin
+gold / white] dividers. (Headline sits above the grid, labels below it — all
+inside the central zone.)
+
+HEADLINE (upper-central area, below the top band): a [HEADER STYLE] band with
+[ornament + small crown?] and [FONT] text reading "[HEADLINE WORDING]". Centred.
+
+PANEL 1 (top-left): Photorealistic [pose] portrait of [PERSON 1 — description],
+wearing [OUTFIT 1], [EXPRESSION]. Background: [SCENE detail].
+PANEL 2 (top-right): [PERSON 2 — description], wearing [OUTFIT 2], [EXPRESSION].
+Background: [same SCENE family].
+PANEL 3 (bottom-left): [PERSON 3 — description], wearing [OUTFIT 3], [EXPRESSION].
+Background: [same SCENE family].
+PANEL 4 (bottom-right): [PERSON 4 — description], wearing [OUTFIT 4], [EXPRESSION].
+Background: [same SCENE family for consistency].
+
+NAME LABELS (lower-central area, above the bottom band): four small [LABEL STYLE]
+plates: "[NAME 1]", "[NAME 2]", "[NAME 3]", "[NAME 4]" with [voting markers:
+A/B/C/D OR small reaction icons OR 5-star rows]. Keep all heads inside the grid,
+away from top/bottom edges.
+
+STYLE: photorealistic editorial portrait photography, 85mm lens, soft CONSISTENT
+lighting across all four panels, identical pose and framing, ultra-detailed, 8K.
+Avoid: wrong aspect ratio, important content near the very top or bottom edge,
+distorted faces, extra fingers, blurry or unreadable text, watermark.
+```
+
+---
+
+## ▶ COUPLE-VS-COUPLE NOTE
+If a panel holds a couple (e.g. "Anne & Sir Timothy" vs "Charles & Camilla"),
+treat it as the **2-character skeleton** but each panel shows TWO people standing
+close together. Label reads "[NAME] & [NAME]". Keep both couples' framing equal.
+
+---
+
+## FILLING TIPS (so prompts never feel generic)
+- **Person description:** use `06-ROYAL-CHARACTER-BANK.md` for accurate hair,
+  age, signature look. Be specific (e.g. "auburn hair in an updo", "blonde
+  bouffant", "greying short beard").
+- **Outfit:** name the garment + colour + material + accessories (hat, brooch,
+  pearls, sash, medals, gloves). Keep outfits in the SAME family across panels.
+- **Pose:** standing hands-clasped, seated legs-crossed, walking candid, couple
+  pose. Use the SAME pose for every panel of one poster.
+- **Expression:** warm smile, gentle smile, composed/dignified, joyful.
+- **Scene:** one concrete setting kept consistent across panels (same palace
+  room / same garden / same studio), varying only small details.
+- **Always keep** the crop-safe block + realism/avoid line exactly as written.
