@@ -61,11 +61,12 @@ against "mass-produced AI content" demonetization. The intro is NOT on camera.
     Also vary WHEN the story proper begins (30s / 2m / after a 5-min teaser) so no
     two videos open the same way. All intros stay in **Watson's voice / in-world**
     so variety never breaks the Sherlock vibe.
-  - **OUTRO (1–2 min, ON CAMERA — the only on-screen part):** the creator speaks
-    in their own words from 3–5 story-specific talking-points (file 10), rotating
-    the **angle** each video (did-you-guess the clue / a character / which case
-    next / a loose-thread theory / behind-the-scenes / reply to a comment /
-    non-gory real-history). Casual and warm, not a stiff read-aloud script.
+  - **OUTRO (1–2 min, ON CAMERA — the only on-screen part):** the creator
+    delivers a **full ready-to-speak ~45–60 second outro** (written by Claude in
+    the post-script package, file 10), rotating the **angle** each video
+    (character/emotional / which case next / loose-thread theory / behind-the-
+    scenes / reply to a comment / non-gory real-history / meta-arc tease). Warm
+    and casual, ending with the fixed signature sign-off line.
 - **Signature sign-off line:** keep one consistent closing line every episode
   (brand recognition).
 

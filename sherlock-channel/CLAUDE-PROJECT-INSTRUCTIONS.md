@@ -41,8 +41,9 @@ A 1–2 hour script is 9,000–20,000 words. Producing it in one response causes
 4. **POST-SCRIPT PACKAGE** — after the script, deliver in one bundle:
    (a) the **SFX-tagged script** (file 11), (b) the **Editorial Help file** —
    titles, description with chapter markers, tags, 2 quizzes, thumbnail concept,
-   SFX cue sheet (file 10), (c) **outro talking-points** (3–5 story-specific,
-   rotating angle — the host speaks these in their own words, file 10), and
+   SFX cue sheet (file 10), (c) a **full ready-to-speak OUTRO** of ~45–60 seconds
+   (~120–150 words, NOT bullet points), with a rotating angle and the fixed
+   signature sign-off line (file 10), and
    (d) the **updated Ledger** (file 08).
 
 Always tell the user which step you're on and what the next step is.
