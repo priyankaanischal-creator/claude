@@ -124,8 +124,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--sentences-per-scene", type=int, default=2,
                    help="Sentences per scene when --words-per-scene is 0")
 
-    p.add_argument("--clip-duration", type=float, default=6.0,
-                   help="Length of each cropped clip in seconds")
+    p.add_argument("--clip-duration", type=float, default=5.0,
+                   help="Length of each cropped clip in seconds (3-5s recommended)")
     p.add_argument("--clips-per-scene", type=int, default=2,
                    help="Clips to download per scene (0 to skip clips)")
     p.add_argument("--images-per-scene", type=int, default=4,
@@ -268,6 +268,7 @@ def main(argv=None) -> int:
 
         # --- clips: try each clip query until enough succeed ---
         got_clips = 0
+        used_video_ids = set()  # avoid the same video twice in one scene
         for ci in range(args.clips_per_scene):
             query = scene.clip_queries[ci % len(scene.clip_queries)] if scene.clip_queries else ""
             if not query:
@@ -281,16 +282,18 @@ def main(argv=None) -> int:
                     search_n=args.search_n,
                     max_height=args.max_height,
                     auth=auth,
+                    exclude_ids=used_video_ids,
                 )
             except Exception as e:
                 log(f"    [clip] error: {type(e).__name__}: {e}")
                 res = None
             if res:
+                used_video_ids.add(res.video_id)
                 entry["clips"].append(res.to_dict())
                 totals["clips"] += 1
                 got_clips += 1
                 log(f"    [clip] OK  {os.path.basename(res.path)} <- "
-                    f"{res.title[:46]} @ {res.start}s")
+                    f"{res.title[:46]} @ {res.start}s (match {res.match_score})")
             else:
                 totals["clip_fail"] += 1
                 log(f"    [clip] none for: {query}")

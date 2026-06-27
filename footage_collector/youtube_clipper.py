@@ -239,10 +239,13 @@ def download_section(
     start: float,
     duration: float,
     out_path: str,
-    max_height: int = 480,
+    max_height: int = 720,
     auth: YtAuth = DEFAULT_AUTH,
+    normalize_169: bool = True,
+    target_w: int = 1920,
+    target_h: int = 1080,
 ) -> bool:
-    """Download just [start, start+duration] of the video as an mp4."""
+    """Download just [start, start+duration] of the video and normalise to 16:9 mp4."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     end = start + duration
     workdir = tempfile.mkdtemp(prefix="ytclip_")
@@ -272,11 +275,17 @@ def download_section(
         shutil.rmtree(workdir, ignore_errors=True)
         return False
 
-    # Re-trim to exact duration & normalise codec for editing friendliness.
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    ff = [
-        "ffmpeg", "-y", "-i", raw,
-        "-t", f"{duration:.2f}",
+    # Re-trim to exact duration, normalise to a clean 16:9 1080p mp4 so every
+    # clip drops straight onto a landscape timeline without resizing.
+    os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+    ff = ["ffmpeg", "-y", "-i", raw, "-t", f"{duration:.2f}"]
+    if normalize_169:
+        vf = (
+            f"scale={target_w}:{target_h}:force_original_aspect_ratio=decrease,"
+            f"pad={target_w}:{target_h}:(ow-iw)/2:(oh-ih)/2:black,setsar=1,fps=30"
+        )
+        ff += ["-vf", vf]
+    ff += [
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
         "-c:a", "aac", "-b:a", "128k",
         "-movflags", "+faststart",
@@ -294,38 +303,60 @@ def download_section(
 
 # --- top-level orchestration ----------------------------------------------
 
+PRE_ROLL = 1.0  # start the clip ~1s before the matched line for action context
+
+
 def collect_clip(
     query: str,
     keywords: List[str],
     out_path: str,
-    duration: float = 6.0,
-    search_n: int = 5,
-    max_height: int = 480,
+    duration: float = 5.0,
+    search_n: int = 6,
+    max_height: int = 720,
     auth: YtAuth = DEFAULT_AUTH,
+    exclude_ids: Optional[set] = None,
 ) -> Optional[ClipResult]:
     """
-    Full pipeline for one scene: search -> locate moment -> download section.
-    Tries multiple candidate videos until one succeeds.
+    Full pipeline for one scene clip:
+      1. search YouTube for candidate videos
+      2. read each candidate's subtitles and score how well it contains the
+         scene's keywords (so we pick the video that ACTUALLY has the moment)
+      3. download a short window centred on the best-matching line
+      4. normalise to a clean 16:9 1080p mp4
+
+    `exclude_ids` lets the caller avoid reusing the same video for multiple
+    clips in the same scene.
     """
+    exclude_ids = exclude_ids or set()
     candidates = search_videos(query, limit=search_n, auth=auth)
+    candidates = [c for c in candidates if c["id"] not in exclude_ids]
     if not candidates:
         return None
 
     workdir = tempfile.mkdtemp(prefix="ytsubs_")
     try:
+        # Score every candidate by subtitle keyword match.
+        scored = []
         for cand in candidates:
             vid = cand["id"]
             vdur = cand["duration"] or 0.0
-
             ts = best_timestamp(vid, keywords, duration, workdir, auth)
             if ts is not None:
-                start, matched, score = ts
+                m_start, matched, score = ts
             else:
-                # fallback: skip likely-intro, take a slice ~20% in
-                start = max(5.0, vdur * 0.2) if vdur else 30.0
-                matched, score = "", 0
+                m_start, matched, score = None, "", 0
+            scored.append((score, cand, vdur, m_start, matched))
 
-            # keep the window inside the video
+        # Best matches first; tie-break toward shorter (more focused) videos.
+        scored.sort(key=lambda x: (x[0], -(x[2] or 1e9)), reverse=True)
+
+        for score, cand, vdur, m_start, matched in scored:
+            vid = cand["id"]
+            if m_start is not None and score > 0:
+                start = max(0.0, m_start - PRE_ROLL)  # begin just before the line
+            else:
+                start = max(5.0, vdur * 0.2) if vdur else 30.0  # fallback slice
+
             if vdur and start + duration > vdur:
                 start = max(0.0, vdur - duration - 1)
 
