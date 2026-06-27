@@ -533,6 +533,120 @@ def extract_frames(clip_path: str, n: int, out_dir: str, prefix: str = "frame") 
     return paths
 
 
+def _parse_time(s: str):
+    s = s.strip()
+    if not s:
+        return None
+    if s.isdigit():
+        return float(s)
+    if ":" in s:
+        try:
+            parts = [float(p) for p in s.split(":")]
+        except ValueError:
+            return None
+        sec = 0.0
+        for p in parts:
+            sec = sec * 60 + p
+        return sec
+    m = re.match(r"(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$", s, re.I)
+    if m and any(m.groups()):
+        h, mi, se = (int(g) if g else 0 for g in m.groups())
+        return float(h * 3600 + mi * 60 + se)
+    return None
+
+
+def parse_youtube_ref(ref: str):
+    """From a YouTube URL (optionally with timestamp/range) return
+    (video_id, start_sec|None, end_sec|None)."""
+    vid = None
+    m = re.search(r"(?:v=|youtu\.be/|/embed/|/shorts/|/live/)([A-Za-z0-9_-]{11})", ref)
+    if m:
+        vid = m.group(1)
+    start = end = None
+    ms = re.search(r"[?#&](?:t|start)=([0-9hms:]+)", ref, re.I)
+    if ms:
+        start = _parse_time(ms.group(1))
+    me = re.search(r"[?#&]end=([0-9hms:]+)", ref, re.I)
+    if me:
+        end = _parse_time(me.group(1))
+    # trailing range "1:23-1:30" or "@1:23" / "[1:23]"
+    rng = re.search(r"(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{1,2}:\d{2}(?::\d{2})?)", ref)
+    if rng:
+        start = _parse_time(rng.group(1))
+        end = _parse_time(rng.group(2))
+    elif start is None:
+        t1 = re.search(r"(?:@|\[)(\d{1,2}:\d{2}(?::\d{2})?)", ref)
+        if t1:
+            start = _parse_time(t1.group(1))
+    return vid, start, end
+
+
+def clip_from_reference(
+    ref: str,
+    keywords: List[str],
+    out_path: str,
+    duration: float = 5.0,
+    auth: YtAuth = DEFAULT_AUTH,
+    used_sections: Optional[set] = None,
+    verify: bool = True,
+) -> tuple:
+    """
+    Try to use an LLM/human-provided YouTube link (+ optional timestamp) for a
+    scene. VERIFIES the video is downloadable and, if it has subtitles, that the
+    scene keywords actually appear (LLMs hallucinate links!). If verification
+    fails the caller should fall back to search.
+    Returns (ClipResult | None, reason).
+    """
+    vid, start, end = parse_youtube_ref(ref)
+    if not vid:
+        return None, "not a valid YouTube link"
+
+    workdir = tempfile.mkdtemp(prefix="ytref_")
+    try:
+        kwmatch, best_start, matched = 0, None, ""
+        sub = _fetch_subtitles(vid, workdir, auth)
+        if sub:
+            cues = _parse_vtt(sub)
+            kw = [k.lower() for k in keywords if len(k) >= 4]
+            best = None
+            for (s, e, txt) in cues:
+                sc = sum(1 for k in kw if k in txt.lower())
+                if sc > 0 and (best is None or sc > best[0]):
+                    best = (sc, s, txt)
+            if best:
+                kwmatch, best_start, matched = best[0], best[1], best[2]
+
+        # Verification: subtitles exist but none of the scene keywords appear.
+        if verify and sub and kwmatch == 0 and any(len(k) >= 4 for k in keywords):
+            return None, "provided link did not match scene transcript (falling back)"
+
+        if start is None:
+            start = best_start if best_start is not None else 0.0
+            if start > PRE_ROLL:
+                start -= PRE_ROLL
+
+        dur = duration
+        if end and end > start:
+            dur = min(end - start, 20.0)
+
+        bucket = f"{vid}@{int(start // 3)}"
+        if used_sections is not None and bucket in used_sections:
+            return None, "section already used"
+
+        ok, reason = download_section(vid, start, dur, out_path, 720, auth)
+        if ok:
+            if used_sections is not None:
+                used_sections.add(bucket)
+            return ClipResult(
+                path=out_path, video_id=vid, url=ref, title="(provided link)",
+                start=round(start, 2), duration=dur,
+                matched_text=matched, match_score=kwmatch,
+            ), ""
+        return None, reason
+    finally:
+        shutil.rmtree(workdir, ignore_errors=True)
+
+
 if __name__ == "__main__":
     import sys
     q = sys.argv[1] if len(sys.argv) > 1 else "Scarface Tony Montana say hello to my little friend"

@@ -75,6 +75,7 @@ class SceneSpec:
     section: str = ""
     on_screen: str = ""
     notes: str = ""
+    clip_links: List[str] = field(default_factory=list)
 
     def slug(self) -> str:
         return f"scene_{self.index:03d}"
@@ -139,6 +140,7 @@ def specs_from_instructor(instructor_path, args) -> tuple:
             image_queries=b.image_queries, clip_queries=b.clip_queries,
             summary=b.narration[:80], section=b.section,
             on_screen=b.on_screen, notes=b.notes,
+            clip_links=b.clip_links,
         )
         for b in beats
     ]
@@ -373,10 +375,35 @@ def main(argv=None) -> int:
             "clips": [], "images": [],
         }
 
-        # --- clips: try each clip query until enough succeed ---
+        # --- clips: provided links first (verified), then search ---
         got_clips = 0
         used_video_ids = set()  # avoid the same video twice in one scene
-        for ci in range(args.clips_per_scene):
+        clip_no = 0
+
+        # 1) Try human/LLM-provided YouTube links for this beat (verified).
+        for ref in scene.clip_links:
+            if clip_no >= args.clips_per_scene:
+                break
+            out_path = os.path.join(scene_dir, f"clip_{clip_no + 1:02d}.mp4")
+            kw = (scene.clip_queries[0].split() if scene.clip_queries else []) + scene.keywords
+            try:
+                res, reason = yt.clip_from_reference(
+                    ref, kw, out_path, duration=args.clip_duration,
+                    auth=auth, used_sections=clip_sections)
+            except Exception as e:
+                res, reason = None, f"{type(e).__name__}: {e}"
+            if res:
+                used_video_ids.add(res.video_id)
+                entry["clips"].append(res.to_dict())
+                totals["clips"] += 1
+                got_clips += 1
+                clip_no += 1
+                log(f"    [clip] OK (provided link) {os.path.basename(res.path)}")
+            else:
+                log(f"    [clip] provided link skipped: {reason}")
+
+        # 2) Fill remaining clip slots with the search pipeline.
+        for ci in range(clip_no, args.clips_per_scene):
             query = scene.clip_queries[ci % len(scene.clip_queries)] if scene.clip_queries else ""
             if not query:
                 break

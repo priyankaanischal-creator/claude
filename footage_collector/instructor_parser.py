@@ -38,6 +38,8 @@ from typing import List, Optional
 _LABELS = {
     "narration": re.compile(r"^\s*Script Cue\s*\(narration\)\s*:\s*(.*)$", re.I),
     "visual": re.compile(r"^\s*Visual\s*/?\s*Exact Clip to Use\s*:\s*(.*)$", re.I),
+    "clip_links": re.compile(r"^\s*(?:Clip Links?|Clips?|Video Links?|YouTube|YT Links?)\s*:\s*(.*)$", re.I),
+    "image_terms": re.compile(r"^\s*(?:Image Search|Image Terms?|Image Queries|Images?)\s*:\s*(.*)$", re.I),
     "onscreen": re.compile(r"^\s*On-?Screen Text\s*:\s*(.*)$", re.I),
     "notes": re.compile(r"^\s*Editor Notes\s*:\s*(.*)$", re.I),
 }
@@ -72,6 +74,8 @@ class Beat:
     on_screen: str = ""
     notes: str = ""
     is_film: bool = True
+    clip_links: List[str] = field(default_factory=list)
+    image_terms: List[str] = field(default_factory=list)
     image_queries: List[str] = field(default_factory=list)
     clip_queries: List[str] = field(default_factory=list)
 
@@ -80,6 +84,28 @@ class Beat:
 
 
 # --- low-level parsing ------------------------------------------------------
+
+def _split_links(raw: str) -> List[str]:
+    """Pull YouTube URLs (optionally with timestamps) out of a Clip Links line."""
+    if not raw:
+        return []
+    parts = re.split(r"[\s,;]+", raw.strip())
+    out = []
+    for p in parts:
+        p = p.strip().strip("()<>[]")
+        if "youtu" in p.lower() and p.lower().startswith("http"):
+            out.append(p)
+    return out
+
+
+def _split_terms(raw: str) -> List[str]:
+    """Split an Image Search line into individual search terms."""
+    if not raw:
+        return []
+    # allow comma, semicolon, pipe, or ' / ' separators
+    parts = re.split(r"\s*[|;,]\s*|\s+/\s+", raw.strip())
+    return [p.strip() for p in parts if p.strip()]
+
 
 def _looks_like_section(line: str) -> bool:
     s = line.strip()
@@ -103,6 +129,10 @@ def parse_beats(text: str) -> List[Beat]:
     cur: Optional[dict] = None
     field_name: Optional[str] = None
 
+    def _new(sec):
+        return {"section": sec, "narration": "", "visual": "", "onscreen": "",
+                "notes": "", "clip_links": "", "image_terms": ""}
+
     def flush():
         nonlocal cur
         if cur and (cur["narration"] or cur["visual"]):
@@ -113,6 +143,8 @@ def parse_beats(text: str) -> List[Beat]:
                 visual=cur["visual"].strip(),
                 on_screen=cur["onscreen"].strip(),
                 notes=cur["notes"].strip(),
+                clip_links=_split_links(cur["clip_links"]),
+                image_terms=_split_terms(cur["image_terms"]),
             ))
         cur = None
 
@@ -125,11 +157,9 @@ def parse_beats(text: str) -> List[Beat]:
                 inline = m.group(1)
                 if name == "narration":
                     flush()  # a new narration line starts a new beat
-                    cur = {"section": section, "narration": "", "visual": "",
-                           "onscreen": "", "notes": ""}
+                    cur = _new(section)
                 if cur is None:
-                    cur = {"section": section, "narration": "", "visual": "",
-                           "onscreen": "", "notes": ""}
+                    cur = _new(section)
                 cur[name] += (" " + inline if cur[name] else inline)
                 field_name = name
                 break
@@ -399,6 +429,22 @@ def build_queries(beat: Beat, subject: str, max_q: int = 3) -> None:
 
     beat.clip_queries = dedup(clip_q)
     beat.image_queries = dedup(img_q)
+
+    # Explicit image search terms from the instructor file take priority.
+    if beat.image_terms:
+        explicit = []
+        for t in beat.image_terms:
+            t = _polish_query(t.replace(" scene", "")) or t
+            if subject.lower() not in t.lower():
+                t = f"{subject} {t}"
+            explicit.append(t)
+        # de-dupe
+        seen, out = set(), []
+        for q in explicit + beat.image_queries:
+            if q and q.lower() not in seen:
+                seen.add(q.lower())
+                out.append(q)
+        beat.image_queries = out[:max(max_q, len(explicit))]
 
 
 def parse_instructor(path: str, subject: str, max_q: int = 3) -> List[Beat]:

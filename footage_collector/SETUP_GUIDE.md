@@ -165,3 +165,34 @@ Sirf images chahiye to `--clips-per-scene 0` aur `--cookies-from-browser` hata d
    `scripts/the_thing_visual_instructor.txt` dekho).
 2. App kholo → instructor file + script daalo → topic likho → Generate dabao.
 3. Folders ready! 🎉
+
+---
+
+## 🔝 Advanced: exact clip links + image search (highest accuracy)
+Har beat me 2 optional lines add kar sakte ho. Tool inhe samajh kar use karega:
+
+```
+Script Cue (narration): "..."
+Visual / Exact Clip to Use: THE BLOOD TEST SCENE. MacReady heats the wire.
+Clip Links: https://youtu.be/Esy-776wcIo?t=118 , https://youtu.be/M2o2FRwn_hg
+Image Search: macready blood test closeup | petri dish blood hot wire
+```
+
+- **Clip Links:** us scene ke exact YouTube links (timestamp `?t=118` ya range
+  `1:23-1:30` ke saath bhi). Tool pehle inhe try karega aur **verify** karega
+  (video chalti hai? transcript scene se match karta hai?). Sahi hua → wahi se
+  clip. Galat/dead link → automatically purana search system. (LLMs kabhi-kabhi
+  galat link bana dete hain, isliye verify zaroori hai — tool khud handle karta hai.)
+- **Image Search:** us scene ke liye exact image search terms (`|` se alag karo).
+  Tool inhe priority dega.
+
+> Dono lines **optional** hain. Na do to tool waise hi (scene-name se) kaam karega.
+
+### LLM ko file banwane ke liye prompt (copy-paste)
+> "Is script ki beat-by-beat VISUAL INSTRUCTOR file banao. Har beat me 4 lines:
+> (1) `Script Cue (narration):` exact narration. (2) `Visual / Exact Clip to Use:`
+> shuruaat me CAPS me exact scene ka naam, phir quotes me famous dialogue, phir
+> concrete location/character/action words — sab **[MOVIE NAME + YEAR]** se related.
+> (3) `Clip Links:` us scene ke 2-3 real YouTube links agar pakka maloom ho
+> (timestamp ke saath), warna ye line chhod do. (4) `Image Search:` us scene ke
+> 2-3 exact image search terms. Topic anchor: **[MOVIE NAME + YEAR]**."
