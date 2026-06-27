@@ -1,7 +1,15 @@
 # Scene 5
 
-QUERY: Tony Montana Scarface Saddam Hussein
-KEYWORDS: Saddam Hussein, Montana Management, laundering, management, hussein’s, operation
+SUMMARY: Origin: the 1980 Mariel boatlift - 125,000 Cubans to Florida, Castro emptying prisons. Tony off the boat, a dishwasher meant for bigger things.
+
+IMAGE QUERIES:
+  - Mariel boatlift 1980 Cuban refugees overloaded boats
+  - Cuban refugees Miami 1980 historical photo
+  - Scarface 1983 Tony Montana refugee camp tent scene
+
+CLIP QUERIES:
+  - Scarface 1983 opening Mariel boatlift scene
+  - Scarface Tony Montana dishwasher Chi Chi scene
 
 TEXT:
-Saddam Hussein’s regime named a money-laundering front company Montana Management, after Tony’s operation. There’s a story film teachers love to tell, about students who showed up in Scarface shirts — and when the teacher explained how the movie actually ends, that Tony murders his best friend, gets his beloved sister killed, drives away everyone who ever loved him, and dies face-down in a fountain, alone, like a dog — they listened to all of it.
+In 1980 around 125,000 Cubans arrived in Florida during the Mariel boatlift while Castro emptied some prisons; Tony comes off the boat a criminal, hates his dishwashing job, and says he is meant for bigger things.

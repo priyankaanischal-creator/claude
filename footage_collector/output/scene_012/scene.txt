@@ -1,7 +1,15 @@
 # Scene 12
 
-QUERY: Tony Montana Scarface frighteningly
-KEYWORDS: frighteningly, astonishing, terrified, dominate
+SUMMARY: The empire was already rotting - addiction, paranoia, taxes. But the refusal turns Sosa from partner into executioner.
+
+IMAGE QUERIES:
+  - Scarface Alejandro Sosa Bolivia villain still
+  - Scarface 1983 Tony Montana paranoid mansion scene
+  - Scarface Tony Montana arguing phone scene
+
+CLIP QUERIES:
+  - Scarface Sosa phone call betrayal scene
+  - Scarface Tony Montana Sosa Bolivia mansion scene
 
 TEXT:
-For most of this film, Tony is frighteningly in control. He can dominate a room, a deal, a terrified man across a table with astonishing force.
+The empire is already collapsing from addiction, paranoia and tax trouble, but refusing the hit turns Sosa into an executioner; the one line Tony won't cross is what his world can't allow.

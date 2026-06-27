@@ -1,7 +1,15 @@
 # Scene 11
 
-QUERY: Tony Montana Scarface opposite
-KEYWORDS: opposite, control, people, assume
+SUMMARY: The bomb in the car: a hit on a journalist, but the target's wife and children get in. Tony won't push the button - he kills Sosa's man instead.
+
+IMAGE QUERIES:
+  - Scarface 1983 New York car bomb scene still
+  - Scarface Tony Montana car bomb hesitation scene
+  - Scarface Alberto the Shadow car scene
+
+CLIP QUERIES:
+  - Scarface car bomb journalist scene won't kill kids
+  - Scarface Tony kills Alberto car scene
 
 TEXT:
-Here is what people get wrong about Tony — they assume he’s the opposite, a man with no control at all. He isn’t.
+On a hit ordered by Sosa, the journalist target gets into the car with his wife and children, and Tony - the chainsaw survivor - refuses to push the button, turning on Sosa's man instead.

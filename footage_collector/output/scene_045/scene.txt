@@ -1,7 +1,0 @@
-# Scene 45
-
-QUERY: Tony Montana Scarface building
-KEYWORDS: building, target, walks, isn’t
-
-TEXT:
-Then the target walks out of a building — and he isn’t alone. His wife is with him.

@@ -1,7 +1,15 @@
 # Scene 3
 
-QUERY: Tony Montana Scarface cigar
-KEYWORDS: cigar, pinky
+SUMMARY: Great villains scare through control. Tony is frighteningly IN control - the immigration interrogation, deals, contract killing, taking the empire.
+
+IMAGE QUERIES:
+  - Scarface 1983 Tony Montana interrogation scene still
+  - Al Pacino Scarface suit serious negotiation
+  - Scarface Tony Montana dominating room scene
+
+CLIP QUERIES:
+  - Scarface immigration interrogation Freedom Town scene
+  - Scarface Tony Montana meeting Frank Lopez scene
 
 TEXT:
-A cigar. A gold pinky ring.
+Unlike a man with no control, Tony dominates rooms and deals - the immigration interrogation, a contract killing without shaking hands, reading rivals and taking an entire empire.

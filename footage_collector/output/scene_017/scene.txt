@@ -1,7 +1,15 @@
 # Scene 17
 
-QUERY: Tony Montana Scarface listen
-KEYWORDS: listen, wants, money
+SUMMARY: The thesis: Tony controlled everything except the thing inside him - the same 'never enough' appetite the world keeps telling us to feed. The poster is a man face-down in a fountain.
+
+IMAGE QUERIES:
+  - Scarface Tony Montana white suit poster on wall gym
+  - Scarface 1983 Tony Montana iconic final portrait
+  - Tony Montana Scarface ambition poster bedroom
+
+CLIP QUERIES:
+  - Scarface Tony Montana the world is yours ending monologue
+  - Scarface 1983 best moments tribute
 
 TEXT:
-Listen to what he wants, because he says it flat out. Not money.
+What makes Tony terrifying is that he controlled everything except the appetite for 'more' that never reaches enough - the same dream the world sells us; every white-suit poster is really a man face-down in a fountain.

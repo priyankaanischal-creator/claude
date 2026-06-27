@@ -193,26 +193,60 @@ def derive_context(title: str, full_text: str, max_terms: int = 2) -> str:
 
 # --- main entry ------------------------------------------------------------
 
+def chunk_by_words(sentences: List[str], target_words: int = 150) -> List[List[str]]:
+    """
+    Group consecutive sentences into chunks of roughly `target_words` words
+    (paragraph-sized scenes). A chunk closes once it reaches the target; very
+    long single sentences become their own chunk.
+    """
+    chunks: List[List[str]] = []
+    cur: List[str] = []
+    cur_words = 0
+    for s in sentences:
+        wc = len(s.split())
+        if cur and cur_words + wc > target_words:
+            chunks.append(cur)
+            cur, cur_words = [], 0
+        cur.append(s)
+        cur_words += wc
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
 def parse_script(
     title: str,
     script: str,
     sentences_per_scene: int = 1,
+    words_per_scene: int | None = None,
     context: str | None = None,
 ) -> List[Scene]:
     """
     Returns an ordered list of Scene objects. `context` overrides the
     auto-derived global anchor if provided.
+
+    If `words_per_scene` is given, the script is split into paragraph-sized
+    scenes of about that many words; otherwise it groups `sentences_per_scene`
+    sentences per scene.
     """
     if context is None:
         context = derive_context(title, script, max_terms=2)
 
     proper_nouns = build_proper_nouns(script)
     sentences = split_sentences(script)
+
+    if words_per_scene:
+        chunk_groups = chunk_by_words(sentences, words_per_scene)
+    else:
+        chunk_groups = [
+            sentences[i:i + sentences_per_scene]
+            for i in range(0, len(sentences), sentences_per_scene)
+        ]
+
     scenes: List[Scene] = []
     idx = 0
 
-    for i in range(0, len(sentences), sentences_per_scene):
-        chunk_sents = sentences[i:i + sentences_per_scene]
+    for chunk_sents in chunk_groups:
         chunk = " ".join(chunk_sents).strip()
         if not chunk:
             continue
@@ -224,7 +258,7 @@ def parse_script(
         beat_entities = [e for e in entities if e.lower() not in ctx_lower]
         keywords = extract_keywords(chunk)
 
-        # Build the query: context anchor + most distinctive beat term(s).
+        # Build the query: context anchor + most distinctive beat terms.
         query_bits: List[str] = []
         if context:
             query_bits.append(context)

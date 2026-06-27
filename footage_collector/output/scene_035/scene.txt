@@ -1,7 +1,0 @@
-# Scene 35
-
-QUERY: Tony Montana Scarface somebody
-KEYWORDS: somebody, people, finger, tells
-
-TEXT:
-You need people like me, he tells them. You need me so you can point your finger and have somebody to call the bad guy.

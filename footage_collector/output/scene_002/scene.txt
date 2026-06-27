@@ -1,7 +1,15 @@
 # Scene 2
 
-QUERY: Tony Montana Scarface barbershops
-KEYWORDS: barbershops, bedrooms, enough, seeing
+SUMMARY: The warning became the dream. What actually makes Tony terrifying - not the chainsaw or 'say hello to my little friend'.
+
+IMAGE QUERIES:
+  - Scarface 1983 Tony Montana intense stare dramatic still
+  - Al Pacino Scarface dark cinematic portrait
+  - Scarface Tony Montana shadow moody lighting
+
+CLIP QUERIES:
+  - Scarface 1983 say hello to my little friend scene
+  - Scarface Tony Montana close up monologue
 
 TEXT:
-Walk into enough gyms, barbershops, and bedrooms and you keep seeing the same poster. A man in a white suit.
+Scarface is a warning that became the dream; the film is cleverer than it looks. What makes Tony terrifying isn't the chainsaw or the famous line.

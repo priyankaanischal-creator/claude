@@ -1,7 +1,15 @@
 # Scene 8
 
-QUERY: Tony Montana Scarface terrifying
-KEYWORDS: terrifying, stranger, chainsaw, villains
+SUMMARY: Why it became a fantasy: Giorgio Moroder's synths and 'Push It to the Limit', the white suit, the marble mansion, the pet tiger, neon Miami - violence so operatic it was rated X.
+
+IMAGE QUERIES:
+  - Scarface mansion pet tiger Tony Montana scene
+  - Scarface 1983 Miami neon nightclub Babylon
+  - Tony Montana marble mansion office desk wide shot
+
+CLIP QUERIES:
+  - Scarface Push It to the Limit montage scene
+  - Scarface mansion tiger scene
 
 TEXT:
-It’s that the film is doing something far stranger, and far more clever, than it usually gets credit for. So let’s actually talk about what makes Tony Montana terrifying — because it isn’t the chainsaw, and it isn’t “say hello to my little friend.” Most of the great movie villains scare you through control.
+The film glamorises Tony's rise with Giorgio Moroder's synth score and 'Push It to the Limit', a marble mansion, a pet tiger and neon Miami - so operatic the ratings board first branded it X.

@@ -1,7 +1,15 @@
 # Scene 4
 
-QUERY: Tony Montana Scarface Camorra
-KEYWORDS: Camorra, Naples, Tony Miami, reportedly, swallowed, literally
+SUMMARY: His problem is the brakes - controls everyone except himself. He wants 'the world and everything in it'. An appetite with no edge.
+
+IMAGE QUERIES:
+  - Scarface The World Is Yours blimp Miami scene
+  - Tony Montana Scarface looking out over Miami window
+  - Scarface 1983 Miami skyline night cinematic
+
+CLIP QUERIES:
+  - Scarface the world is yours blimp scene
+  - Scarface Tony Montana the world is yours quote
 
 TEXT:
-Staring out like he swallowed the world whole. Rappers take his name — there are hit songs literally titled “Tony Montana.” A Camorra boss in Naples reportedly built himself an exact replica of Tony’s Miami mansion.
+Tony can control everyone but himself. He doesn't want money or a house - he wants the world and everything in it, an appetite that has no finish line.

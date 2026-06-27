@@ -1,7 +1,15 @@
 # Scene 14
 
-QUERY: Tony Montana Scarface Bolivian
-KEYWORDS: Bolivian, negotiates, bolivian, kingpin, rivals
+SUMMARY: The mountain of cocaine and the final stand: 'Say hello to my little friend.' Tony is shot in the back and falls from his balcony.
+
+IMAGE QUERIES:
+  - Scarface cocaine mountain desk Tony Montana scene
+  - Scarface 1983 final shootout M16 grenade launcher
+  - Scarface say hello to my little friend balcony still
+
+CLIP QUERIES:
+  - Scarface say hello to my little friend final shootout
+  - Scarface Tony Montana last stand mansion scene
 
 TEXT:
-He reads rivals, negotiates with a Bolivian kingpin, and takes an entire empire off the man who hired him. The wheel is in his hands the whole way up.
+Behind a literal hill of cocaine, paranoid and raging, Tony makes his last stand - 'say hello to my little friend' - soaking up gunfire until one man shoots him in the back and he pitches off the balcony.

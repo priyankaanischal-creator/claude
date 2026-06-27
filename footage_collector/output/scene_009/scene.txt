@@ -1,7 +1,15 @@
 # Scene 9
 
-QUERY: Tony Montana Scarface precise
-KEYWORDS: precise, quiet
+SUMMARY: Tony as the one honest voice - the restaurant scene: 'You need people like me... say goodnight to the bad guy.'
+
+IMAGE QUERIES:
+  - Scarface restaurant scene Tony Montana Elvira still
+  - Scarface 1983 say goodnight to the bad guy scene
+  - Al Pacino Scarface restaurant tuxedo scene
+
+CLIP QUERIES:
+  - Scarface say goodnight to the bad guy restaurant scene
+  - Scarface you need people like me scene
 
 TEXT:
-The ones who really get under your skin are quiet. Precise.
+In an expensive restaurant, wrecked on his own product and surrounded by respectable hypocrites, Tony stands up: you need people like me to point at - say goodnight to the bad guy.

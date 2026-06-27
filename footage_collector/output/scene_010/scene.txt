@@ -1,7 +1,15 @@
 # Scene 10
 
-QUERY: Tony Montana Scarface contact
-KEYWORDS: contact, control, moment, danger
+SUMMARY: The cruel joke: he gets the mansion, the wife and the empire, and is completely alone. Elvira drifts through it numb and bored.
+
+IMAGE QUERIES:
+  - Scarface Elvira Michelle Pfeiffer mansion still
+  - Scarface Tony Montana Elvira bored dinner scene
+  - Scarface 1983 lonely mansion interior wide shot
+
+CLIP QUERIES:
+  - Scarface Elvira dinner argument restaurant scene
+  - Scarface Tony and Elvira mansion scene
 
 TEXT:
-They hold eye contact a beat too long, smile at the wrong moment, make you feel the danger long before they ever raise their voice. Their power is that they are never out of control.
+Tony gets everything - the mansion, Elvira, the empire - and is miserable and alone inside it, because an appetite can only be fed, never satisfied.

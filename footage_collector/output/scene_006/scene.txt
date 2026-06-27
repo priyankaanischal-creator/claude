@@ -1,7 +1,15 @@
 # Scene 6
 
-QUERY: Tony Montana Scarface scarface
-KEYWORDS: scarface, montana, warning, wanted
+SUMMARY: Oliver Stone wrote the script deep in his own cocaine addiction, then moved to Paris to finish it stone-cold sober.
+
+IMAGE QUERIES:
+  - Oliver Stone director 1980s portrait
+  - Oliver Stone young screenwriter black and white
+  - cocaine lines mirror dark moody cinematic
+
+CLIP QUERIES:
+  - Oliver Stone Scarface screenplay interview
+  - Oliver Stone 1983 cocaine addiction interview
 
 TEXT:
-And they still wanted to be Tony Montana. Scarface is a warning.
+Screenwriter Oliver Stone was deep in cocaine addiction while researching the film, and had to move to Paris to write the whole thing sober.
