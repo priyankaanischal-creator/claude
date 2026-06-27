@@ -23,11 +23,15 @@ import hashlib
 import io
 import os
 import time
+import warnings
 from dataclasses import dataclass, asdict, field
 from typing import List, Optional, Set, Union
 from urllib.parse import urlparse
 
 import requests
+
+# Quieten a harmless Pillow warning about palette images with transparency.
+warnings.filterwarnings("ignore", message=".*Palette images with Transparency.*")
 
 try:
     from ddgs import DDGS

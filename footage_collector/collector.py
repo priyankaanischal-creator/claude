@@ -32,8 +32,10 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import List
@@ -41,6 +43,21 @@ from typing import List
 import scene_parser
 import youtube_clipper as yt
 import image_collector as ic
+
+
+def _augment_subject_with_year(subject: str, *texts: str) -> str:
+    """If the subject has no year, append the most common year found in the
+    source text. Disambiguates titles like 'THE THING' -> 'THE THING 1982'."""
+    if re.search(r"\b(?:19|20)\d{2}\b", subject):
+        return subject
+    years: List[str] = []
+    for t in texts:
+        if t:
+            years += re.findall(r"\b(?:19|20)\d{2}\b", t)
+    if not years:
+        return subject
+    common = Counter(years).most_common(1)[0][0]
+    return f"{subject} {common}".strip()
 
 
 def log(msg: str) -> None:
@@ -104,6 +121,16 @@ def specs_from_instructor(instructor_path, args) -> tuple:
     if not subject:
         subject = title
     subject = subject.strip()
+
+    # Disambiguate the topic with a year from the source text (e.g. 1982),
+    # so generic anchors like "THE THING" don't pull unrelated images.
+    with open(instructor_path, "r", encoding="utf-8") as f:
+        instructor_text = f.read()
+    script_text_for_year = ""
+    if args.script and os.path.isfile(args.script):
+        with open(args.script, "r", encoding="utf-8") as f:
+            script_text_for_year = f.read()
+    subject = _augment_subject_with_year(subject, instructor_text, script_text_for_year)
 
     beats = ip.parse_instructor(instructor_path, subject)
     specs = [

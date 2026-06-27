@@ -20,9 +20,33 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 from dataclasses import dataclass, asdict
 from typing import List, Optional
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_BIN = os.path.join(_HERE, "bin")
+
+# Call yt-dlp as a module of THIS Python interpreter. This works even when the
+# `yt-dlp` command isn't on the system PATH (common on Windows after pip install).
+_YTDLP = [sys.executable, "-m", "yt_dlp"]
+
+
+def _exe(name: str) -> str:
+    """Resolve ffmpeg/ffprobe: prefer a bundled ./bin copy, else system PATH."""
+    for cand in (os.path.join(_BIN, name), os.path.join(_BIN, name + ".exe")):
+        if os.path.isfile(cand):
+            return cand
+    return shutil.which(name) or shutil.which(name + ".exe") or name
+
+
+def _ffmpeg_location_args() -> List[str]:
+    """Tell yt-dlp where ffmpeg is, if we have a bundled copy."""
+    if os.path.isdir(_BIN) and (os.path.isfile(os.path.join(_BIN, "ffmpeg"))
+                                or os.path.isfile(os.path.join(_BIN, "ffmpeg.exe"))):
+        return ["--ffmpeg-location", _BIN]
+    return []
 
 
 @dataclass
@@ -83,8 +107,7 @@ def search_videos(query: str, limit: int = 5, max_minutes: int = 40,
     Return a list of candidate videos: [{id, title, duration}, ...].
     Uses yt-dlp's ytsearch (no API key). Filters out absurdly long videos.
     """
-    cmd = [
-        "yt-dlp",
+    cmd = _YTDLP + [
         f"ytsearch{limit}:{query}",
         "--flat-playlist",
         "--no-warnings",
@@ -163,8 +186,8 @@ def _fetch_subtitles(video_id: str, workdir: str, auth: YtAuth = DEFAULT_AUTH) -
     """Download auto/manual English subs (vtt) without the video. Returns path."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     out_tmpl = os.path.join(workdir, "%(id)s.%(ext)s")
-    cmd = [
-        "yt-dlp", url,
+    cmd = _YTDLP + [
+        url,
         "--skip-download",
         "--write-subs", "--write-auto-subs",
         "--sub-langs", "en.*,en",
@@ -223,7 +246,7 @@ def best_timestamp(
 
 def _ffprobe_duration(path: str) -> float:
     cmd = [
-        "ffprobe", "-v", "error", "-show_entries", "format=duration",
+        _exe("ffprobe"), "-v", "error", "-show_entries", "format=duration",
         "-of", "json", path,
     ]
     try:
@@ -251,15 +274,15 @@ def download_section(
     workdir = tempfile.mkdtemp(prefix="ytclip_")
     raw_tmpl = os.path.join(workdir, "raw.%(ext)s")
     section = f"*{start:.2f}-{end:.2f}"
-    cmd = [
-        "yt-dlp", url,
+    cmd = _YTDLP + [
+        url,
         "--download-sections", section,
         "--force-keyframes-at-cuts",
         "-f", f"bv*[height<={max_height}]+ba/b[height<={max_height}]/b",
         "--merge-output-format", "mp4",
         "--no-warnings", "--quiet",
         "-o", raw_tmpl,
-    ] + auth.args()
+    ] + _ffmpeg_location_args() + auth.args()
     try:
         proc = _run(cmd, timeout=300)
     except subprocess.TimeoutExpired:
@@ -278,7 +301,7 @@ def download_section(
     # Re-trim to exact duration, normalise to a clean 16:9 1080p mp4 so every
     # clip drops straight onto a landscape timeline without resizing.
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
-    ff = ["ffmpeg", "-y", "-i", raw, "-t", f"{duration:.2f}"]
+    ff = [_exe("ffmpeg"), "-y", "-i", raw, "-t", f"{duration:.2f}"]
     if normalize_169:
         vf = (
             f"scale={target_w}:{target_h}:force_original_aspect_ratio=decrease,"
