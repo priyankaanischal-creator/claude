@@ -196,6 +196,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
                    help="Clips to download per scene (0 to skip clips)")
     p.add_argument("--images-per-scene", type=int, default=4,
                    help="Images to download per scene (0 to skip images)")
+    p.add_argument("--frames-per-clip", type=int, default=2,
+                   help="Still frames (screenshots) to grab from each downloaded "
+                        "clip as guaranteed on-topic images (0 to disable)")
 
     p.add_argument("--search-n", type=int, default=5,
                    help="YouTube candidate videos to try per clip query")
@@ -329,10 +332,11 @@ def main(argv=None) -> int:
         with open(manifest_path, "w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-    totals = {"clips": 0, "images": 0, "clip_fail": 0}
+    totals = {"clips": 0, "images": 0, "clip_fail": 0, "frames": 0}
     t0 = time.time()
     last_idx = specs[-1].index if specs else 0
     dedup = ic.DedupState()  # shared across ALL scenes -> no repeated images
+    clip_sections = set()    # shared -> the SAME clip section never repeats
 
     for n, scene in enumerate(specs, 1):
         scene_dir = os.path.join(args.out, scene.slug())
@@ -386,6 +390,7 @@ def main(argv=None) -> int:
                     max_height=args.max_height,
                     auth=auth,
                     exclude_ids=used_video_ids,
+                    used_sections=clip_sections,
                 )
             except Exception as e:
                 log(f"    [clip] error: {type(e).__name__}: {e}")
@@ -400,6 +405,23 @@ def main(argv=None) -> int:
             else:
                 totals["clip_fail"] += 1
                 log(f"    [clip] none for: {query}  ({reason})")
+
+        # --- frames: grab on-topic stills straight from the downloaded clips ---
+        if args.frames_per_clip > 0 and entry["clips"]:
+            shot_idx = 0
+            for c in entry["clips"]:
+                frames = yt.extract_frames(
+                    c["path"], args.frames_per_clip, scene_dir,
+                    prefix=f"shot{shot_idx + 1}")
+                for fp in frames:
+                    entry["images"].append({
+                        "path": fp, "source_url": c.get("url", ""),
+                        "query": "frame from clip", "width": 1920, "height": 1080,
+                    })
+                    totals["frames"] += 1
+                shot_idx += 1
+            if shot_idx:
+                log(f"    [shot] {totals['frames']} frame(s) grabbed from clips so far")
 
         # --- images: pooled across all image queries ---
         if args.images_per_scene > 0:
@@ -426,7 +448,7 @@ def main(argv=None) -> int:
     log("\n" + "=" * 66)
     log(f"  DONE in {dt:.0f}s")
     log(f"  clips: {totals['clips']} ok, {totals['clip_fail']} failed | "
-        f"images: {totals['images']}")
+        f"images: {totals['images']} (incl. {totals['frames']} frames from clips)")
     log(f"  manifest: {manifest_path}")
     log("=" * 66)
     return 0

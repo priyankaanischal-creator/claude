@@ -144,6 +144,26 @@ def _dedup_key(url: str) -> str:
     return (p.netloc + p.path).lower()
 
 
+def _ddgs_images(query: str, max_results: int, size: str):
+    """Run one DuckDuckGo image search with a timeout + one retry."""
+    last_exc = None
+    for attempt in range(2):
+        try:
+            try:
+                ddgs = DDGS(timeout=25)
+            except TypeError:
+                ddgs = DDGS()
+            with ddgs:
+                return list(ddgs.images(query, max_results=max_results,
+                                        size=size, layout="Wide"))
+        except Exception as e:  # network / rate-limit / timeout
+            last_exc = e
+            time.sleep(1.5)
+    if last_exc:
+        print(f"    [img] search error ({size}): {type(last_exc).__name__}")
+    return []
+
+
 def search_images(
     query: str,
     min_width: int = 1280,
@@ -154,12 +174,7 @@ def search_images(
     """Return landscape, high-res image candidates for one query, best first."""
     raw: List[dict] = []
     for size in ("Wallpaper", "Large"):
-        try:
-            with DDGS() as ddgs:
-                for r in ddgs.images(query, max_results=pool, size=size, layout="Wide"):
-                    raw.append(r)
-        except Exception as e:
-            print(f"    [img] search error ({size}): {type(e).__name__}: {e}")
+        raw += _ddgs_images(query, pool, size)
         if len(raw) >= pool:
             break
 

@@ -101,11 +101,48 @@ DEFAULT_AUTH = YtAuth()
 
 # --- search ----------------------------------------------------------------
 
-def search_videos(query: str, limit: int = 5, max_minutes: int = 40,
+# Titles that usually mean commentary/analysis (NOT actual movie footage).
+_JUNK_TITLE = (
+    "explained", "breakdown", "reaction", "react", "review", "analysis",
+    "analy", "theory", "theories", "ranked", "ranking", "essay", "easter egg",
+    "things you missed", "things you didnt", "facts", "top 10", "top ten",
+    "retrospective", "podcast", "commentary", "explain", "iceberg",
+    "why ", "how ", "vs ", "tier list", "deep dive", "recap", "summary",
+    "discussion", "interview",
+)
+# Titles that usually ARE real movie footage.
+_GOOD_TITLE = (
+    "movie clip", "movie scene", "official clip", "scene", "clip", " hd",
+    "4k", "remaster", "blu-ray", "bluray", "full scene",
+)
+
+
+def _title_score(title: str, duration: float) -> int:
+    """Heuristic: positive = looks like real movie footage, negative = commentary."""
+    t = " " + title.lower() + " "
+    score = 0
+    for kw in _JUNK_TITLE:
+        if kw in t:
+            score -= 4
+    for kw in _GOOD_TITLE:
+        if kw in t:
+            score += 3
+    # short clips are usually the actual scene; long videos are usually essays
+    if duration:
+        if duration <= 240:
+            score += 2
+        elif duration > 900:
+            score -= 4
+        elif duration > 480:
+            score -= 2
+    return score
+
+
+def search_videos(query: str, limit: int = 8, max_minutes: int = 30,
                   auth: YtAuth = DEFAULT_AUTH) -> List[dict]:
     """
-    Return a list of candidate videos: [{id, title, duration}, ...].
-    Uses yt-dlp's ytsearch (no API key). Filters out absurdly long videos.
+    Return candidate videos [{id, title, duration, title_score}, ...], best
+    (most footage-like) first. Uses yt-dlp ytsearch (no API key).
     """
     cmd = _YTDLP + [
         f"ytsearch{limit}:{query}",
@@ -132,7 +169,12 @@ def search_videos(query: str, limit: int = 5, max_minutes: int = 40,
             dur = 0.0
         if max_minutes and dur and dur > max_minutes * 60:
             continue
-        results.append({"id": vid, "title": title, "duration": dur})
+        results.append({
+            "id": vid, "title": title, "duration": dur,
+            "title_score": _title_score(title, dur),
+        })
+    # Best-looking footage first.
+    results.sort(key=lambda r: r["title_score"], reverse=True)
     return results
 
 
@@ -389,23 +431,28 @@ def collect_clip(
     keywords: List[str],
     out_path: str,
     duration: float = 5.0,
-    search_n: int = 6,
+    search_n: int = 8,
     max_height: int = 720,
     auth: YtAuth = DEFAULT_AUTH,
     exclude_ids: Optional[set] = None,
-) -> Optional[ClipResult]:
+    used_sections: Optional[set] = None,
+) -> tuple:
     """
     Full pipeline for one scene clip:
-      1. search YouTube for candidate videos
-      2. read each candidate's subtitles and score how well it contains the
-         scene's keywords (so we pick the video that ACTUALLY has the moment)
+      1. search YouTube and rank candidates by how much they look like real
+         movie footage (title) rather than commentary/reaction/essay videos
+      2. read each candidate's subtitles and score keyword match (so we pick the
+         video + timestamp that ACTUALLY has the moment)
       3. download a short window centred on the best-matching line
       4. normalise to a clean 16:9 1080p mp4
 
-    `exclude_ids` lets the caller avoid reusing the same video for multiple
-    clips in the same scene.
+    `exclude_ids`    : video ids to skip entirely (global de-dup).
+    `used_sections`  : set of "videoid@bucket" already used anywhere, so the
+                       SAME clip section never repeats across scenes.
+    Returns (ClipResult | None, reason).
     """
     exclude_ids = exclude_ids or set()
+    used_sections = used_sections if used_sections is not None else set()
     candidates = search_videos(query, limit=search_n, auth=auth)
     candidates = [c for c in candidates if c["id"] not in exclude_ids]
     if not candidates:
@@ -414,33 +461,39 @@ def collect_clip(
     last_reason = "download failed"
     workdir = tempfile.mkdtemp(prefix="ytsubs_")
     try:
-        # Score every candidate by subtitle keyword match.
+        # Score candidates: subtitle keyword match (x3) + footage-like title.
         scored = []
         for cand in candidates:
             vid = cand["id"]
             vdur = cand["duration"] or 0.0
             ts = best_timestamp(vid, keywords, duration, workdir, auth)
             if ts is not None:
-                m_start, matched, score = ts
+                m_start, matched, kscore = ts
             else:
-                m_start, matched, score = None, "", 0
-            scored.append((score, cand, vdur, m_start, matched))
+                m_start, matched, kscore = None, "", 0
+            combined = kscore * 3 + cand.get("title_score", 0)
+            scored.append((combined, kscore, cand, vdur, m_start, matched))
 
-        # Best matches first; tie-break toward shorter (more focused) videos.
-        scored.sort(key=lambda x: (x[0], -(x[2] or 1e9)), reverse=True)
+        scored.sort(key=lambda x: (x[0], -(x[3] or 1e9)), reverse=True)
 
-        for score, cand, vdur, m_start, matched in scored:
+        for combined, kscore, cand, vdur, m_start, matched in scored:
             vid = cand["id"]
-            if m_start is not None and score > 0:
-                start = max(0.0, m_start - PRE_ROLL)  # begin just before the line
+            if m_start is not None and kscore > 0:
+                start = max(0.0, m_start - PRE_ROLL)
             else:
-                start = max(5.0, vdur * 0.2) if vdur else 30.0  # fallback slice
+                start = max(5.0, vdur * 0.2) if vdur else 30.0
 
             if vdur and start + duration > vdur:
                 start = max(0.0, vdur - duration - 1)
 
+            # Skip a section that was already used elsewhere (no repeats).
+            bucket = f"{vid}@{int(start // 3)}"
+            if bucket in used_sections:
+                continue
+
             ok, reason = download_section(vid, start, duration, out_path, max_height, auth)
             if ok:
+                used_sections.add(bucket)
                 return ClipResult(
                     path=out_path,
                     video_id=vid,
@@ -449,12 +502,35 @@ def collect_clip(
                     start=round(start, 2),
                     duration=duration,
                     matched_text=matched,
-                    match_score=score,
+                    match_score=kscore,
                 ), ""
             last_reason = reason or last_reason
         return None, last_reason
     finally:
         shutil.rmtree(workdir, ignore_errors=True)
+
+
+def extract_frames(clip_path: str, n: int, out_dir: str, prefix: str = "frame") -> List[str]:
+    """Grab N evenly-spaced still frames from a clip (on-point images straight
+    from the matching footage). Returns list of saved image paths."""
+    if n <= 0 or not os.path.isfile(clip_path):
+        return []
+    dur = _ffprobe_duration(clip_path) or 5.0
+    os.makedirs(out_dir, exist_ok=True)
+    paths: List[str] = []
+    for i in range(n):
+        frac = (i + 1) / (n + 1)
+        t = max(0.1, dur * frac)
+        outp = os.path.join(out_dir, f"{prefix}_{i + 1:02d}.jpg")
+        cmd = [_exe("ffmpeg"), "-y", "-ss", f"{t:.2f}", "-i", clip_path,
+               "-frames:v", "1", "-q:v", "2", outp]
+        try:
+            _run(cmd, timeout=60)
+        except subprocess.TimeoutExpired:
+            continue
+        if os.path.exists(outp) and os.path.getsize(outp) > 0:
+            paths.append(outp)
+    return paths
 
 
 if __name__ == "__main__":
