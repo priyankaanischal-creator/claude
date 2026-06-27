@@ -193,7 +193,16 @@ def build_arg_parser() -> argparse.ArgumentParser:
     return p
 
 
+def _prepend_local_bin():
+    """If a local ./bin holds ffmpeg/ffprobe (placed by setup), make them findable."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    binp = os.path.join(here, "bin")
+    if os.path.isdir(binp):
+        os.environ["PATH"] = binp + os.pathsep + os.environ.get("PATH", "")
+
+
 def main(argv=None) -> int:
+    _prepend_local_bin()
     args = build_arg_parser().parse_args(argv)
 
     if not args.script and not args.plan and not args.instructor:

@@ -1,0 +1,147 @@
+# 🎬 Footage Collector — PC Setup Guide (ekdum simple)
+
+Ye guide bilkul beginner ke liye hai. Aapko coding aani zaroori nahi.
+Tool aapki script + visual instructor file se har scene ke liye **YouTube clips
+(cropped, 16:9)** aur **high-res images** download karke folders mein daal deta hai.
+
+> **GUI app banega ya command line?**
+> Aapke liye ek **simple app window (GUI)** ban gayi hai. Aapko terminal/command
+> kuch nahi chalani — bas `run.bat` double-click karo, ek window khulegi, file
+> daalo, button dabao. Command line sirf backup ke liye hai (neeche diya hai).
+
+---
+
+## Kya-kya chahiye (ek baar ka setup)
+1. **Python 3.10+** (free)
+2. Internet connection
+3. Wahi browser jisme aap **YouTube pe logged-in** ho (Chrome/Edge/Firefox) — clips ke liye
+
+---
+
+## STEP 1 — Tool download karo
+1. Repo kholo: `https://github.com/priyankaanischal-creator/claude`
+2. Branch `add-footage-collector` select karo (ya PR merge ke baad `main`).
+3. Green **"Code"** button → **"Download ZIP"**.
+4. ZIP ko apne PC pe extract karo. Andar `footage_collector` folder milega — bas usi ke andar kaam hoga.
+
+---
+
+## STEP 2 — Python install karo (agar nahi hai)
+1. `https://www.python.org/downloads/` kholo → **Download Python** dabao.
+2. Installer chalao. ⚠️ **SABSE ZAROORI:** pehli screen pe **"Add python.exe to PATH"** wala checkbox **TICK** karo, phir "Install Now".
+3. Install hone do.
+
+> Check karne ke liye: Start menu me "cmd" type karke Command Prompt kholo,
+> `python --version` likho. Agar version dikhe (jaise `Python 3.12.x`) to ho gaya.
+
+---
+
+## STEP 3 — One-time setup (ffmpeg + packages)
+Folder `footage_collector` ke andar:
+
+- **Windows:** `setup.bat` pe **double-click** karo.
+  - Ye khud Python packages install karega aur **ffmpeg** download karke `bin\` folder me daal dega.
+  - "Ho gaya!" dikhe to band kar do.
+- **Mac/Linux:** Terminal me folder kholo aur chalao:
+  ```
+  bash setup.sh
+  ```
+  (Mac pe ffmpeg ke liye: `brew install ffmpeg` | Ubuntu: `sudo apt install ffmpeg python3-tk`)
+
+> Ye step **sirf ek baar** karna hai.
+
+---
+
+## STEP 4 — App kholo aur footage banao
+- **Windows:** `run.bat` pe **double-click** → app window khulegi.
+- **Mac/Linux:** `bash run.sh`
+
+App window me:
+1. **Video title** — apni video ka title (optional).
+2. **Topic / context** — sabse important! Jaise `The Thing 1982` ya `Scarface 1983`. Isse saare results topic se related rehte hain.
+3. **Visual instructor file** — "Browse…" se apni instructor `.txt` file choose karo.
+4. **Clean script (optional)** — apni original script `.txt` (chaaho to).
+5. **Output folder** — kahan save karna hai (default `output`).
+6. **Options:**
+   - Clips / scene → kitni clips (default 2)
+   - Images / scene → kitni images (default 4)
+   - Clip length → 5 second (recommended)
+   - **YouTube login** → wo browser choose karo jisme aap YouTube pe logged-in ho (clips ke liye zaroori, neeche dekho).
+7. **▶ Generate Footage** dabao. Progress neeche window me dikhega.
+8. Khatam hone pe **"Open output folder"** se folders dekho.
+
+---
+
+## STEP 5 — Clips ke liye "YouTube login" wala step (important)
+YouTube datacenter/anjaan jagah se download block karta hai
+("Sign in to confirm you're not a bot"). Solution: aap apne **browser ki login**
+use karoge.
+
+- App me **YouTube login** dropdown me wo browser choose karo jisme aap **abhi
+  YouTube pe logged-in** ho (e.g. `chrome`).
+- Bas. Tool us browser ki cookies use karke clips download kar lega.
+
+> Tip: Clips download karte waqt **wo browser band rakho** (Chrome cookies kabhi
+> locked hote hain agar browser khula ho). Sirf YouTube pe ek baar login hona chahiye.
+> Images ke liye ye step zaroori nahi — wo waise bhi download ho jaati hain.
+
+---
+
+## Output kaisa milega
+```
+output/
+  manifest.json              <- saari scenes ki list + queries + sources
+  scene_001/
+    scene.txt                <- is scene ka narration + queries (+ notes)
+    clip_01.mp4              <- 5 sec, 16:9, 1080p
+    clip_02.mp4
+    image_01.jpg             <- high-res, landscape
+    image_02.jpg ...
+  scene_002/
+  ...
+```
+Har scene ka apna folder — editing ke time ready "visual buffet".
+
+---
+
+## ❓ Common problems (troubleshooting)
+
+| Problem | Fix |
+|--------|-----|
+| "Python nahi mila" / 'python' is not recognized | Python install nahi hua ya PATH tick nahi kiya. Step 2 dobara, PATH tick zaroor karo. |
+| setup.bat me ffmpeg download fail | Internet check karo. Ya manual: ffmpeg Windows build download karke `ffmpeg.exe` + `ffprobe.exe` ko `footage_collector\bin\` me daal do. |
+| Clips download nahi ho rahi, "Sign in to confirm you're not a bot" | App me sahi **browser** choose karo (jisme YouTube logged-in ho), aur wo browser **band** rakho. |
+| "could not find cookies" | Galat browser select kiya, ya us browser me YouTube login nahi. Sahi browser choose karo. |
+| Images aa rahi par clips nahi | Normal — sabse pehle YouTube login wala step set karo. Images bina login ke aati hain. |
+| App window khulti hi nahi (Linux) | `sudo apt install python3-tk` chalao. |
+
+---
+
+## 💻 Command-line tareeka (backup, agar GUI na chahe)
+Folder ke andar terminal/cmd me:
+```bash
+# ek baar:
+pip install -r requirements.txt      # + ffmpeg installed/bin me ho
+
+# footage banao:
+python collector.py ^
+  --instructor scripts/the_thing_visual_instructor.txt ^
+  --script scripts/the_thing.txt ^
+  --context "The Thing 1982" ^
+  --title "WHAT THE THING'S ENDING REALLY MEANS" ^
+  --out output ^
+  --clips-per-scene 2 --images-per-scene 4 --clip-duration 5 ^
+  --cookies-from-browser chrome
+```
+(Windows me `^` line-continuation hai; Mac/Linux me `\` use karo.)
+
+Sirf images chahiye to `--clips-per-scene 0` aur `--cookies-from-browser` hata do.
+
+---
+
+## Naye video ke liye kya karna hai (har baar)
+1. Claude/Gemini se us script ki **visual instructor file** banwao (CAPS scene-name +
+   dialogue quotes + concrete words, sab topic se related — example ke liye
+   `scripts/the_thing_visual_instructor.txt` dekho).
+2. App kholo → instructor file + script daalo → topic likho → Generate dabao.
+3. Folders ready! 🎉
