@@ -7,10 +7,12 @@ ON-SCREEN TEXT: "THE ONE DECENT THING. THE EXACT THING THAT WORLD CANNOT ALLOW."
 EDITOR NOTES: Quiet. Mournful. This is the emotional floor of the essay.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface
+  - Tony Montana Scarface face alone
+  - Tony Montana Scarface knowing what
 
 CLIP QUERIES:
-  - Tony Montana Scarface scene
+  - Tony Montana Scarface face alone scene
+  - Tony Montana Scarface knowing what scene
 
 NARRATION / TEXT:
 "…The one decent thing in him is the exact thing that world cannot allow to survive."

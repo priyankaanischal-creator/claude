@@ -7,10 +7,12 @@ ON-SCREEN TEXT: "EVERY POSTER IS A MAN FACE-DOWN IN A FOUNTAIN."
 EDITOR NOTES: The reframe. The poster will never look the same. Hold this beat.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface
+  - Tony Montana Scarface poster knows
+  - Tony Montana Scarface what actually
 
 CLIP QUERIES:
-  - Tony Montana Scarface scene
+  - Tony Montana Scarface poster knows scene
+  - Tony Montana Scarface what actually scene
 
 NARRATION / TEXT:
 "…every one of those posters is a man face-down in a fountain, framed and put on a wall."

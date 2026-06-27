@@ -188,10 +188,21 @@ def _polish_query(s: str) -> str:
     return f"{core} scene" if had_scene else core
 
 
+_BAD_QUOTE_WORDS = {
+    "rating", "mpaa", "excessive", "cumulative", "violence", "language",
+    "overlay", "title", "card",
+}
+
+
 def _clean_quote(q: str) -> Optional[str]:
     q = q.strip().strip("….,;:!- ").strip()
-    if len(q.split()) < 2:
+    if ":" in q or any(c.isdigit() for c in q):
         return None
+    words = q.split()
+    if len(words) < 2 or len(words) > 6:          # real dialogue lines are short
+        return None
+    if any(w.lower().strip(".,!?") in _BAD_QUOTE_WORDS for w in words):
+        return None                                # skip text-card / overlay strings
     return q.lower() if q.isupper() else q
 
 
@@ -213,9 +224,11 @@ def _quotes(text: str, allow_double: bool) -> List[str]:
 
 
 def _caps_scene_names(text: str) -> List[str]:
-    # drop parentheticals and quote chars first so "(Scarface)" / quotes don't leak
+    # Remove parentheticals AND quoted spans first, so on-screen / text-card
+    # content (e.g. "MPAA RATING: X ...") is never mistaken for a scene name.
     text = re.sub(r"\([^)]*\)", " ", text)
-    text = re.sub(r"[\"“”]", " ", text)
+    text = re.sub(r"[\"“][^\"”]*[\"”]", " ", text)
+    text = re.sub(r"‘[^’]*’", " ", text)
     names = []
     for c in _CAPS_RE.findall(text):
         phrase = _LEADING_ARTICLE.sub("", c).strip()  # only strip a leading article
@@ -251,73 +264,126 @@ def _proper_nouns(text: str) -> List[str]:
     return res
 
 
+_CRAFT_STOP = {
+    "montage", "shot", "shots", "clip", "clips", "scene", "scenes", "cut",
+    "cuts", "dissolve", "cross", "hold", "holds", "establish", "establishing",
+    "insert", "inserts", "intercut", "still", "stills", "footage", "camera",
+    "frame", "frames", "slow", "fast", "quick", "brief", "push", "pull",
+    "zoom", "pan", "reveal", "card", "text", "overlay", "flash", "real",
+    "world", "then", "continue", "optional", "back", "wide", "close",
+    "splash", "silence", "tone", "music", "energy", "beat", "beats",
+    "version", "same", "document", "documentary", "stock", "archival",
+    "photo", "image", "reference", "into", "onto", "with", "from", "that",
+    "this", "their", "there", "here", "your", "have", "been", "were", "where",
+    "which", "while", "after", "before", "about", "across", "over", "under",
+    "him", "his", "her", "she", "they", "them", "tony", "scarface",  # subject
+    "film", "movie", "late", "early", "previous", "next", "sharp", "visual",
+    "contrast", "thesis", "audience", "viewer", "feeling", "something",
+    "abstract", "universal", "respectful", "minimal", "factual", "build",
+    "show", "focus", "establishing", "behind", "across", "between", "against",
+    # common verbs / adverbs / adjectives that aren't visual subjects
+    "hard", "down", "here", "again", "just", "simple", "split", "holding",
+    "standing", "final", "reflective", "dissolves", "fires", "alive",
+    "wanting", "channel", "recreation", "turns", "named", "company",
+    "reportedly", "story", "listened", "wanted", "young", "delivering",
+    "watching", "looking", "talk", "makes", "every", "people", "like",
+}
+
+
+def _descriptive_keywords(text: str, limit: int = 4) -> List[str]:
+    """Salient content words from the Visual line (used only to add specificity;
+    always combined with the subject anchor, so results stay on-topic)."""
+    text = re.sub(r"\([^)]*\)", " ", text)
+    # remove quoted spans entirely (text cards / on-screen / dialogue handled elsewhere)
+    text = re.sub(r"[\"“][^\"”]*[\"”]", " ", text)
+    text = re.sub(r"‘[^’]*’", " ", text)
+    words = re.findall(r"[a-zA-Z][a-zA-Z\-]{3,}", text.lower())
+    out, seen = [], set()
+    for w in words:
+        if w in _CRAFT_STOP or w in seen:
+            continue
+        seen.add(w)
+        out.append(w)
+    return out[:limit]
+
+
 def build_queries(beat: Beat, subject: str, max_q: int = 3) -> None:
-    """Populate beat.image_queries and beat.clip_queries from its visual text."""
-    visual = beat.visual
-    blob = f"{beat.narration} {beat.visual}"
-    low = blob.lower()
-    beat.is_film = not any(mk in low for mk in _NONFILM_MARKERS)
+    """
+    Populate beat.image_queries and beat.clip_queries.
 
-    scenes = _caps_scene_names(visual)
-    # famous lines: double-quotes only from VISUAL (narration is fully quoted),
-    # plus curly-single famous lines from both narration and visual.
-    raw_quotes = _quotes(visual, allow_double=True) + _quotes(beat.narration, allow_double=False)
-    _seen = set()
-    quotes = []
-    for q in raw_quotes:
-        if q.lower() not in _seen:
-            _seen.add(q.lower())
-            quotes.append(q)
-    propers = _proper_nouns(visual)
+    STRICT relevance rules:
+      - EVERY query is anchored to `subject` (the script's topic). The anchor is
+        never dropped, so results stay on-topic only.
+      - Only high-confidence signals are used as specifics:
+          1. explicit CAPS scene names from the Visual line (quotes/parens removed)
+          2. short quoted dialogue lines (<=6 words, no text-card/overlay strings)
+      - On-Screen Text and Editor Notes are NEVER used for searching.
+      - If a beat has no reliable specific, we fall back to the bare subject
+        (still on-topic) rather than inventing an unrelated query.
+    """
+    subject = subject.strip()
+    low = f"{beat.narration} {beat.visual}".lower()
+    beat.is_film = not any(mk in low for mk in _NONFILM_MARKERS)  # info only
 
-    anchor = subject if beat.is_film else ""
+    # Signals come ONLY from the narration + Visual line.
+    scenes = _caps_scene_names(beat.visual)
+    quotes = _quotes(beat.visual, allow_double=True) + _quotes(beat.narration, allow_double=False)
 
-    def q(*parts):
-        s = " ".join(p for p in parts if p).strip()
-        s = re.sub(r"\s+", " ", s)
-        return s
+    specifics: List[str] = []
+    for s in scenes[:2]:
+        specifics.append(s)
+    for q in quotes[:2]:
+        specifics.append(q)
+
+    # de-dup specifics (case-insensitive), keep order
+    seen, uniq = set(), []
+    for sp in specifics:
+        if sp.lower() not in seen:
+            seen.add(sp.lower())
+            uniq.append(sp)
+
+    # Fill remaining slots with descriptive keyword phrases from the Visual line
+    # (still anchored to subject -> stays on-topic), so generic beats become
+    # more specific instead of falling back to the bare subject.
+    if len(uniq) < max_q:
+        kws = _descriptive_keywords(beat.visual, limit=4)
+        phrases = []
+        if len(kws) >= 2:
+            phrases.append(f"{kws[0]} {kws[1]}")
+        if len(kws) >= 4:
+            phrases.append(f"{kws[2]} {kws[3]}")
+        elif len(kws) == 3:
+            phrases.append(kws[2])
+        elif len(kws) == 1:
+            phrases.append(kws[0])
+        for p in phrases:
+            if len(uniq) >= max_q:
+                break
+            if p.lower() not in seen:
+                seen.add(p.lower())
+                uniq.append(p)
+
+    uniq = uniq[:max_q]
 
     clip_q: List[str] = []
     img_q: List[str] = []
+    for sp in uniq:
+        base = f"{subject} {sp}".strip()
+        img_q.append(base)
+        # add a "scene" hint for video search unless the name already has it
+        clip_q.append(base if re.search(r"scene$", base, re.I) else f"{base} scene")
 
-    # 1) explicit CAPS scene names (strongest signal)
-    for name in scenes[:2]:
-        clip_q.append(q(anchor, name, "scene"))
-        img_q.append(q(anchor, name, "still"))
-
-    # 2) famous quoted lines
-    for line in quotes[:2]:
-        clip_q.append(q(anchor, line, "scene"))
-        img_q.append(q(anchor, line))
-
-    # 3) named entities (people / places) - good for both film + non-film beats
-    if propers:
-        if beat.is_film:
-            # combine subject with the first couple of distinctive names
-            top = [p for p in propers if p.lower() not in ("tony", "scarface")][:2]
-            for p in top:
-                clip_q.append(q(anchor, p, "scene"))
-                img_q.append(q(anchor, p))
-        else:
-            # non-film: search the entities/topic directly (archival/stock/etc.)
-            joined = " ".join(propers[:3])
-            clip_q.append(q(joined, "archival footage"))
-            img_q.append(q(joined))
-            img_q.append(q(propers[0]) if propers else "")
-
-    # 4) fallback if nothing extracted
-    if not clip_q:
-        clip_q.append(q(anchor or subject, "scene"))
-    if not img_q:
-        img_q.append(q(anchor or subject))
+    if not uniq:  # no reliable specific -> stay on-topic with the bare subject
+        img_q.append(subject)
+        clip_q.append(f"{subject} scene")
 
     def dedup(seq):
-        seen, res = set(), []
-        for s in seq:
-            s = _polish_query(s)
-            if s and s.lower() not in seen:
-                seen.add(s.lower())
-                res.append(s)
+        s, res = set(), []
+        for x in seq:
+            x = _polish_query(x)
+            if x and x.lower() not in s:
+                s.add(x.lower())
+                res.append(x)
         return res[:max_q]
 
     beat.clip_queries = dedup(clip_q)

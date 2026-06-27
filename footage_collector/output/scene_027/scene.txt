@@ -7,12 +7,12 @@ ON-SCREEN TEXT: (no overlay)
 EDITOR NOTES: Silence. Or one low, sustained tone. No music. Let it sit.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface Manny
-  - Tony Montana Scarface Gina
+  - Tony Montana Scarface manny body
+  - Tony Montana Scarface being pulled
 
 CLIP QUERIES:
-  - Tony Montana Scarface Manny scene
-  - Tony Montana Scarface Gina scene
+  - Tony Montana Scarface manny body scene
+  - Tony Montana Scarface being pulled scene
 
 NARRATION / TEXT:
 "The appetite has finally eaten the last person who loved him, and Tony pulled the trigger himself."

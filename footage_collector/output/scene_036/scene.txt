@@ -7,11 +7,12 @@ ON-SCREEN TEXT: "IT ONLY CONTAINS MORE."
 EDITOR NOTES: This is the audience-mirror moment. Keep it gentle, not preachy.
 
 IMAGE QUERIES:
-  - No Scarface Something
-  - No Scarface
+  - Tony Montana Scarface empty luxury
+  - Tony Montana Scarface room skyline
 
 CLIP QUERIES:
-  - No Scarface Something archival footage
+  - Tony Montana Scarface empty luxury scene
+  - Tony Montana Scarface room skyline scene
 
 NARRATION / TEXT:
 "The raise. The bigger place. The win after which you’ll finally relax… the dream doesn’t contain an ‘enough.’ It only contains more."

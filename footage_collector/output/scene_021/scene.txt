@@ -7,12 +7,14 @@ ON-SCREEN TEXT: (no overlay)
 EDITOR NOTES: Build tension through silence and close-ups. No text overlay — let the acting carry.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface Car-Bomb Scene still
-  - Tony Montana Scarface Alberto
+  - Tony Montana Scarface Car-Bomb Scene
+  - Tony Montana Scarface car-bomb alberto
+  - Tony Montana Scarface journalist wife
 
 CLIP QUERIES:
-  - Tony Montana Scarface Car-Bomb Scene scene
-  - Tony Montana Scarface Alberto scene
+  - Tony Montana Scarface Car-Bomb Scene
+  - Tony Montana Scarface car-bomb alberto scene
+  - Tony Montana Scarface journalist wife scene
 
 NARRATION / TEXT:
 "Sosa orders a hit… Tony is right there, in the car, his thumb on the bomb. Then the target walks out — and he isn’t alone. His wife. And then his children…"

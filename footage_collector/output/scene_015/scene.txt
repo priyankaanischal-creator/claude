@@ -7,10 +7,12 @@ ON-SCREEN TEXT: (no overlay)
 EDITOR NOTES: Glamour reel. Let the visuals prove the argument — this is WHY people put the poster up.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface Miami
+  - Tony Montana Scarface white suit
+  - Tony Montana Scarface mansion interior
 
 CLIP QUERIES:
-  - Tony Montana Scarface Miami scene
+  - Tony Montana Scarface white suit scene
+  - Tony Montana Scarface mansion interior scene
 
 NARRATION / TEXT:
 "It dresses him in white… marble mansion, a literal pet tiger, neon Miami…"

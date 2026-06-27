@@ -7,12 +7,12 @@ ON-SCREEN TEXT: 1932: THE SHAME OF THE NATION  →  1983: THE WORLD IS YOURS
 EDITOR NOTES: Historical-link beat. Quick — 10 seconds. The point is that the "warning" has ALWAYS been the DNA.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht
-  - Tony Montana Scarface De Palma
+  - Tony Montana Scarface poster title
+  - Tony Montana Scarface palma dedication
 
 CLIP QUERIES:
-  - Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht scene
-  - Tony Montana Scarface De Palma scene
+  - Tony Montana Scarface poster title scene
+  - Tony Montana Scarface palma dedication scene
 
 NARRATION / TEXT:
 "…the original Scarface from 1932, subtitled The Shame of the Nation… The warning was in this story’s DNA for fifty years…"

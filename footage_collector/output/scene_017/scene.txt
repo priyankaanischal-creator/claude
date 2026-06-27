@@ -7,14 +7,14 @@ ON-SCREEN TEXT: "SAY GOODNIGHT TO THE BAD GUY."
 EDITOR NOTES: Let the scene play. Tony’s most iconic moment outside the finale. The thesis-in-dialogue.
 
 IMAGE QUERIES:
-  - Tony Montana Scarface Restaurant Scene still
+  - Tony Montana Scarface Restaurant Scene
   - Tony Montana Scarface bad guy
-  - Tony Montana Scarface You need people like me
+  - Tony Montana Scarface restaurant drunk
 
 CLIP QUERIES:
-  - Tony Montana Scarface Restaurant Scene scene
+  - Tony Montana Scarface Restaurant Scene
   - Tony Montana Scarface bad guy scene
-  - Tony Montana Scarface You need people like me
+  - Tony Montana Scarface restaurant drunk scene
 
 NARRATION / TEXT:
 "…an expensive restaurant… ‘You need people like me… Say goodnight to the bad guy.’"
