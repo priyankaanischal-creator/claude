@@ -1,0 +1,16 @@
+# Scene 37  [CLOSE]
+
+SUMMARY: "…every one of those posters is a man face-down in a fountain, framed and put on
+
+ON-SCREEN TEXT: "EVERY POSTER IS A MAN FACE-DOWN IN A FOUNTAIN."
+
+EDITOR NOTES: The reframe. The poster will never look the same. Hold this beat.
+
+IMAGE QUERIES:
+  - Tony Montana Scarface
+
+CLIP QUERIES:
+  - Tony Montana Scarface scene
+
+NARRATION / TEXT:
+"…every one of those posters is a man face-down in a fountain, framed and put on a wall."

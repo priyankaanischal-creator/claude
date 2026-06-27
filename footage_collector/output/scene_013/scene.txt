@@ -1,15 +1,18 @@
-# Scene 13
+# Scene 13  [THE STRATEGIST]
 
-SUMMARY: The appetite turns inward: his sister Gina and best friend Manny. Tony shoots Manny in the street, learning the truth only as he dies.
+SUMMARY: "Pacino trained with knife-fighters and the boxer Roberto Durán, who he said had
+
+ON-SCREEN TEXT: "A CERTAIN LION IN HIM." — AL PACINO
+
+EDITOR NOTES: Quote card. Quick. Connects Pacino’s physical prep to the "appetite-in-a-cage" thesis.
 
 IMAGE QUERIES:
-  - Scarface Manny Ribera Steven Bauer still
-  - Scarface Gina sister Mary Elizabeth Mastrantonio
-  - Scarface 1983 Tony shoots Manny street scene
+  - Tony Montana Scarface a certain lion in him
+  - Tony Montana Scarface Roberto
 
 CLIP QUERIES:
-  - Scarface Tony shoots Manny scene
-  - Scarface Manny and Gina married scene
+  - Tony Montana Scarface a certain lion in him scene
+  - Tony Montana Scarface Roberto scene
 
-TEXT:
-Discovering that his loyal friend Manny has secretly married his sister Gina, Tony shoots Manny in the street without a question, learning they were married only as Manny dies.
+NARRATION / TEXT:
+"Pacino trained with knife-fighters and the boxer Roberto Durán, who he said had ‘a certain lion in him.’"

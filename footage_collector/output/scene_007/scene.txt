@@ -1,15 +1,16 @@
-# Scene 7
+# Scene 7  [THE WRONG KIND OF TERROR]
 
-SUMMARY: The chainsaw scene: a drug buy gone wrong. Survival isn't about being strongest - it's nerve. Pacino trained with knife-fighters and boxer Roberto Duran.
+SUMMARY: "His problem is the brakes. Tony can control everyone in the world except himsel
+
+ON-SCREEN TEXT: "THE WHEEL IS IN HIS HANDS. THE BRAKES ARE NOT."
+
+EDITOR NOTES: THE thesis line. Hold it. Let it register. This is the spine of the whole video.
 
 IMAGE QUERIES:
-  - Scarface 1983 chainsaw scene bathroom still
-  - Scarface Tony Montana shootout window scene
-  - Roberto Duran boxer 1980s black and white
+  - Tony Montana Scarface
 
 CLIP QUERIES:
-  - Scarface chainsaw scene 1983 apartment
-  - Scarface bathroom Colombian chainsaw scene
+  - Tony Montana Scarface scene
 
-TEXT:
-The infamous chainsaw scene - a drug buy where a Colombian takes a chainsaw to Tony's friend while he watches - shows survival depends on nerve; Al Pacino trained with knife-fighters and boxer Roberto Duran.
+NARRATION / TEXT:
+"His problem is the brakes. Tony can control everyone in the world except himself."

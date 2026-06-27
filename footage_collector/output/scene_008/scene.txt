@@ -1,15 +1,16 @@
-# Scene 8
+# Scene 8  [THE WRONG KIND OF TERROR]
 
-SUMMARY: Why it became a fantasy: Giorgio Moroder's synths and 'Push It to the Limit', the white suit, the marble mansion, the pet tiger, neon Miami - violence so operatic it was rated X.
+SUMMARY: "Listen to what he wants… He wants what’s coming to him — the world, and everyth
+
+ON-SCREEN TEXT: "THE WORLD AND EVERYTHING IN IT."
+
+EDITOR NOTES: Slow. Ambient sound only. Let Tony’s expression carry the beat.
 
 IMAGE QUERIES:
-  - Scarface mansion pet tiger Tony Montana scene
-  - Scarface 1983 Miami neon nightclub Babylon
-  - Tony Montana marble mansion office desk wide shot
+  - Tony Montana Scarface The World Is Yours
 
 CLIP QUERIES:
-  - Scarface Push It to the Limit montage scene
-  - Scarface mansion tiger scene
+  - Tony Montana Scarface The World Is Yours scene
 
-TEXT:
-The film glamorises Tony's rise with Giorgio Moroder's synth score and 'Push It to the Limit', a marble mansion, a pet tiger and neon Miami - so operatic the ratings board first branded it X.
+NARRATION / TEXT:
+"Listen to what he wants… He wants what’s coming to him — the world, and everything in it… It’s an appetite."

@@ -1,15 +1,19 @@
-# Scene 1
+# Scene 1  [COLD OPEN]
 
-SUMMARY: Tony's myth: dead since 1983 but everywhere - the iconic white-suit poster, rappers, the replica mansion, Saddam's 'Montana Management'.
+SUMMARY: "Tony Montana has been dead since 1983. He has never been more popular."
+
+ON-SCREEN TEXT: DEAD SINCE 1983. NEVER MORE POPULAR.
+
+EDITOR NOTES: Hard, fast cuts — 1 second each. Percussive. Establish the cultural phenomenon BEFORE explaining the character.
 
 IMAGE QUERIES:
-  - Scarface 1983 Tony Montana white suit poster cinematic
-  - Al Pacino Scarface cigar close up still
-  - Tony Montana Scarface gold ring white suit portrait
+  - The World Is Yours
+  - Scarface The World Is Yours Pacino
+  - Scarface
 
 CLIP QUERIES:
-  - Scarface 1983 Tony Montana white suit office scene
-  - Scarface Tony Montana cigar scene
+  - The World Is Yours scene
+  - Scarface The World Is Yours Pacino archival footage
 
-TEXT:
-Tony Montana has been dead since 1983 and has never been more popular - the white suit, cigar and gold ring poster in gyms, barbershops and bedrooms; rappers, a Camorra boss's replica mansion, Saddam's Montana Management front.
+NARRATION / TEXT:
+"Tony Montana has been dead since 1983. He has never been more popular."

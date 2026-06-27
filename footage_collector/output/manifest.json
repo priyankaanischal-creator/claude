@@ -1,10 +1,10 @@
 {
   "title": "WHAT MAKES TONY MONTANA SO TERRIFYING",
-  "context": "Scarface 1983 Tony Montana",
-  "mode": "plan (scarface_plan.json)",
-  "generated_at": "2026-06-27T20:02:18.151748+00:00",
+  "context": "Tony Montana Scarface",
+  "mode": "instructor (tony_montana_visual_instructor.txt)",
+  "generated_at": "2026-06-27T20:33:44.955596+00:00",
   "settings": {
-    "clip_duration": 6.0,
+    "clip_duration": 5.0,
     "clips_per_scene": 0,
     "images_per_scene": 4,
     "min_image_width": 1280
@@ -13,782 +13,1855 @@
     {
       "index": 1,
       "slug": "scene_001",
-      "summary": "Tony's myth: dead since 1983 but everywhere - the iconic white-suit poster, rappers, the replica mansion, Saddam's 'Montana Management'.",
-      "text": "Tony Montana has been dead since 1983 and has never been more popular - the white suit, cigar and gold ring poster in gyms, barbershops and bedrooms; rappers, a Camorra boss's replica mansion, Saddam's Montana Management front.",
+      "section": "COLD OPEN",
+      "summary": "\"Tony Montana has been dead since 1983. He has never been more popular.\"",
+      "text": "\"Tony Montana has been dead since 1983. He has never been more popular.\"",
+      "on_screen_text": "DEAD SINCE 1983. NEVER MORE POPULAR.",
+      "editor_notes": "Hard, fast cuts — 1 second each. Percussive. Establish the cultural phenomenon BEFORE explaining the character.",
       "image_queries": [
-        "Scarface 1983 Tony Montana white suit poster cinematic",
-        "Al Pacino Scarface cigar close up still",
-        "Tony Montana Scarface gold ring white suit portrait"
+        "The World Is Yours",
+        "Scarface The World Is Yours Pacino",
+        "Scarface"
       ],
       "clip_queries": [
-        "Scarface 1983 Tony Montana white suit office scene",
-        "Scarface Tony Montana cigar scene"
+        "The World Is Yours scene",
+        "Scarface The World Is Yours Pacino archival footage"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_001/image_01.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp9442500.jpg",
-          "query": "Scarface 1983 Tony Montana white suit poster cinematic",
+          "source_url": "https://wallpaperaccess.com/full/1765762.jpg",
+          "query": "The World Is Yours",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_001/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/6f/29/59/6f29590f79de760de2d3220e6422e331.jpg",
-          "query": "Tony Montana Scarface gold ring white suit portrait",
-          "width": 7552,
-          "height": 4576
+          "source_url": "https://i2.wp.com/quotefancy.com/media/wallpaper/3840x2160/826127-Young-Jeezy-Quote-The-world-is-yours-and-everything-in-it-it-s-out.jpg",
+          "query": "The World Is Yours",
+          "width": 3840,
+          "height": 2160
         },
         {
-          "path": "output/scene_001/image_03.jpg",
-          "source_url": "https://m.media-amazon.com/images/M/MV5BNGY3YTZmY2YtNGVjZS00ZDMxLWFmYjAtYzhmYmU0NjJkOWQzXkEyXkFqcGc@._V1_.jpg",
-          "query": "Al Pacino Scarface cigar close up still",
-          "width": 4096,
-          "height": 2914
+          "path": "output/scene_001/image_03.png",
+          "source_url": "https://wallpapercave.com/wp/wp2610748.png",
+          "query": "The World Is Yours",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_001/image_04.jpg",
-          "source_url": "https://wallpaperaccess.com/full/1445377.jpg",
-          "query": "Al Pacino Scarface cigar close up still",
-          "width": 3624,
-          "height": 2265
+          "source_url": "https://4kwallpapers.com/images/wallpapers/scarface-al-pacino-5k-8k-3840x2160-13463.jpg",
+          "query": "Scarface The World Is Yours Pacino",
+          "width": 3840,
+          "height": 2160
         }
       ]
     },
     {
       "index": 2,
       "slug": "scene_002",
-      "summary": "The warning became the dream. What actually makes Tony terrifying - not the chainsaw or 'say hello to my little friend'.",
-      "text": "Scarface is a warning that became the dream; the film is cleverer than it looks. What makes Tony terrifying isn't the chainsaw or the famous line.",
+      "section": "COLD OPEN",
+      "summary": "\"Walk into enough gyms, barbershops… Rappers take his name… a Camorra boss repor",
+      "text": "\"Walk into enough gyms, barbershops… Rappers take his name… a Camorra boss reportedly built a replica mansion… Saddam Hussein’s regime named a company Montana Management…\"",
+      "on_screen_text": "TONY MONTANA (Future, 2011)  ·  NAPLES REPLICA MANSION  ·  MONTANA MANAGEMENT",
+      "editor_notes": "Keep this fast and factual. These are proof-of-impact beats, not deep dives. 1-2 seconds per flash.",
       "image_queries": [
-        "Scarface 1983 Tony Montana intense stare dramatic still",
-        "Al Pacino Scarface dark cinematic portrait",
-        "Scarface Tony Montana shadow moody lighting"
+        "Tony Montana",
+        "Montana Management",
+        "Tony Montana Naples Camorra Montana Management"
       ],
       "clip_queries": [
-        "Scarface 1983 say hello to my little friend scene",
-        "Scarface Tony Montana close up monologue"
+        "Tony Montana scene",
+        "Montana Management scene",
+        "Tony Montana Naples Camorra Montana Management archival footage"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_002/image_01.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
-          "query": "Scarface 1983 Tony Montana intense stare dramatic still",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://montanafreepress.org/wp-content/uploads/2024/08/AdobeStock_320568278.jpeg",
+          "query": "Montana Management",
+          "width": 6000,
+          "height": 3375
         },
         {
           "path": "output/scene_002/image_02.jpg",
-          "source_url": "https://4kwallpapers.com/images/wallpapers/al-pacino-scarface-5k-3840x2160-13435.jpg",
-          "query": "Al Pacino Scarface dark cinematic portrait",
+          "source_url": "https://i.pinimg.com/originals/11/70/8e/11708efdf4ae5385e7390ba450b1ed2e.jpg?nii=t",
+          "query": "Tony Montana Naples Camorra Montana Management",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_002/image_03.png",
-          "source_url": "https://i.pinimg.com/originals/05/c9/34/05c93437bea03a57035912180a40172e.png",
-          "query": "Scarface Tony Montana shadow moody lighting",
-          "width": 5511,
-          "height": 3115
+          "source_url": "https://www.montana.edu/emergency/video-surveillance/video-surveillance-flow-chart1.png",
+          "query": "Montana Management",
+          "width": 6800,
+          "height": 3788
         },
         {
           "path": "output/scene_002/image_04.jpg",
-          "source_url": "https://static.sky.it/editorialimages/6998a7461504586985cac09eec84dd0b108b19fa/skytg24/it/spettacolo/cinema/2020/06/08/scarface-film/15-scarface-web.jpg?im=Resize",
-          "query": "Scarface 1983 Tony Montana intense stare dramatic still",
-          "width": 3300,
-          "height": 2177
+          "source_url": "https://photos.thedyrt.com/photo/media/freezeout-lake-wildlife-management_33e5d640-e1fa-442f-b8a1-329912821812.jpg?width=3488&height=1744&fit=crop&crop=smart&format=auto",
+          "query": "Montana Management",
+          "width": 3488,
+          "height": 1744
         }
       ]
     },
     {
       "index": 3,
       "slug": "scene_003",
-      "summary": "Great villains scare through control. Tony is frighteningly IN control - the immigration interrogation, deals, contract killing, taking the empire.",
-      "text": "Unlike a man with no control, Tony dominates rooms and deals - the immigration interrogation, a contract killing without shaking hands, reading rivals and taking an entire empire.",
+      "section": "COLD OPEN",
+      "summary": "\"…a story film teachers love to tell… they listened to all of it. And they still",
+      "text": "\"…a story film teachers love to tell… they listened to all of it. And they still wanted to be Tony Montana.\"",
+      "on_screen_text": "\"THEY STILL WANTED TO BE TONY MONTANA.\"",
+      "editor_notes": "The contrast IS the hook. Slow the edit right down after the rapid montage. Let the fountain image breathe.",
       "image_queries": [
-        "Scarface 1983 Tony Montana interrogation scene still",
-        "Al Pacino Scarface suit serious negotiation",
-        "Scarface Tony Montana dominating room scene"
+        "Scarface"
       ],
       "clip_queries": [
-        "Scarface immigration interrogation Freedom Town scene",
-        "Scarface Tony Montana meeting Frank Lopez scene"
+        "Scarface archival footage"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_003/image_01.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/xXNSdudRSsqpN1N498YN1kvvb1q.jpg",
-          "query": "Scarface 1983 Tony Montana interrogation scene still",
+          "source_url": "https://www.dpzone.in/wp-content/uploads/3/Scarface-Wallpaper-49.jpg",
+          "query": "Scarface",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_003/image_02.jpg",
-          "source_url": "https://wallpaperaccess.com/full/747374.jpg",
-          "query": "Scarface 1983 Tony Montana interrogation scene still",
+          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
+          "query": "Scarface",
+          "width": 4600,
+          "height": 3034
+        },
+        {
+          "path": "output/scene_003/image_03.jpg",
+          "source_url": "https://wallpapercave.com/wp/uKk0bYE.jpg",
+          "query": "Scarface",
           "width": 3100,
           "height": 2102
         },
         {
-          "path": "output/scene_003/image_03.jpg",
-          "source_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/05/mixcollage-06-may-2024-06-55-pm-88.jpg",
-          "query": "Al Pacino Scarface suit serious negotiation",
-          "width": 3000,
-          "height": 1500
-        },
-        {
           "path": "output/scene_003/image_04.jpg",
-          "source_url": "https://i.etsystatic.com/32400093/r/il/bfc5fc/3939295452/il_fullxfull.3939295452_jst5.jpg",
-          "query": "Scarface Tony Montana dominating room scene",
-          "width": 3000,
-          "height": 2119
+          "source_url": "https://wallpapersok.com/images/file/scarface-headshot-look-6n8ha2e5517yoqr9.jpg",
+          "query": "Scarface",
+          "width": 2976,
+          "height": 1920
         }
       ]
     },
     {
       "index": 4,
       "slug": "scene_004",
-      "summary": "His problem is the brakes - controls everyone except himself. He wants 'the world and everything in it'. An appetite with no edge.",
-      "text": "Tony can control everyone but himself. He doesn't want money or a house - he wants the world and everything in it, an appetite that has no finish line.",
+      "section": "COLD OPEN",
+      "summary": "\"Scarface is a warning. And the warning became the dream… So let’s actually talk",
+      "text": "\"Scarface is a warning. And the warning became the dream… So let’s actually talk about what makes Tony Montana terrifying…\"",
+      "on_screen_text": "TITLE CARD: The warning became the dream.",
+      "editor_notes": "Transition into the essay. One held note of Moroder-style synth.",
       "image_queries": [
-        "Scarface The World Is Yours blimp Miami scene",
-        "Tony Montana Scarface looking out over Miami window",
-        "Scarface 1983 Miami skyline night cinematic"
+        "Miami"
       ],
       "clip_queries": [
-        "Scarface the world is yours blimp scene",
-        "Scarface Tony Montana the world is yours quote"
+        "Miami archival footage"
       ],
       "clips": [],
       "images": [
         {
-          "path": "output/scene_004/image_01.png",
-          "source_url": "https://wallpapercave.com/wp/wp2610748.png",
-          "query": "Scarface The World Is Yours blimp Miami scene",
+          "path": "output/scene_004/image_01.jpg",
+          "source_url": "https://getwallpapers.com/wallpaper/full/2/3/e/728260-amazing-miami-beach-wallpapers-3840x2160.jpg",
+          "query": "Miami",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_004/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
-          "query": "Tony Montana Scarface looking out over Miami window",
-          "width": 4600,
-          "height": 3034
+          "source_url": "https://wallpaperaccess.com/full/2296825.jpg",
+          "query": "Miami",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_004/image_03.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/ulrM7v3rmcOE0WYWF48vResVemc.jpg",
-          "query": "Scarface 1983 Miami skyline night cinematic",
-          "width": 2720,
-          "height": 1530
+          "source_url": "http://www.voglioviverecosi.com/wp-content/uploads/9.jpg",
+          "query": "Miami",
+          "width": 4288,
+          "height": 2291
         },
         {
           "path": "output/scene_004/image_04.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp2610739.jpg",
-          "query": "Scarface The World Is Yours blimp Miami scene",
-          "width": 2880,
-          "height": 1800
+          "source_url": "https://wallpapercave.com/wp/wp2603554.jpg",
+          "query": "Miami",
+          "width": 4808,
+          "height": 2860
         }
       ]
     },
     {
       "index": 5,
       "slug": "scene_005",
-      "summary": "Origin: the 1980 Mariel boatlift - 125,000 Cubans to Florida, Castro emptying prisons. Tony off the boat, a dishwasher meant for bigger things.",
-      "text": "In 1980 around 125,000 Cubans arrived in Florida during the Mariel boatlift while Castro emptied some prisons; Tony comes off the boat a criminal, hates his dishwashing job, and says he is meant for bigger things.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"Most of the great movie villains scare you through control… quiet, precise, hol",
+      "text": "\"Most of the great movie villains scare you through control… quiet, precise, hold eye contact a beat too long…\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "Fast, minimal. These are contrast-beats, not deep references. Just enough to establish \"the quiet villain.\"",
       "image_queries": [
-        "Mariel boatlift 1980 Cuban refugees overloaded boats",
-        "Cuban refugees Miami 1980 historical photo",
-        "Scarface 1983 Tony Montana refugee camp tent scene"
+        "Hannibal Lecter Anton Chigurh Hans Landa",
+        "Hannibal Lecter"
       ],
       "clip_queries": [
-        "Scarface 1983 opening Mariel boatlift scene",
-        "Scarface Tony Montana dishwasher Chi Chi scene"
+        "Hannibal Lecter Anton Chigurh Hans Landa archival footage"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_005/image_01.jpg",
-          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2160,g_auto/dpr_auto/f_auto/q_auto:eco/v1/143429951_muf6pu?_a=BAVAZGB00",
-          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
+          "source_url": "https://www.hdwallpapers.in/download/mads_mikkelsen_hannibal_lecter_4k_hd_hannibal-HD.jpg",
+          "query": "Hannibal Lecter Anton Chigurh Hans Landa",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_005/image_02.jpg",
-          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2160,g_auto/dpr_auto/f_auto/q_auto:eco/v1/roy_cohn_feature_ap_540512159?_a=BAVAZGB00",
-          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
+          "source_url": "https://wallpapercat.com/w/full/3/b/4/179896-3840x2160-desktop-4k-hannibal-tv-series-wallpaper-image.jpg",
+          "query": "Hannibal Lecter",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_005/image_03.jpg",
-          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2163,g_auto/dpr_auto/f_auto/q_auto:eco/v1/Man_Moment_Machine-3840x2160-1-scaled_myr0cb?_a=BAVMn6DY0",
-          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
-          "width": 3840,
-          "height": 2163
+          "source_url": "https://cdn.wallpapersafari.com/91/15/4dikSv.jpg",
+          "query": "Hannibal Lecter",
+          "width": 5000,
+          "height": 2796
         },
         {
           "path": "output/scene_005/image_04.jpg",
-          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_3840,h_2443,g_auto/dpr_auto/f_auto/q_auto:eco/v1/mariel-boatlift-gettyimages-998443434?_a=BAVAZGID0",
-          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
-          "width": 3840,
-          "height": 2443
+          "source_url": "https://wallpapercave.com/wp/wp2759463.jpg",
+          "query": "Hannibal Lecter",
+          "width": 5700,
+          "height": 3750
         }
       ]
     },
     {
       "index": 6,
       "slug": "scene_006",
-      "summary": "Oliver Stone wrote the script deep in his own cocaine addiction, then moved to Paris to finish it stone-cold sober.",
-      "text": "Screenwriter Oliver Stone was deep in cocaine addiction while researching the film, and had to move to Paris to write the whole thing sober.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"Here is what people get wrong about Tony… For most of this film, Tony is fright",
+      "text": "\"Here is what people get wrong about Tony… For most of this film, Tony is frighteningly in control.\"",
+      "on_screen_text": "\"FRIGHTENINGLY IN CONTROL.\"",
+      "editor_notes": "Show Tony at his sharpest. This is the \"strategist\" the audience needs to see BEFORE the appetite argument lands.",
       "image_queries": [
-        "Oliver Stone director 1980s portrait",
-        "Oliver Stone young screenwriter black and white",
-        "cocaine lines mirror dark moody cinematic"
+        "Tony Montana Scarface Sosa",
+        "Tony Montana Scarface Bolivia"
       ],
       "clip_queries": [
-        "Oliver Stone Scarface screenplay interview",
-        "Oliver Stone 1983 cocaine addiction interview"
+        "Tony Montana Scarface Sosa scene",
+        "Tony Montana Scarface Bolivia scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_006/image_01.jpg",
-          "source_url": "https://hips.hearstapps.com/hmg-prod/images/oliver-stone-attends-the-lula-photocall-at-the-77th-annual-news-photo-1764858100.pjpeg?crop=1xw:0.84363xh;0,0.124xh",
-          "query": "Oliver Stone director 1980s portrait",
-          "width": 7001,
-          "height": 3938
+          "source_url": "https://i.pinimg.com/originals/6f/29/59/6f29590f79de760de2d3220e6422e331.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 7552,
+          "height": 4576
         },
         {
           "path": "output/scene_006/image_02.jpg",
-          "source_url": "https://deadline.com/wp-content/uploads/2023/10/Stone-Oldman-MBDJFKK_EC041.jpg?resize=152",
-          "query": "Oliver Stone director 1980s portrait",
-          "width": 3987,
-          "height": 2627
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/Tony-Montana-at-his-desk-in-Scarface.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 3248,
+          "height": 1624
         },
         {
           "path": "output/scene_006/image_03.jpg",
-          "source_url": "https://www.raicultura.it/dl/img/2021/09/09/1631176544979_JFK_1991.jpg",
-          "query": "Oliver Stone director 1980s portrait",
-          "width": 3978,
-          "height": 2645
+          "source_url": "https://image.lexica.art/full_jpg/acd657eb-54bc-4afa-970f-f09f6084b3ac",
+          "query": "Tony Montana Scarface Bolivia",
+          "width": 3072,
+          "height": 2048
         },
         {
           "path": "output/scene_006/image_04.jpg",
-          "source_url": "https://deadline.com/wp-content/uploads/2022/09/GettyImages-1393598367.jpg",
-          "query": "Oliver Stone director 1980s portrait",
-          "width": 4500,
-          "height": 3001
+          "source_url": "https://wallpaperaccess.com/full/747446.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 2899,
+          "height": 1920
         }
       ]
     },
     {
       "index": 7,
       "slug": "scene_007",
-      "summary": "The chainsaw scene: a drug buy gone wrong. Survival isn't about being strongest - it's nerve. Pacino trained with knife-fighters and boxer Roberto Duran.",
-      "text": "The infamous chainsaw scene - a drug buy where a Colombian takes a chainsaw to Tony's friend while he watches - shows survival depends on nerve; Al Pacino trained with knife-fighters and boxer Roberto Duran.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"His problem is the brakes. Tony can control everyone in the world except himsel",
+      "text": "\"His problem is the brakes. Tony can control everyone in the world except himself.\"",
+      "on_screen_text": "\"THE WHEEL IS IN HIS HANDS. THE BRAKES ARE NOT.\"",
+      "editor_notes": "THE thesis line. Hold it. Let it register. This is the spine of the whole video.",
       "image_queries": [
-        "Scarface 1983 chainsaw scene bathroom still",
-        "Scarface Tony Montana shootout window scene",
-        "Roberto Duran boxer 1980s black and white"
+        "Tony Montana Scarface"
       ],
       "clip_queries": [
-        "Scarface chainsaw scene 1983 apartment",
-        "Scarface bathroom Colombian chainsaw scene"
+        "Tony Montana Scarface scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_007/image_01.jpg",
-          "source_url": "http://afterdarknessart.com/cdn/shop/files/IMG_2141.jpg?v=1696453269",
-          "query": "Scarface Tony Montana shootout window scene",
-          "width": 3840,
-          "height": 2400
+          "source_url": "https://wallpaperaccess.com/full/621260.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 2686,
+          "height": 1797
         },
         {
           "path": "output/scene_007/image_02.jpg",
-          "source_url": "https://wallpaperaccess.com/full/8162672.jpg",
-          "query": "Roberto Duran boxer 1980s black and white",
-          "width": 3600,
-          "height": 2430
+          "source_url": "https://images.alphacoders.com/565/565697.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 2560,
+          "height": 1600
         },
         {
           "path": "output/scene_007/image_03.jpg",
-          "source_url": "https://llero.net/wp-content/uploads/2016/06/Duran-Cover.jpg",
-          "query": "Roberto Duran boxer 1980s black and white",
-          "width": 3605,
-          "height": 2448
+          "source_url": "https://wallpapercave.com/wp/wp2852344.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 2560,
+          "height": 1600
         },
         {
           "path": "output/scene_007/image_04.jpg",
-          "source_url": "https://i.etsystatic.com/25268223/r/il/05ed0c/3537065314/il_fullxfull.3537065314_k4ir.jpg",
-          "query": "Scarface Tony Montana shootout window scene",
-          "width": 3000,
-          "height": 1570
+          "source_url": "https://images3.alphacoders.com/120/1202351.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 2000,
+          "height": 1125
         }
       ]
     },
     {
       "index": 8,
       "slug": "scene_008",
-      "summary": "Why it became a fantasy: Giorgio Moroder's synths and 'Push It to the Limit', the white suit, the marble mansion, the pet tiger, neon Miami - violence so operatic it was rated X.",
-      "text": "The film glamorises Tony's rise with Giorgio Moroder's synth score and 'Push It to the Limit', a marble mansion, a pet tiger and neon Miami - so operatic the ratings board first branded it X.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"Listen to what he wants… He wants what’s coming to him — the world, and everyth",
+      "text": "\"Listen to what he wants… He wants what’s coming to him — the world, and everything in it… It’s an appetite.\"",
+      "on_screen_text": "\"THE WORLD AND EVERYTHING IN IT.\"",
+      "editor_notes": "Slow. Ambient sound only. Let Tony’s expression carry the beat.",
       "image_queries": [
-        "Scarface mansion pet tiger Tony Montana scene",
-        "Scarface 1983 Miami neon nightclub Babylon",
-        "Tony Montana marble mansion office desk wide shot"
+        "Tony Montana Scarface The World Is Yours"
       ],
       "clip_queries": [
-        "Scarface Push It to the Limit montage scene",
-        "Scarface mansion tiger scene"
+        "Tony Montana Scarface The World Is Yours scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_008/image_01.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/6WtSR3j50CQpqE2RD8sFlkKyjI8.jpg",
-          "query": "Scarface 1983 Miami neon nightclub Babylon",
+          "source_url": "http://afterdarknessart.com/cdn/shop/files/IMG_2368.jpg?v=1700004816",
+          "query": "Tony Montana Scarface The World Is Yours",
           "width": 3840,
-          "height": 2160
+          "height": 2400
         },
         {
           "path": "output/scene_008/image_02.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/qARJD0Ps2NZ52ctuFbajh7INr1J.jpg",
-          "query": "Scarface 1983 Miami neon nightclub Babylon",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://wallpapercave.com/wp/wp2846061.jpg",
+          "query": "Tony Montana Scarface The World Is Yours",
+          "width": 2580,
+          "height": 1460
         },
         {
           "path": "output/scene_008/image_03.jpg",
-          "source_url": "https://i.pinimg.com/originals/16/3b/c4/163bc4561b3c1033a25c56ea99c23ebc.jpg",
-          "query": "Scarface 1983 Miami neon nightclub Babylon",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://wallpaperset.com/w/full/f/a/b/510091.jpg",
+          "query": "Tony Montana Scarface The World Is Yours",
+          "width": 2560,
+          "height": 1600
         },
         {
           "path": "output/scene_008/image_04.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/7BupR7uH9oo2qmbvwYXSlkq3TAl.jpg",
-          "query": "Scarface 1983 Miami neon nightclub Babylon",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://wallpaperset.com/w/full/5/5/f/510101.jpg",
+          "query": "Tony Montana Scarface The World Is Yours",
+          "width": 1920,
+          "height": 1080
         }
       ]
     },
     {
       "index": 9,
       "slug": "scene_009",
-      "summary": "Tony as the one honest voice - the restaurant scene: 'You need people like me... say goodnight to the bad guy.'",
-      "text": "In an expensive restaurant, wrecked on his own product and surrounded by respectable hypocrites, Tony stands up: you need people like me to point at - say goodnight to the bad guy.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"In 1980, around a hundred and twenty-five thousand Cubans arrive in Florida dur",
+      "text": "\"In 1980, around a hundred and twenty-five thousand Cubans arrive in Florida during the Mariel boatlift…\"",
+      "on_screen_text": "MARIEL BOATLIFT — 1980  ·  125,000 CUBANS",
+      "editor_notes": "Documentary tone. Ground the character in real history.",
       "image_queries": [
-        "Scarface restaurant scene Tony Montana Elvira still",
-        "Scarface 1983 say goodnight to the bad guy scene",
-        "Al Pacino Scarface restaurant tuxedo scene"
+        "Mariel Florida",
+        "Mariel"
       ],
       "clip_queries": [
-        "Scarface say goodnight to the bad guy restaurant scene",
-        "Scarface you need people like me scene"
+        "Mariel Florida archival footage"
       ],
       "clips": [],
       "images": [
         {
-          "path": "output/scene_009/image_01.webp",
-          "source_url": "https://reviewsonreels.ca/wp-content/uploads/2025/08/bad-guys-2-movie-review-1.webp",
-          "query": "Scarface 1983 say goodnight to the bad guy scene",
+          "path": "output/scene_009/image_01.jpg",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2160,g_auto/dpr_auto/f_auto/q_auto:eco/v1/143429951_muf6pu?_a=BAVAZGB00",
+          "query": "Mariel Florida",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_009/image_02.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/w3WcJHavAwc5D3hj0rOB0Z15wzF.jpg",
-          "query": "Scarface 1983 say goodnight to the bad guy scene",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2160,g_auto/dpr_auto/f_auto/q_auto:eco/v1/roy_cohn_feature_ap_540512159?_a=BAVAZGB00",
+          "query": "Mariel Florida",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_009/image_03.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp15641280.jpg",
-          "query": "Scarface 1983 say goodnight to the bad guy scene",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2163,g_auto/dpr_auto/f_auto/q_auto:eco/v1/Man_Moment_Machine-3840x2160-1-scaled_myr0cb?_a=BAVAZGB00",
+          "query": "Mariel Florida",
           "width": 3840,
-          "height": 2160
+          "height": 2163
         },
         {
-          "path": "output/scene_009/image_04.png",
-          "source_url": "https://i.pinimg.com/originals/30/91/c1/3091c1a9fe99e965658f08bf53fec3d3.png",
-          "query": "Scarface 1983 say goodnight to the bad guy scene",
-          "width": 3838,
-          "height": 2134
+          "path": "output/scene_009/image_04.jpg",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_3840,h_2443,g_auto/dpr_auto/f_auto/q_auto:eco/v1/mariel-boatlift-gettyimages-998443434?_a=BAVAZGID0",
+          "query": "Mariel Florida",
+          "width": 3840,
+          "height": 2443
         }
       ]
     },
     {
       "index": 10,
       "slug": "scene_010",
-      "summary": "The cruel joke: he gets the mansion, the wife and the empire, and is completely alone. Elvira drifts through it numb and bored.",
-      "text": "Tony gets everything - the mansion, Elvira, the empire - and is miserable and alone inside it, because an appetite can only be fed, never satisfied.",
+      "section": "THE WRONG KIND OF TERROR",
+      "summary": "\"…he says it out loud: he is meant for bigger things.\"",
+      "text": "\"…he says it out loud: he is meant for bigger things.\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "Quick. Sets up the rise.",
       "image_queries": [
-        "Scarface Elvira Michelle Pfeiffer mansion still",
-        "Scarface Tony Montana Elvira bored dinner scene",
-        "Scarface 1983 lonely mansion interior wide shot"
+        "Tony Montana Scarface Manny"
       ],
       "clip_queries": [
-        "Scarface Elvira dinner argument restaurant scene",
-        "Scarface Tony and Elvira mansion scene"
+        "Tony Montana Scarface Manny scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_010/image_01.jpg",
-          "source_url": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/45AVT4HTFBERNKYFLTFIFYVFGU.jpg",
-          "query": "Scarface Elvira Michelle Pfeiffer mansion still",
-          "width": 4305,
-          "height": 2809
+          "source_url": "https://image.tmdb.org/t/p/original/7wJWU6lrNWIfxd5W7Eu9Rmb2s5L.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_010/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/94/21/58/942158b52ff3d7e073fd766fac29989f.jpg",
-          "query": "Scarface Elvira Michelle Pfeiffer mansion still",
-          "width": 3507,
-          "height": 2341
+          "source_url": "https://wallpaperaccess.com/full/4756740.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 2860,
+          "height": 1920
         },
         {
-          "path": "output/scene_010/image_03.png",
-          "source_url": "https://i.pinimg.com/originals/ca/07/a5/ca07a5bc8825fbcfdb8aef69854d782e.png",
-          "query": "Scarface Tony Montana Elvira bored dinner scene",
-          "width": 3158,
-          "height": 1759
+          "path": "output/scene_010/image_03.jpg",
+          "source_url": "https://wallpaperaccess.com/full/621287.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
         },
         {
           "path": "output/scene_010/image_04.jpg",
-          "source_url": "https://external-preview.redd.it/kIE_kD3Wf-Phe6KlAEQ0s7-CQ0cibNAY_Dtl360UrhI.jpg?auto=webp&s=e188c6dc1726a996c6badb1f2ded6b5075907cf1",
-          "query": "Scarface 1983 lonely mansion interior wide shot",
-          "width": 2896,
-          "height": 1936
+          "source_url": "https://wallpaperaccess.com/full/747378.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
         }
       ]
     },
     {
       "index": 11,
       "slug": "scene_011",
-      "summary": "The bomb in the car: a hit on a journalist, but the target's wife and children get in. Tony won't push the button - he kills Sosa's man instead.",
-      "text": "On a hit ordered by Sosa, the journalist target gets into the car with his wife and children, and Tony - the chainsaw survivor - refuses to push the button, turning on Sosa's man instead.",
+      "section": "THE STRATEGIST",
+      "summary": "\"Oliver Stone was deep in his own cocaine addiction when he took the job… moved ",
+      "text": "\"Oliver Stone was deep in his own cocaine addiction when he took the job… moved to Paris… wrote the whole thing stone-cold sober.\"",
+      "on_screen_text": "OLIVER STONE  ·  WROTE SCARFACE SOBER, AN OCEAN FROM HIS ADDICTION",
+      "editor_notes": "Production-fact beat. Keep it tight — 15 seconds max. The fact earns its place because addiction IS the theme.",
       "image_queries": [
-        "Scarface 1983 New York car bomb scene still",
-        "Scarface Tony Montana car bomb hesitation scene",
-        "Scarface Alberto the Shadow car scene"
+        "Oliver Stone Paris Scarface",
+        "Oliver Stone"
       ],
       "clip_queries": [
-        "Scarface car bomb journalist scene won't kill kids",
-        "Scarface Tony kills Alberto car scene"
+        "Oliver Stone Paris Scarface archival footage"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_011/image_01.jpg",
-          "source_url": "https://preview.redd.it/1ta6h8k4r0n91.jpg?auto=webp&s=b410001637cc39084d35959f2505e4d6ab86380f",
-          "query": "Scarface 1983 New York car bomb scene still",
-          "width": 4032,
-          "height": 2268
+          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
+          "query": "Oliver Stone Paris Scarface",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_011/image_02.jpg",
-          "source_url": "https://www.flyingspares.com/media/ves/blog/DSSTN.JPG",
-          "query": "Scarface Alberto the Shadow car scene",
-          "width": 4512,
-          "height": 3000
+          "source_url": "https://deadline.com/wp-content/uploads/2022/09/GettyImages-1393598367.jpg?resize=630",
+          "query": "Oliver Stone",
+          "width": 4500,
+          "height": 3001
         },
         {
           "path": "output/scene_011/image_03.jpg",
-          "source_url": "https://static.vecteezy.com/system/resources/previews/027/103/315/large_2x/eerie-night-scene-with-moonlit-forest-mist-and-dark-ambiance-free-photo.jpg",
-          "query": "Scarface Alberto the Shadow car scene",
-          "width": 3497,
-          "height": 1960
+          "source_url": "https://voiretmanger.fr/wp-content/uploads/2016/02/scarface-al-pacino.jpg",
+          "query": "Oliver Stone Paris Scarface",
+          "width": 3300,
+          "height": 2200
         },
         {
-          "path": "output/scene_011/image_04.webp",
-          "source_url": "https://www.sonicstadium.org/uploads/monthly_2025_09/large.Shadow.webp.8dc0469949159ac88f50ebf61ee6c78a.webp",
-          "query": "Scarface Alberto the Shadow car scene",
-          "width": 3456,
-          "height": 1944
+          "path": "output/scene_011/image_04.jpg",
+          "source_url": "https://i.abcnewsfe.com/a/17f34b74-be76-443f-a650-8bfe998ad4ea/oliver-stone-gty-jef-250401_1743533799337_hpMain.jpg",
+          "query": "Oliver Stone",
+          "width": 3072,
+          "height": 2048
         }
       ]
     },
     {
       "index": 12,
       "slug": "scene_012",
-      "summary": "The empire was already rotting - addiction, paranoia, taxes. But the refusal turns Sosa from partner into executioner.",
-      "text": "The empire is already collapsing from addiction, paranoia and tax trouble, but refusing the hit turns Sosa into an executioner; the one line Tony won't cross is what his world can't allow.",
+      "section": "THE STRATEGIST",
+      "summary": "\"The first real test… a drug buy that turns into a Colombian taking a chainsaw t",
+      "text": "\"The first real test… a drug buy that turns into a Colombian taking a chainsaw to Tony’s friend…\"",
+      "on_screen_text": "\"THE ONE WHOSE NERVE DOESN’T BREAK.\"",
+      "editor_notes": "Brutal. Don’t linger gratuitously — the point is Tony’s composure, NOT the gore. Focus camera on Tony’s face during the horror.",
       "image_queries": [
-        "Scarface Alejandro Sosa Bolivia villain still",
-        "Scarface 1983 Tony Montana paranoid mansion scene",
-        "Scarface Tony Montana arguing phone scene"
+        "Tony Montana Scarface Chainsaw Apartment still",
+        "Tony Montana Scarface Angel",
+        "Tony Montana Scarface Hector"
       ],
       "clip_queries": [
-        "Scarface Sosa phone call betrayal scene",
-        "Scarface Tony Montana Sosa Bolivia mansion scene"
+        "Tony Montana Scarface Chainsaw Apartment scene",
+        "Tony Montana Scarface Angel scene",
+        "Tony Montana Scarface Hector scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_012/image_01.jpg",
-          "source_url": "https://sportshub.cbsistatic.com/i/2025/02/12/f1dfc78d-f211-4b9e-932c-c600393610ee/sosa-1.jpg",
-          "query": "Scarface Alejandro Sosa Bolivia villain still",
-          "width": 6960,
-          "height": 3480
+          "source_url": "https://i.etsystatic.com/25268223/r/il/05ed0c/3537065314/il_fullxfull.3537065314_k4ir.jpg",
+          "query": "Tony Montana Scarface Angel",
+          "width": 3000,
+          "height": 1570
         },
         {
-          "path": "output/scene_012/image_02.jpg",
-          "source_url": "https://i.etsystatic.com/47045543/r/il/9376ac/5610335097/il_fullxfull.5610335097_bs0s.jpg",
-          "query": "Scarface Tony Montana arguing phone scene",
-          "width": 3000,
-          "height": 2000
+          "path": "output/scene_012/image_02.webp",
+          "source_url": "https://wallpapercave.com/wp/wp15484635.webp",
+          "query": "Tony Montana Scarface Angel",
+          "width": 2560,
+          "height": 1440
         },
         {
           "path": "output/scene_012/image_03.jpg",
-          "source_url": "https://preview.redd.it/saw-this-damn-movie-a-million-times-and-i-cant-believe-that-v0-mvh05u2h1a2a1.jpg?auto=webp&s=aa51b19c6448a358dabfeadf778d82758a629792",
-          "query": "Scarface Alejandro Sosa Bolivia villain still",
-          "width": 3000,
-          "height": 1437
+          "source_url": "https://wallpapercave.com/wp/wp10875673.jpg",
+          "query": "Tony Montana Scarface Chainsaw Apartment still",
+          "width": 2779,
+          "height": 1837
         },
         {
           "path": "output/scene_012/image_04.webp",
-          "source_url": "https://img.gta5-mods.com/q95/images/scarface-1983-tony-montana-replaces-trevor-sp-legacy/e4f314-3.jpg",
-          "query": "Scarface 1983 Tony Montana paranoid mansion scene",
+          "source_url": "https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701118040.jpg",
+          "query": "Tony Montana Scarface Angel",
           "width": 2560,
-          "height": 1440
+          "height": 1600
         }
       ]
     },
     {
       "index": 13,
       "slug": "scene_013",
-      "summary": "The appetite turns inward: his sister Gina and best friend Manny. Tony shoots Manny in the street, learning the truth only as he dies.",
-      "text": "Discovering that his loyal friend Manny has secretly married his sister Gina, Tony shoots Manny in the street without a question, learning they were married only as Manny dies.",
+      "section": "THE STRATEGIST",
+      "summary": "\"Pacino trained with knife-fighters and the boxer Roberto Durán, who he said had",
+      "text": "\"Pacino trained with knife-fighters and the boxer Roberto Durán, who he said had ‘a certain lion in him.’\"",
+      "on_screen_text": "\"A CERTAIN LION IN HIM.\" — AL PACINO",
+      "editor_notes": "Quote card. Quick. Connects Pacino’s physical prep to the \"appetite-in-a-cage\" thesis.",
       "image_queries": [
-        "Scarface Manny Ribera Steven Bauer still",
-        "Scarface Gina sister Mary Elizabeth Mastrantonio",
-        "Scarface 1983 Tony shoots Manny street scene"
+        "Tony Montana Scarface a certain lion in him",
+        "Tony Montana Scarface Roberto"
       ],
       "clip_queries": [
-        "Scarface Tony shoots Manny scene",
-        "Scarface Manny and Gina married scene"
+        "Tony Montana Scarface a certain lion in him scene",
+        "Tony Montana Scarface Roberto scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_013/image_01.jpg",
-          "source_url": "https://www.wearemoviegeeks.com/wp-content/uploads/scarface-121408802_JK_3748_rgb.jpg",
-          "query": "Scarface Manny Ribera Steven Bauer still",
-          "width": 3000,
-          "height": 2001
+          "source_url": "https://images.pexels.com/photos/31496490/pexels-photo-31496490.jpeg?cs=srgb&dl=pexels-anouschka-cumberlege-107469787-31496490.jpg&fm=jpg",
+          "query": "Tony Montana Scarface a certain lion in him",
+          "width": 6016,
+          "height": 4000
         },
         {
-          "path": "output/scene_013/image_02.png",
-          "source_url": "https://wallpaperaccess.com/full/621354.png",
-          "query": "Scarface 1983 Tony shoots Manny street scene",
-          "width": 2880,
-          "height": 1800
+          "path": "output/scene_013/image_02.jpg",
+          "source_url": "https://images.pexels.com/photos/32216150/pexels-photo-32216150.jpeg?cs=srgb&dl=pexels-ashish-keshkar-356972172-32216150.jpg&fm=jpg",
+          "query": "Tony Montana Scarface a certain lion in him",
+          "width": 6000,
+          "height": 4000
         },
         {
-          "path": "output/scene_013/image_03.png",
-          "source_url": "https://wallpaperaccess.com/full/5064787.png",
-          "query": "Scarface 1983 Tony shoots Manny street scene",
-          "width": 2880,
-          "height": 1800
+          "path": "output/scene_013/image_03.jpg",
+          "source_url": "https://www.kenyamasaimarasafaris.com/wp-content/uploads/2023/09/Scarface-the-Masai-Mara-famous-Lion.jpg",
+          "query": "Tony Montana Scarface a certain lion in him",
+          "width": 2560,
+          "height": 1439
         },
         {
-          "path": "output/scene_013/image_04.png",
-          "source_url": "https://i0.wp.com/notesonfilm1.com/wp-content/uploads/2018/01/screen-shot-2017-12-31-at-12-30-52.png",
-          "query": "Scarface 1983 Tony shoots Manny street scene",
-          "width": 2880,
-          "height": 1800
+          "path": "output/scene_013/image_04.jpg",
+          "source_url": "https://a-z-animals.com/media/2023/02/Black-and-Yellow-Grunge-Gaming-Youtube-Thumbnail-2.jpg",
+          "query": "Tony Montana Scarface a certain lion in him",
+          "width": 2400,
+          "height": 1350
         }
       ]
     },
     {
       "index": 14,
       "slug": "scene_014",
-      "summary": "The mountain of cocaine and the final stand: 'Say hello to my little friend.' Tony is shot in the back and falls from his balcony.",
-      "text": "Behind a literal hill of cocaine, paranoid and raging, Tony makes his last stand - 'say hello to my little friend' - soaking up gunfire until one man shoots him in the back and he pitches off the balcony.",
+      "section": "THE GLAMOUR",
+      "summary": "\"Scarface does not deliver its lesson soberly… Giorgio Moroder’s score, ‘Push It",
+      "text": "\"Scarface does not deliver its lesson soberly… Giorgio Moroder’s score, ‘Push It to the Limit’…\"",
+      "on_screen_text": "\"PUSH IT TO THE LIMIT\"",
+      "editor_notes": "LET THE MUSIC HIT. This is the beat where the audience needs to FEEL the glamour to understand the thesis. Energy UP.",
       "image_queries": [
-        "Scarface cocaine mountain desk Tony Montana scene",
-        "Scarface 1983 final shootout M16 grenade launcher",
-        "Scarface say hello to my little friend balcony still"
+        "Tony Montana Scarface Push It To The Limit Montage still",
+        "Tony Montana Scarface push it to the limit",
+        "Tony Montana Scarface Elvira"
       ],
       "clip_queries": [
-        "Scarface say hello to my little friend final shootout",
-        "Scarface Tony Montana last stand mansion scene"
+        "Tony Montana Scarface Push It To The Limit Montage scene",
+        "Tony Montana Scarface push it to the limit scene",
+        "Tony Montana Scarface Elvira scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_014/image_01.jpg",
-          "source_url": "https://cdn.kinocheck.com/i/usl1wfs9dk.jpg",
-          "query": "Scarface 1983 final shootout M16 grenade launcher",
+          "source_url": "https://www.gamerguides.com/assets/media/17/185/cyberpunk_vehicle_heists_push_it_to_the_limit_gang_kill-56783022.jpg",
+          "query": "Tony Montana Scarface Push It To The Limit Montage still",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_014/image_02.jpg",
-          "source_url": "https://img-new.cgtrader.com/items/4347329/9088209926/m16-m203-grenade-launcher-3d-model-9088209926.jpg",
-          "query": "Scarface 1983 final shootout M16 grenade launcher",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/1064471-Gordon-Ramsay-Quote-Push-your-limit-to-the-absolute-extreme.jpg",
+          "query": "Tony Montana Scarface Push It To The Limit Montage still",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_014/image_03.jpg",
-          "source_url": "https://i.pinimg.com/originals/48/9b/2c/489b2c8119f5904b29bbe11597e2bc36.jpg",
-          "query": "Scarface say hello to my little friend balcony still",
-          "width": 4096,
-          "height": 2304
+          "source_url": "https://nypost.com/wp-content/uploads/sites/2/2023/05/NYPICHPDPICT000011582829.jpg",
+          "query": "Tony Montana Scarface Push It To The Limit Montage still",
+          "width": 6000,
+          "height": 4000
         },
         {
           "path": "output/scene_014/image_04.jpg",
-          "source_url": "https://external-preview.redd.it/say-hello-to-my-little-friends-v0-qJTiBVPWRo2W4qhkUQzcjSdi51rHGRUGakyL8jox0cQ.png?format=pjpg&auto=webp&s=8245eb9936ea7445f0427d7f07849eb31285c882",
-          "query": "Scarface say hello to my little friend balcony still",
-          "width": 3340,
-          "height": 1836
+          "source_url": "https://gallery.artsupp.com/partners_exhibitions_pictures/full/36718.jpg",
+          "query": "Tony Montana Scarface Push It To The Limit Montage still",
+          "width": 4252,
+          "height": 2835
         }
       ]
     },
     {
       "index": 15,
       "slug": "scene_015",
-      "summary": "Where he lands: face-down in the fountain, dead, beneath the lit statue reading 'The World Is Yours' - the promise turned punchline.",
-      "text": "Tony lands face-down in the fountain, dead, directly beneath a lit statue inscribed 'The World Is Yours' - the same promise from the blimp, now hanging over his corpse like a punchline.",
+      "section": "THE GLAMOUR",
+      "summary": "\"It dresses him in white… marble mansion, a literal pet tiger, neon Miami…\"",
+      "text": "\"It dresses him in white… marble mansion, a literal pet tiger, neon Miami…\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "Glamour reel. Let the visuals prove the argument — this is WHY people put the poster up.",
       "image_queries": [
-        "Scarface The World Is Yours statue fountain ending",
-        "Scarface 1983 Tony Montana dead fountain final shot",
-        "The World Is Yours globe statue Scarface"
+        "Tony Montana Scarface Miami"
       ],
       "clip_queries": [
-        "Scarface ending The World Is Yours fountain statue",
-        "Scarface Tony Montana falls into fountain ending"
+        "Tony Montana Scarface Miami scene"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_015/image_01.jpg",
-          "source_url": "https://i.pinimg.com/originals/61/02/40/610240084dabc42e05c9503907be0fcb.jpg",
-          "query": "Scarface The World Is Yours statue fountain ending",
-          "width": 4096,
-          "height": 2304
+          "source_url": "https://wallpapers.com/images/hd/scarface-2560-x-1440-background-jyzqo9vnkcygdwmi.jpg",
+          "query": "Tony Montana Scarface Miami",
+          "width": 2560,
+          "height": 1440
         },
         {
-          "path": "output/scene_015/image_02.png",
-          "source_url": "https://cdn2.steamgriddb.com/logo/41f5243f556bba6cd5e87d2b3975f306.png",
-          "query": "Scarface The World Is Yours statue fountain ending",
-          "width": 4999,
-          "height": 2530
+          "path": "output/scene_015/image_02.jpg",
+          "source_url": "https://themobmuseum.org/wp-content/uploads/2024/06/ala-2jd96w0-scaled.jpg",
+          "query": "Tony Montana Scarface Miami",
+          "width": 2560,
+          "height": 1702
         },
         {
-          "path": "output/scene_015/image_03.png",
-          "source_url": "https://s.studiobinder.com/wp-content/uploads/2022/06/Scarface-Script-Teardown-Ending-StudioBinder-Screenwriting-Software.png",
-          "query": "Scarface The World Is Yours statue fountain ending",
-          "width": 2880,
-          "height": 1800
+          "path": "output/scene_015/image_03.jpg",
+          "source_url": "https://d.ibtimes.com/en/full/1583885/scarface-mansion-sale.jpg",
+          "query": "Tony Montana Scarface Miami",
+          "width": 2500,
+          "height": 1669
         },
         {
           "path": "output/scene_015/image_04.jpg",
-          "source_url": "https://wallpaperset.com/w/full/4/6/e/510141.jpg",
-          "query": "Scarface The World Is Yours statue fountain ending",
-          "width": 2880,
-          "height": 1800
+          "source_url": "https://wallpapers.com/images/hd/scarface-2000-x-1125-background-ixx7q7yxoho8m0bq.jpg",
+          "query": "Tony Montana Scarface Miami",
+          "width": 2000,
+          "height": 1125
         }
       ]
     },
     {
       "index": 16,
       "slug": "scene_016",
-      "summary": "The joke was baked in: a remake of the 1932 Scarface (Howard Hawks, loosely Al Capone), a censored cautionary tale subtitled 'The Shame of the Nation'.",
-      "text": "Pacino made it because he loved the original 1932 Scarface by Howard Hawks, a censored cautionary tale loosely built on Al Capone and subtitled 'The Shame of the Nation' - the warning was in the story's DNA for fifty years.",
+      "section": "THE GLAMOUR",
+      "summary": "\"…The ratings board first branded the movie X… The surface tells you how electri",
+      "text": "\"…The ratings board first branded the movie X… The surface tells you how electrifying destruction can look.\"",
+      "on_screen_text": "RATED X  →  BUT LOOK AT HIM.",
+      "editor_notes": "The contrast is the point. X-rating fact earns its place because it proves the film was SO seductive even the censors recoiled.",
       "image_queries": [
-        "Scarface 1932 Howard Hawks Paul Muni still",
-        "Al Capone 1930s gangster historical photo",
-        "Scarface 1932 The Shame of the Nation poster"
+        "Mpaa Rating still",
+        "Excessive And Cumulative Violence And Language still",
+        "mpaa rating"
       ],
       "clip_queries": [
-        "Scarface 1932 original film Paul Muni scene",
-        "Al Capone documentary 1930s Chicago footage"
+        "Mpaa Rating scene",
+        "Excessive And Cumulative Violence And Language scene"
       ],
       "clips": [],
       "images": [
         {
-          "path": "output/scene_016/image_01.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/5077a7b2c871e94899f56270e79308e9.jpeg?r=16x9&w=3840",
-          "query": "Scarface 1932 Howard Hawks Paul Muni still",
+          "path": "output/scene_016/image_01.webp",
+          "source_url": "https://jacksonmurphy.design/images/article-files/001-MPAA/ScreenTypes/RatingScreen-GreenBand-PG-13.webp",
+          "query": "Mpaa Rating still",
           "width": 3840,
           "height": 2160
         },
         {
-          "path": "output/scene_016/image_02.jpg",
-          "source_url": "https://m.media-amazon.com/images/M/MV5BOGFlMzc4YjItODMwYy00YjQ1LWE2ZGMtYmVkNGNhOWIwN2ZkXkEyXkFqcGc@._V1_.jpg",
-          "query": "Scarface 1932 The Shame of the Nation poster",
-          "width": 4000,
-          "height": 2250
-        },
-        {
-          "path": "output/scene_016/image_03.jpg",
-          "source_url": "https://cdn.history.com/sites/2/2014/01/capone-mug-shot.jpg",
-          "query": "Al Capone 1930s gangster historical photo",
-          "width": 5376,
-          "height": 3118
-        },
-        {
-          "path": "output/scene_016/image_04.jpg",
-          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/al-capone-soup-kitchen-great-depression-gettyimages-640454517?_a=BAVAZGDX0",
-          "query": "Al Capone 1930s gangster historical photo",
+          "path": "output/scene_016/image_02.png",
+          "source_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c851bfc-482c-4a2d-ba80-13a9772ce16d/ddriwwh-4b6e9709-5723-47d6-a517-fe402682ecac.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjODUxYmZjLTQ4MmMtNGEyZC1iYTgwLTEzYTk3NzJjZTE2ZFwvZGRyaXd3aC00YjZlOTcwOS01NzIzLTQ3ZDYtYTUxNy1mZTQwMjY4MmVjYWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yA6HQmTouFi3lrddbndWBBPOjyKqH3izeDKTaZXSDr0",
+          "query": "Mpaa Rating still",
           "width": 3840,
-          "height": 1920
+          "height": 2160
+        },
+        {
+          "path": "output/scene_016/image_03.webp",
+          "source_url": "https://jacksonmurphy.design/images/article-files/001-MPAA/HowTheTrailerRatingScreenWasDesigned-01.webp",
+          "query": "Mpaa Rating still",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output/scene_016/image_04.png",
+          "source_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/7c851bfc-482c-4a2d-ba80-13a9772ce16d/ddriyfw-7cddf750-4683-4961-9d75-ef223b420327.png",
+          "query": "Mpaa Rating still",
+          "width": 3840,
+          "height": 2160
         }
       ]
     },
     {
       "index": 17,
       "slug": "scene_017",
-      "summary": "The thesis: Tony controlled everything except the thing inside him - the same 'never enough' appetite the world keeps telling us to feed. The poster is a man face-down in a fountain.",
-      "text": "What makes Tony terrifying is that he controlled everything except the appetite for 'more' that never reaches enough - the same dream the world sells us; every white-suit poster is really a man face-down in a fountain.",
+      "section": "THE GLAMOUR",
+      "summary": "\"…an expensive restaurant… ‘You need people like me… Say goodnight to the bad gu",
+      "text": "\"…an expensive restaurant… ‘You need people like me… Say goodnight to the bad guy.’\"",
+      "on_screen_text": "\"SAY GOODNIGHT TO THE BAD GUY.\"",
+      "editor_notes": "Let the scene play. Tony’s most iconic moment outside the finale. The thesis-in-dialogue.",
       "image_queries": [
-        "Scarface Tony Montana white suit poster on wall gym",
-        "Scarface 1983 Tony Montana iconic final portrait",
-        "Tony Montana Scarface ambition poster bedroom"
+        "Tony Montana Scarface Restaurant Scene still",
+        "Tony Montana Scarface bad guy",
+        "Tony Montana Scarface You need people like me"
       ],
       "clip_queries": [
-        "Scarface Tony Montana the world is yours ending monologue",
-        "Scarface 1983 best moments tribute"
+        "Tony Montana Scarface Restaurant Scene scene",
+        "Tony Montana Scarface bad guy scene",
+        "Tony Montana Scarface You need people like me"
       ],
       "clips": [],
       "images": [
         {
           "path": "output/scene_017/image_01.jpg",
-          "source_url": "https://i.redd.it/cb0yrtxp6ew71.jpg",
-          "query": "Scarface Tony Montana white suit poster on wall gym",
-          "width": 3462,
-          "height": 2309
+          "source_url": "https://i.pinimg.com/originals/16/3b/c4/163bc4561b3c1033a25c56ea99c23ebc.jpg",
+          "query": "Tony Montana Scarface You need people like me",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_017/image_02.jpg",
-          "source_url": "https://i.etsystatic.com/42278183/r/il/19c1a7/4858271642/il_1080xN.4858271642_alaq.jpg",
-          "query": "Tony Montana Scarface ambition poster bedroom",
-          "width": 3000,
-          "height": 2002
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7260414-Michelle-A-Valentine-Quote-You-can-t-keep-looking-at-me-like-that-I-want-you-If-you.jpg",
+          "query": "Tony Montana Scarface You need people like me",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_017/image_03.jpg",
-          "source_url": "https://wallpaperaccess.com/full/749169.jpg",
-          "query": "Scarface Tony Montana white suit poster on wall gym",
-          "width": 2899,
-          "height": 1920
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/6329162-Cheyenne-McCray-Quote-People-like-you-are-the-reason-People-like.jpg",
+          "query": "Tony Montana Scarface You need people like me",
+          "width": 3840,
+          "height": 2160
         },
         {
           "path": "output/scene_017/image_04.jpg",
-          "source_url": "https://wallpaperaccess.com/full/621260.jpg",
-          "query": "Scarface Tony Montana white suit poster on wall gym",
-          "width": 2686,
-          "height": 1797
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7539403-Kelsey-Kingsley-Quote-Thank-God-people-like-you-fall-in-love-with.jpg",
+          "query": "Tony Montana Scarface You need people like me",
+          "width": 3840,
+          "height": 2160
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "slug": "scene_018",
+      "section": "THE GLAMOUR",
+      "summary": "\"Scarface condemns Tony in its plot and glamorizes him in every frame around it.",
+      "text": "\"Scarface condemns Tony in its plot and glamorizes him in every frame around it.\"",
+      "on_screen_text": "\"THE WARNING AND THE FANTASY WERE NEVER SEPARABLE.\"",
+      "editor_notes": "Key thesis payoff for this section. Hold the text. Let it land.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_018/image_01.jpg",
+          "source_url": "https://w.wallhaven.cc/full/1p/wallhaven-1p1vmg.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_018/image_02.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-8snma37sqmmhbycv.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_018/image_03.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-e90btu0ung7yvit0.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_018/image_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/tony-montana-scarface-2-gd0qjax7dderiwvc.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "slug": "scene_019",
+      "section": "THE GLAMOUR",
+      "summary": "\"…He has everything… and he is completely alone inside it… an appetite can’t be ",
+      "text": "\"…He has everything… and he is completely alone inside it… an appetite can’t be satisfied, only fed…\"",
+      "on_screen_text": "\"MORE NEVER TURNS INTO ENOUGH.\"",
+      "editor_notes": "Slow, cold. The glamour is over. Emptiness.",
+      "image_queries": [
+        "Tony Montana Scarface Elvira"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Elvira scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_019/image_01.jpg",
+          "source_url": "https://fictionalcorporations.com/wp-content/uploads/4130963211_fmvg-scaled.jpg",
+          "query": "Tony Montana Scarface Elvira",
+          "width": 2560,
+          "height": 1707
+        },
+        {
+          "path": "output/scene_019/image_02.jpg",
+          "source_url": "https://getwallpapers.com/wallpaper/full/e/d/2/848460-scarface-hd-wallpaper-1920x1080-for-iphone-6.jpg",
+          "query": "Tony Montana Scarface Elvira",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_019/image_03.jpg",
+          "source_url": "https://cdna.artstation.com/p/assets/images/images/056/173/972/large/giulia-dora-untitled-artwork.jpg?1668617027",
+          "query": "Tony Montana Scarface Elvira",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_019/image_04.png",
+          "source_url": "https://i.pinimg.com/originals/22/3b/69/223b699b5e14dfd35510d8ad8a9de927.png",
+          "query": "Tony Montana Scarface Elvira",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "slug": "scene_020",
+      "section": "THE ONE LINE",
+      "summary": "\"…almost every line moves the second it stands between him and what he wants. Al",
+      "text": "\"…almost every line moves the second it stands between him and what he wants. Almost every line. But not quite all of them.\"",
+      "on_screen_text": "\"ALMOST EVERY LINE. BUT NOT QUITE ALL OF THEM.\"",
+      "editor_notes": "The montage is fast, ruthless. Then STOP. Black. Silence. The pause earns the next beat.",
+      "image_queries": [
+        "Tony Montana Scarface lesson in manners",
+        "Tony Montana Scarface Colombian",
+        "Tony Montana Scarface Frank"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface lesson in manners scene",
+        "Tony Montana Scarface Colombian scene",
+        "Tony Montana Scarface Frank scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_020/image_01.jpg",
+          "source_url": "https://i.pinimg.com/originals/94/21/58/942158b52ff3d7e073fd766fac29989f.jpg",
+          "query": "Tony Montana Scarface lesson in manners",
+          "width": 3507,
+          "height": 2341
+        },
+        {
+          "path": "output/scene_020/image_02.jpg",
+          "source_url": "https://cdn.amomama.com/98495ce59557dba54777055d9d465897.jpg",
+          "query": "Tony Montana Scarface lesson in manners",
+          "width": 2400,
+          "height": 1200
+        },
+        {
+          "path": "output/scene_020/image_03.webp",
+          "source_url": "https://www.badliteratureinc.it/wp-content/uploads/2025/05/ra722.webp",
+          "query": "Tony Montana Scarface lesson in manners",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "path": "output/scene_020/image_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-1920-x-1080-background-fjajvtvvf4jtj5bu.jpg",
+          "query": "Tony Montana Scarface lesson in manners",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "slug": "scene_021",
+      "section": "THE ONE LINE",
+      "summary": "\"Sosa orders a hit… Tony is right there, in the car, his thumb on the bomb. Then",
+      "text": "\"Sosa orders a hit… Tony is right there, in the car, his thumb on the bomb. Then the target walks out — and he isn’t alone. His wife. And then his children…\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "Build tension through silence and close-ups. No text overlay — let the acting carry.",
+      "image_queries": [
+        "Tony Montana Scarface Car-Bomb Scene still",
+        "Tony Montana Scarface Alberto"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Car-Bomb Scene scene",
+        "Tony Montana Scarface Alberto scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_021/image_01.jpg",
+          "source_url": "https://motionbgs.com/media/8260/scarface-tony-montana.3840x2160.jpg",
+          "query": "Tony Montana Scarface Car-Bomb Scene still",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output/scene_021/image_02.jpg",
+          "source_url": "https://img.lupygames.com/9ab82c6b-9229-4109-4ed8-62bfd6830000/width=3840,fit=contain,format=auto,quality=75",
+          "query": "Tony Montana Scarface Car-Bomb Scene still",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output/scene_021/image_03.png",
+          "source_url": "https://i.pinimg.com/originals/05/c9/34/05c93437bea03a57035912180a40172e.png",
+          "query": "Tony Montana Scarface Alberto",
+          "width": 5511,
+          "height": 3115
+        },
+        {
+          "path": "output/scene_021/image_04.jpg",
+          "source_url": "https://cdn.speednik.com/powerautorax55/wp-content/blogs.dir/1/files/2025/10/unreal-tony-towney-muscle-car-collection-going-to-auction-2025-10-08_09-13-26_502420.jpeg",
+          "query": "Tony Montana Scarface Car-Bomb Scene still",
+          "width": 5142,
+          "height": 3428
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "slug": "scene_022",
+      "section": "THE ONE LINE",
+      "summary": "\"Tony will not push the button… He turns on Sosa’s man and kills him instead.\"",
+      "text": "\"Tony will not push the button… He turns on Sosa’s man and kills him instead.\"",
+      "on_screen_text": "\"HE WILL NOT KILL THE KIDS.\"",
+      "editor_notes": "Hold on Tony’s face after the kill — the man who just signed his own death warrant.",
+      "image_queries": [
+        "Tony Montana Scarface No! No kids",
+        "Tony Montana Scarface Alberto"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface No! No kids scene",
+        "Tony Montana Scarface Alberto scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_022/image_01.webp",
+          "source_url": "https://static.wikia.nocookie.net/7c390509-5398-45d6-957f-dcc7f9d80f34",
+          "query": "Tony Montana Scarface No! No kids",
+          "width": 2304,
+          "height": 1440
+        },
+        {
+          "path": "output/scene_022/image_02.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-pictures-4jm8un7ipt5klnys.jpg",
+          "query": "Tony Montana Scarface No! No kids",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_022/image_03.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-1920-x-1080-background-4e2wf7ol7or4dee6.jpg",
+          "query": "Tony Montana Scarface No! No kids",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_022/image_04.png",
+          "source_url": "https://i.pinimg.com/originals/e7/b3/b7/e7b3b76d933ce0d684777d0257603a94.png",
+          "query": "Tony Montana Scarface No! No kids",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "slug": "scene_023",
+      "section": "THE ONE LINE",
+      "summary": "\"…the empire is already rotting… But that refusal turns Sosa from partner into e",
+      "text": "\"…the empire is already rotting… But that refusal turns Sosa from partner into executioner…\"",
+      "on_screen_text": "SOSA: PARTNER → EXECUTIONER.",
+      "editor_notes": "Cause-and-effect. The machine turns.",
+      "image_queries": [
+        "Tony Montana Scarface Sosa"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Sosa scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_023/image_01.jpg",
+          "source_url": "https://imagez.tmz.com/image/76/16by9/2024/08/11/76323e01663044bea9016513c4d4661d_xl.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "path": "output/scene_023/image_02.jpg",
+          "source_url": "https://www.preserveddragons.com/images/np/2021/Apr/tony_sosa_full.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 2244,
+          "height": 1505
+        },
+        {
+          "path": "output/scene_023/image_03.jpg",
+          "source_url": "https://wallpapercave.com/wp/wp2982457.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_023/image_04.jpg",
+          "source_url": "https://wallpapercave.com/wp/p29RHFf.jpg",
+          "query": "Tony Montana Scarface Sosa",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "slug": "scene_024",
+      "section": "THE ONE LINE",
+      "summary": "\"…The one decent thing in him is the exact thing that world cannot allow to surv",
+      "text": "\"…The one decent thing in him is the exact thing that world cannot allow to survive.\"",
+      "on_screen_text": "\"THE ONE DECENT THING. THE EXACT THING THAT WORLD CANNOT ALLOW.\"",
+      "editor_notes": "Quiet. Mournful. This is the emotional floor of the essay.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_024/image_01.jpg",
+          "source_url": "https://wallpapers.com/images/hd/tony-montana-fearless-scarface-b99jdnfmwi9w9sae.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_024/image_02.jpg",
+          "source_url": "https://m.media-amazon.com/images/M/MV5BNGU4N2IwNDQtY2Y4Yi00MDAzLTlmOTEtYTM3ZmEyMjM4NWFjXkEyXkFqcGdeQXVyMjIzMjU4ODI@._V1_.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_024/image_03.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-1920-x-1080-background-3wfk759xzmnrr5z2.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_024/image_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-ztz435c1k5r8gpaf.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "slug": "scene_025",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"…his love for Gina was never clean… a need to own her more than protect her…\"",
+      "text": "\"…his love for Gina was never clean… a need to own her more than protect her…\"",
+      "on_screen_text": "\"NOT PROTECTION. POSSESSION.\"",
+      "editor_notes": "Build the incest-undertone carefully — let the clips speak. Tony’s intensity around Gina should feel unmistakably wrong.",
+      "image_queries": [
+        "Tony Montana Scarface Gina",
+        "Tony Montana Scarface Babylon Club"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Gina scene",
+        "Tony Montana Scarface Babylon Club scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_025/image_01.png",
+          "source_url": "https://i.pinimg.com/originals/ca/07/a5/ca07a5bc8825fbcfdb8aef69854d782e.png",
+          "query": "Tony Montana Scarface Gina",
+          "width": 3158,
+          "height": 1759
+        },
+        {
+          "path": "output/scene_025/image_02.png",
+          "source_url": "https://i.pinimg.com/originals/33/bd/5d/33bd5de1cbc4b4ec1c13ccb6d744f25a.png",
+          "query": "Tony Montana Scarface Gina",
+          "width": 2208,
+          "height": 1242
+        },
+        {
+          "path": "output/scene_025/image_03.png",
+          "source_url": "https://i.pinimg.com/originals/72/fb/91/72fb9177305cbdb5d2f8046c287f1b3f.png",
+          "query": "Tony Montana Scarface Babylon Club",
+          "width": 2208,
+          "height": 1242
+        },
+        {
+          "path": "output/scene_025/image_04.jpg",
+          "source_url": "https://i.pinimg.com/originals/ea/5d/68/ea5d6841c048f768c9c45226714d4143.jpg",
+          "query": "Tony Montana Scarface Gina",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "slug": "scene_026",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"…he discovers Manny has secretly married Gina… Tony doesn’t ask a single questi",
+      "text": "\"…he discovers Manny has secretly married Gina… Tony doesn’t ask a single question. He shoots him in the street.\"",
+      "on_screen_text": "\"HE MURDERS HIS ONLY REAL FRIEND.\"",
+      "editor_notes": "Do NOT rush this. Let the gunshot echo. Hold on Manny falling. Hold on Gina screaming. Hold on Tony’s face AFTER. Most emotionally devastating beat in the film.",
+      "image_queries": [
+        "Tony Montana Scarface Manny Murder still",
+        "Tony Montana Scarface Gina",
+        "Tony Montana Scarface Manny"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Manny Murder scene",
+        "Tony Montana Scarface Gina scene",
+        "Tony Montana Scarface Manny scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_026/image_01.png",
+          "source_url": "https://wallpaperaccess.com/full/621354.png",
+          "query": "Tony Montana Scarface Manny Murder still",
+          "width": 2880,
+          "height": 1800
+        },
+        {
+          "path": "output/scene_026/image_02.png",
+          "source_url": "https://wallpaperaccess.com/full/5064787.png",
+          "query": "Tony Montana Scarface Manny Murder still",
+          "width": 2880,
+          "height": 1800
+        },
+        {
+          "path": "output/scene_026/image_03.jpg",
+          "source_url": "https://wallpaperaccess.com/full/658867.jpg",
+          "query": "Tony Montana Scarface Manny Murder still",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_026/image_04.jpg",
+          "source_url": "https://preview.redd.it/tony-montana-vs-tommy-vercetti-scarface-vs-gta-vice-city-v0-uqd8m28dqrsb1.jpg?auto=webp&s=e8cc5c7e70cb2753b526b2155a720ac276edf92b",
+          "query": "Tony Montana Scarface Manny Murder still",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "slug": "scene_027",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"The appetite has finally eaten the last person who loved him, and Tony pulled t",
+      "text": "\"The appetite has finally eaten the last person who loved him, and Tony pulled the trigger himself.\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "Silence. Or one low, sustained tone. No music. Let it sit.",
+      "image_queries": [
+        "Tony Montana Scarface Manny",
+        "Tony Montana Scarface Gina"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Manny scene",
+        "Tony Montana Scarface Gina scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_027/image_01.jpg",
+          "source_url": "https://wallpaperaccess.com/full/747459.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_027/image_02.png",
+          "source_url": "https://wallpaperaccess.com/full/621339.png",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_027/image_03.jpg",
+          "source_url": "https://m.media-amazon.com/images/M/MV5BZjkxNDU3NDktNTcyYi00ZGEyLWI2OWMtYTNkYTgzYzI4MjQ0XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_027/image_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-pwhd1o2sxinilz3u.jpg",
+          "query": "Tony Montana Scarface Manny",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "slug": "scene_028",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"…Tony sits behind a literal hill of cocaine… his face buried in the very thing ",
+      "text": "\"…Tony sits behind a literal hill of cocaine… his face buried in the very thing he sold to the whole country.\"",
+      "on_screen_text": "\"ALONE. IN THE THING HE BUILT.\"",
+      "editor_notes": "Slow push-in. This is the visual thesis — the man consumed by his own product, in the monument to his own appetite.",
+      "image_queries": [
+        "Tony Montana Scarface Cocaine-Desk Scene still",
+        "Tony Montana Scarface Security"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Cocaine-Desk Scene scene",
+        "Tony Montana Scarface Security scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_028/image_01.jpg",
+          "source_url": "https://static.sky.it/editorialimages/6998a7461504586985cac09eec84dd0b108b19fa/skytg24/it/spettacolo/cinema/2020/06/08/scarface-film/15-scarface-web.jpg?im=Resize",
+          "query": "Tony Montana Scarface Cocaine-Desk Scene still",
+          "width": 3300,
+          "height": 2177
+        },
+        {
+          "path": "output/scene_028/image_02.jpg",
+          "source_url": "https://i.etsystatic.com/51086507/r/il/67a2ae/7072807158/il_fullxfull.7072807158_cx3g.jpg",
+          "query": "Tony Montana Scarface Cocaine-Desk Scene still",
+          "width": 3000,
+          "height": 2000
+        },
+        {
+          "path": "output/scene_028/image_03.png",
+          "source_url": "https://i0.wp.com/notesonfilm1.com/wp-content/uploads/2018/01/screen-shot-2017-12-31-at-13-06-49.png",
+          "query": "Tony Montana Scarface Cocaine-Desk Scene still",
+          "width": 2880,
+          "height": 1800
+        },
+        {
+          "path": "output/scene_028/image_04.jpg",
+          "source_url": "https://synca.jp/wp/wp-content/uploads/2024/10/2154_00414-1-scaled-e1730172057329.jpg",
+          "query": "Tony Montana Scarface Cocaine-Desk Scene still",
+          "width": 2560,
+          "height": 1339
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "slug": "scene_029",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"…the army Sosa promised arrives… ‘Say hello to my little friend.’\"",
+      "text": "\"…the army Sosa promised arrives… ‘Say hello to my little friend.’\"",
+      "on_screen_text": "\"SAY HELLO TO MY LITTLE FRIEND.\"",
+      "editor_notes": "Full operatic volume. Let the madness peak. Tony should feel simultaneously pathetic and unstoppable.",
+      "image_queries": [
+        "Tony Montana Scarface Final Battle still",
+        "Tony Montana Scarface Say hello to my little friend",
+        "Tony Montana Scarface Sosa"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Final Battle scene",
+        "Tony Montana Scarface Say hello to my little friend scene",
+        "Tony Montana Scarface Sosa scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_029/image_01.jpg",
+          "source_url": "https://i.pinimg.com/originals/17/96/d2/1796d2d5c7469096d7e3aebdc1e6131a.jpg",
+          "query": "Tony Montana Scarface Say hello to my little friend",
+          "width": 2842,
+          "height": 1888
+        },
+        {
+          "path": "output/scene_029/image_02.jpg",
+          "source_url": "https://images.gamebanana.com/img/ss/mods/676328ae1df11.jpg",
+          "query": "Tony Montana Scarface Final Battle still",
+          "width": 2560,
+          "height": 1440
+        },
+        {
+          "path": "output/scene_029/image_03.jpg",
+          "source_url": "https://preview.redd.it/xn30mt09qfy51.jpg?width=2559&format=pjpg&auto=webp&s=7999d00d1f515140d207c3b63e6451bf12b17518",
+          "query": "Tony Montana Scarface Say hello to my little friend",
+          "width": 2559,
+          "height": 1438
+        },
+        {
+          "path": "output/scene_029/image_04.jpg",
+          "source_url": "http://getwallpapers.com/wallpaper/full/1/a/1/848483-gorgerous-scarface-hd-wallpaper-2544x1646-ipad.jpg",
+          "query": "Tony Montana Scarface Say hello to my little friend",
+          "width": 2544,
+          "height": 1646
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "slug": "scene_030",
+      "section": "THE APPETITE EATS THE MAN",
+      "summary": "\"…one man steps up quietly behind him and fires a single shot into his back. And",
+      "text": "\"…one man steps up quietly behind him and fires a single shot into his back. And Tony Montana pitches off his own balcony into the fountain below.\"",
+      "on_screen_text": "(no overlay)",
+      "editor_notes": "SILENCE after the shot. Let the fall happen in near-quiet. The splash. Then nothing. Hold on the body in the water.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_030/image_01.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-l5rtdzf4sntn4unq.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1011
+        },
+        {
+          "path": "output/scene_030/image_02.jpg",
+          "source_url": "https://i.pinimg.com/originals/c7/db/cd/c7dbcd4a532402a696e73143d0079dd9.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1756,
+          "height": 989
+        },
+        {
+          "path": "output/scene_030/image_03.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-2560-x-1599-background-vi0t6s0dwogqxyoi.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1199
+        },
+        {
+          "path": "output/scene_030/image_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-oobjo3k4x17d95n5.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1277
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "slug": "scene_031",
+      "section": "THE FOUNTAIN",
+      "summary": "\"Look at where he lands. Face-down in the water… directly above his body, lit up",
+      "text": "\"Look at where he lands. Face-down in the water… directly above his body, lit up, a statue: The World Is Yours.\"",
+      "on_screen_text": "\"THE WORLD IS YOURS.\"",
+      "editor_notes": "THE shot. Slow pullback. Let the irony land without narration stepping on it. Hold for 3-4 seconds after the text appears.",
+      "image_queries": [
+        "Tony Montana Scarface Final Shot still",
+        "Tony Montana Scarface World Is Yours still",
+        "Tony Montana Scarface the world is yours"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Final Shot scene",
+        "Tony Montana Scarface World Is Yours scene",
+        "Tony Montana Scarface the world is yours scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_031/image_01.jpg",
+          "source_url": "https://wallpaperset.com/w/full/4/6/e/510141.jpg",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 2880,
+          "height": 1800
+        },
+        {
+          "path": "output/scene_031/image_02.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-1920-x-1080-background-2abe52nm2hqgb2su.jpg",
+          "query": "Tony Montana Scarface Final Shot still",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_031/image_03.jpg",
+          "source_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/13b394c9-8f73-4327-9bb8-3b80e6971c1f/ddy1efo-9efbcd2c-0c20-4fd8-92c8-998dd04edeab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzYjM5NGM5LThmNzMtNDMyNy05YmI4LTNiODBlNjk3MWMxZlwvZGR5MWVmby05ZWZiY2QyYy0wYzIwLTRmZDgtOTJjOC05OThkZDA0ZWRlYWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mzfxV1q2M1be7VGqa77_ce_ySESVcFJB8rI13dUCBK0",
+          "query": "Tony Montana Scarface Final Shot still",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_031/image_04.png",
+          "source_url": "https://i.pinimg.com/originals/66/b6/10/66b610b420a1d5185a8349d58c1ba797.png",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "slug": "scene_032",
+      "section": "THE FOUNTAIN",
+      "summary": "\"The man who wanted the world drowns in three feet of water…\"",
+      "text": "\"The man who wanted the world drowns in three feet of water…\"",
+      "on_screen_text": "\"DROWNED IN THREE FEET OF WATER.\"",
+      "editor_notes": "Devastating simplicity. This is the punchline.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_032/image_01.jpg",
+          "source_url": "https://fwmedia.fandomwire.com/wp-content/uploads/2025/03/05055910/tony-montana-scarface.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "path": "output/scene_032/image_02.jpg",
+          "source_url": "https://www.looper.com/img/gallery/what-really-killed-tony-montana-in-scarface/l-intro-1604535932.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1600,
+          "height": 899
+        },
+        {
+          "path": "output/scene_032/image_03.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-i9v3jtguofz2p2rl.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1680,
+          "height": 1017
+        },
+        {
+          "path": "output/scene_032/image_04.jpg",
+          "source_url": "https://wallpaper.forfun.com/fetch/2e/2ebe6f528abd4f9b30ef66e11efcac0d.jpeg?w=1800",
+          "query": "Tony Montana Scarface",
+          "width": 1800,
+          "height": 1273
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "slug": "scene_033",
+      "section": "THE FOUNTAIN",
+      "summary": "\"…the original Scarface from 1932, subtitled The Shame of the Nation… The warnin",
+      "text": "\"…the original Scarface from 1932, subtitled The Shame of the Nation… The warning was in this story’s DNA for fifty years…\"",
+      "on_screen_text": "1932: THE SHAME OF THE NATION  →  1983: THE WORLD IS YOURS",
+      "editor_notes": "Historical-link beat. Quick — 10 seconds. The point is that the \"warning\" has ALWAYS been the DNA.",
+      "image_queries": [
+        "Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht",
+        "Tony Montana Scarface De Palma"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht scene",
+        "Tony Montana Scarface De Palma scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_033/image_01.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/fX1DFPMZYsRG17BmMPJAKUaBZEz.jpg",
+          "query": "Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_033/image_02.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/4Usxu1GuumaJX3oXBJBZxZsA2y1.jpg",
+          "query": "Tony Montana Scarface De Palma",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_033/image_03.jpg",
+          "source_url": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/12/scarface-19320.jpg",
+          "query": "Tony Montana Scarface Dedicated to Howard Hawks and Ben Hecht",
+          "width": 2000,
+          "height": 1000
+        },
+        {
+          "path": "output/scene_033/image_04.jpg",
+          "source_url": "https://www.cultura.id/wp-content/uploads/2021/11/Scarface.jpg",
+          "query": "Tony Montana Scarface De Palma",
+          "width": 2000,
+          "height": 1308
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "slug": "scene_034",
+      "section": "THE FOUNTAIN",
+      "summary": "\"…the movie made the warning and the fantasy impossible to pull apart.\"",
+      "text": "\"…the movie made the warning and the fantasy impossible to pull apart.\"",
+      "on_screen_text": "\"THE WARNING AND THE FANTASY. IMPOSSIBLE TO PULL APART.\"",
+      "editor_notes": "The thesis at its most complete. Hold.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_034/image_01.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-tony-montana-dm7mk25rrdmone0h.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1600,
+          "height": 1000
+        },
+        {
+          "path": "output/scene_034/image_02.webp",
+          "source_url": "https://www.colormusic.cl/wp-content/uploads/2025/02/Tony-Montana-escena-final-de-Scarface.webp",
+          "query": "Tony Montana Scarface",
+          "width": 1516,
+          "height": 999
+        },
+        {
+          "path": "output/scene_034/image_03.jpg",
+          "source_url": "https://c8.alamy.com/compde/2hptmm7/scarface-1983-universal-picturs-film-mit-al-pacino-als-kubanischen-drogenboss-tony-montana-2hptmm7.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1300,
+          "height": 925
+        },
+        {
+          "path": "output/scene_034/image_alt_01.jpg",
+          "source_url": "https://wallpapers.com/images/hd/tony-montana-scarface-gun-0gw8js81hex9w1nj.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 1440
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "slug": "scene_035",
+      "section": "CLOSE",
+      "summary": "\"…a man who controlled everything except the thing inside him… the same thing th",
+      "text": "\"…a man who controlled everything except the thing inside him… the same thing the world keeps telling all of us to feed…\"",
+      "on_screen_text": "\"THE THING INSIDE HIM.\"",
+      "editor_notes": "Pull away from Scarface briefly. The YOU-pivot. Reflective, warm-melancholy tone.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_035/image_alt_01.jpg",
+          "source_url": "https://i.pinimg.com/originals/12/02/ea/1202ea4c7a2234e271264885d30831a4.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1920,
+          "height": 816
+        },
+        {
+          "path": "output/scene_035/image_alt_02.jpg",
+          "source_url": "https://wallpapers.com/images/hd/chilling-scarface-tony-montana-4v2dad64qcoxqktz.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "path": "output/scene_035/image_alt_03.jpg",
+          "source_url": "http://4.bp.blogspot.com/-ELWAGQDPmbM/TnNTjuwI5JI/AAAAAAAADD8/HetlRFjKx08/s1600/Tony_Montana_Scarface_Al_Pacino_Manny_HD_Wallpaper_Vvallpaper.Net.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "path": "output/scene_035/image_alt_04.jpg",
+          "source_url": "https://i.etsystatic.com/14719230/r/il/4383c2/1588478532/il_fullxfull.1588478532_pjw0.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1555,
+          "height": 1153
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "slug": "scene_036",
+      "section": "CLOSE",
+      "summary": "\"The raise. The bigger place. The win after which you’ll finally relax… the drea",
+      "text": "\"The raise. The bigger place. The win after which you’ll finally relax… the dream doesn’t contain an ‘enough.’ It only contains more.\"",
+      "on_screen_text": "\"IT ONLY CONTAINS MORE.\"",
+      "editor_notes": "This is the audience-mirror moment. Keep it gentle, not preachy.",
+      "image_queries": [
+        "No Scarface Something",
+        "No Scarface"
+      ],
+      "clip_queries": [
+        "No Scarface Something archival footage"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_036/image_01.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/10/untitled-38.jpg",
+          "query": "No Scarface Something",
+          "width": 2160,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_036/image_02.jpg",
+          "source_url": "https://i.pinimg.com/originals/bd/5b/fc/bd5bfc376e554b8eba8509757c8b3087.jpg",
+          "query": "No Scarface Something",
+          "width": 1922,
+          "height": 1082
+        },
+        {
+          "path": "output/scene_036/image_03.webp",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/ddd770f3-62f8-4db9-b4c9-3ab202eff0c2/david-ayer-says-his-scarface-script-is-one-of-the-best-he-ever-wrote-but-the-studio-wanted-something-more-fun.jpg",
+          "query": "No Scarface Something",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_036/image_04.jpg",
+          "source_url": "https://nobadmovie.com/wp-content/uploads/2019/01/scarface_wallpaper.jpg",
+          "query": "No Scarface Something",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "slug": "scene_037",
+      "section": "CLOSE",
+      "summary": "\"…every one of those posters is a man face-down in a fountain, framed and put on",
+      "text": "\"…every one of those posters is a man face-down in a fountain, framed and put on a wall.\"",
+      "on_screen_text": "\"EVERY POSTER IS A MAN FACE-DOWN IN A FOUNTAIN.\"",
+      "editor_notes": "The reframe. The poster will never look the same. Hold this beat.",
+      "image_queries": [
+        "Tony Montana Scarface"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_037/image_alt_01.jpg",
+          "source_url": "https://ilarge.lisimg.com/image/27662201/1118full-scarface-photo.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1532,
+          "height": 1118
+        },
+        {
+          "path": "output/scene_037/image_alt_02.jpg",
+          "source_url": "https://cdn.pensador.com/es/imagenes/frases_de_tony_montana-og.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1400,
+          "height": 1050
+        },
+        {
+          "path": "output/scene_037/image_alt_03.jpg",
+          "source_url": "https://somosnews.com.mx/wp-content/uploads/2024/02/Tony-Montana.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1200,
+          "height": 795
+        },
+        {
+          "path": "output/scene_037/image_alt_04.jpg",
+          "source_url": "https://wallpapers.com/images/hd/scarface-pictures-pgbyanuk6gmvvfoj.jpg",
+          "query": "Tony Montana Scarface",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "slug": "scene_038",
+      "section": "CLOSE",
+      "summary": "\"The World Is Yours was never a promise. It was always the punchline.\"",
+      "text": "\"The World Is Yours was never a promise. It was always the punchline.\"",
+      "on_screen_text": "\"ALWAYS THE PUNCHLINE.\"",
+      "editor_notes": "Cut to black. Silence. Hold 2 seconds.",
+      "image_queries": [
+        "Tony Montana Scarface World Is Yours still",
+        "Tony Montana Scarface the world is yours"
+      ],
+      "clip_queries": [
+        "Tony Montana Scarface World Is Yours scene",
+        "Tony Montana Scarface the world is yours scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_038/image_01.jpg",
+          "source_url": "https://cdn.wccftech.com/wp-content/uploads/2022/09/Scarface-The-World-is-Yours-UE5-scaled.jpg",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 2560,
+          "height": 1325
+        },
+        {
+          "path": "output/scene_038/image_02.jpg",
+          "source_url": "https://wallpaperaccess.com/full/775190.jpg",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_038/image_03.jpg",
+          "source_url": "https://wallpapercave.com/wp/wp2610722.jpg",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output/scene_038/image_04.jpg",
+          "source_url": "https://gaming-cdn.com/images/products/20827/screenshot/scarface-the-world-is-yours-2006-pc-steam-wallpaper-1.jpg?v=1761147543",
+          "query": "Tony Montana Scarface World Is Yours still",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "slug": "scene_039",
+      "section": "CLOSE",
+      "summary": "\"…is it even possible to make an honest warning that looks this good…? Tell me b",
+      "text": "\"…is it even possible to make an honest warning that looks this good…? Tell me below. Subscribe…\"",
+      "on_screen_text": "WARNING OR DREAM?  ·  SUBSCRIBE",
+      "editor_notes": "Clean, calm. No hard sell.",
+      "image_queries": [
+        "Simple Channel Optionally",
+        "Simple"
+      ],
+      "clip_queries": [
+        "Simple Channel Optionally archival footage"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output/scene_039/image_01.jpg",
+          "source_url": "https://images.hdqwalls.com/wallpapers/4k-texture-simple-background-21.jpg",
+          "query": "Simple",
+          "width": 4000,
+          "height": 2500
+        },
+        {
+          "path": "output/scene_039/image_02.jpg",
+          "source_url": "https://esle.io/storage/app/788/simple-usa-map-with-statesnames.jpg",
+          "query": "Simple",
+          "width": 4677,
+          "height": 3307
+        },
+        {
+          "path": "output/scene_039/image_03.jpg",
+          "source_url": "https://www.lesactivitesdemaman.fr/wp-content/uploads/2022/10/conjugaison_passe_simple.jpg",
+          "query": "Simple",
+          "width": 3508,
+          "height": 2480
+        },
+        {
+          "path": "output/scene_039/image_04.png",
+          "source_url": "https://s3.tradingview.com/w/WnOGV2ZK_big.png",
+          "query": "Simple Channel Optionally",
+          "width": 3226,
+          "height": 1952
         }
       ]
     }

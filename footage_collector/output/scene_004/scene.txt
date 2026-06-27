@@ -1,15 +1,16 @@
-# Scene 4
+# Scene 4  [COLD OPEN]
 
-SUMMARY: His problem is the brakes - controls everyone except himself. He wants 'the world and everything in it'. An appetite with no edge.
+SUMMARY: "Scarface is a warning. And the warning became the dream… So let’s actually talk
+
+ON-SCREEN TEXT: TITLE CARD: The warning became the dream.
+
+EDITOR NOTES: Transition into the essay. One held note of Moroder-style synth.
 
 IMAGE QUERIES:
-  - Scarface The World Is Yours blimp Miami scene
-  - Tony Montana Scarface looking out over Miami window
-  - Scarface 1983 Miami skyline night cinematic
+  - Miami
 
 CLIP QUERIES:
-  - Scarface the world is yours blimp scene
-  - Scarface Tony Montana the world is yours quote
+  - Miami archival footage
 
-TEXT:
-Tony can control everyone but himself. He doesn't want money or a house - he wants the world and everything in it, an appetite that has no finish line.
+NARRATION / TEXT:
+"Scarface is a warning. And the warning became the dream… So let’s actually talk about what makes Tony Montana terrifying…"

@@ -1,15 +1,18 @@
-# Scene 6
+# Scene 6  [THE WRONG KIND OF TERROR]
 
-SUMMARY: Oliver Stone wrote the script deep in his own cocaine addiction, then moved to Paris to finish it stone-cold sober.
+SUMMARY: "Here is what people get wrong about Tony… For most of this film, Tony is fright
+
+ON-SCREEN TEXT: "FRIGHTENINGLY IN CONTROL."
+
+EDITOR NOTES: Show Tony at his sharpest. This is the "strategist" the audience needs to see BEFORE the appetite argument lands.
 
 IMAGE QUERIES:
-  - Oliver Stone director 1980s portrait
-  - Oliver Stone young screenwriter black and white
-  - cocaine lines mirror dark moody cinematic
+  - Tony Montana Scarface Sosa
+  - Tony Montana Scarface Bolivia
 
 CLIP QUERIES:
-  - Oliver Stone Scarface screenplay interview
-  - Oliver Stone 1983 cocaine addiction interview
+  - Tony Montana Scarface Sosa scene
+  - Tony Montana Scarface Bolivia scene
 
-TEXT:
-Screenwriter Oliver Stone was deep in cocaine addiction while researching the film, and had to move to Paris to write the whole thing sober.
+NARRATION / TEXT:
+"Here is what people get wrong about Tony… For most of this film, Tony is frighteningly in control."

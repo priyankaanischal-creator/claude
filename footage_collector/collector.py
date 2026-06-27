@@ -55,6 +55,9 @@ class SceneSpec:
     clip_queries: List[str] = field(default_factory=list)
     keywords: List[str] = field(default_factory=list)
     summary: str = ""
+    section: str = ""
+    on_screen: str = ""
+    notes: str = ""
 
     def slug(self) -> str:
         return f"scene_{self.index:03d}"
@@ -79,6 +82,40 @@ def specs_from_script(title, script_text, args) -> tuple:
         for s in scenes
     ]
     return specs, title, context
+
+
+def specs_from_instructor(instructor_path, args) -> tuple:
+    import instructor_parser as ip
+    # Determine the subject anchor: explicit --context, else derive from the
+    # clean script if provided, else fall back to the title.
+    subject = args.context
+    title = args.title or "Untitled"
+    if not subject and args.script and os.path.isfile(args.script):
+        with open(args.script, "r", encoding="utf-8") as f:
+            script_text = f.read()
+        if not args.title:
+            for line in script_text.splitlines():
+                line = line.strip()
+                if line:
+                    if len(line) < 90 and not line.endswith((".", "!", "?")):
+                        title = line
+                    break
+        subject = scene_parser.derive_context(title, script_text, max_terms=2)
+    if not subject:
+        subject = title
+    subject = subject.strip()
+
+    beats = ip.parse_instructor(instructor_path, subject)
+    specs = [
+        SceneSpec(
+            index=b.index, text=b.narration,
+            image_queries=b.image_queries, clip_queries=b.clip_queries,
+            summary=b.narration[:80], section=b.section,
+            on_screen=b.on_screen, notes=b.notes,
+        )
+        for b in beats
+    ]
+    return specs, title, subject
 
 
 def specs_from_plan(plan_path, args) -> tuple:
@@ -109,10 +146,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
         description="Collect YouTube clips + images for each scene of a script.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    src = p.add_argument_group("input (one of --script or --plan)")
+    src = p.add_argument_group("input (one of --script / --plan / --instructor)")
     src.add_argument("--script", default=None, help="Path to a raw script/transcript .txt")
     src.add_argument("--plan", default=None,
                      help="Path to a curated plan JSON (scenes + image/clip queries)")
+    src.add_argument("--instructor", default=None,
+                     help="Path to a beat-by-beat visual instructor .txt (best quality, no API)")
 
     p.add_argument("--title", default=None, help="Video title (auto-detected if omitted)")
     p.add_argument("--out", default="output", help="Output directory")
@@ -157,11 +196,17 @@ def build_arg_parser() -> argparse.ArgumentParser:
 def main(argv=None) -> int:
     args = build_arg_parser().parse_args(argv)
 
-    if not args.script and not args.plan:
-        log("ERROR: provide --script <file> or --plan <file>")
+    if not args.script and not args.plan and not args.instructor:
+        log("ERROR: provide --instructor <file>, --plan <file>, or --script <file>")
         return 2
 
-    if args.plan:
+    if args.instructor:
+        if not os.path.isfile(args.instructor):
+            log(f"ERROR: instructor file not found: {args.instructor}")
+            return 2
+        specs, title, context = specs_from_instructor(args.instructor, args)
+        mode = f"instructor ({os.path.basename(args.instructor)})"
+    elif args.plan:
         if not os.path.isfile(args.plan):
             log(f"ERROR: plan file not found: {args.plan}")
             return 2
@@ -251,16 +296,26 @@ def main(argv=None) -> int:
         log(f"    clip q: {scene.clip_queries}")
 
         with open(os.path.join(scene_dir, "scene.txt"), "w", encoding="utf-8") as f:
-            f.write(f"# Scene {scene.index}\n")
+            f.write(f"# Scene {scene.index}")
+            if scene.section:
+                f.write(f"  [{scene.section}]")
+            f.write("\n")
             if scene.summary:
                 f.write(f"\nSUMMARY: {scene.summary}\n")
+            if scene.on_screen:
+                f.write(f"\nON-SCREEN TEXT: {scene.on_screen}\n")
+            if scene.notes:
+                f.write(f"\nEDITOR NOTES: {scene.notes}\n")
             f.write(f"\nIMAGE QUERIES:\n" + "\n".join(f"  - {q}" for q in scene.image_queries))
             f.write(f"\n\nCLIP QUERIES:\n" + "\n".join(f"  - {q}" for q in scene.clip_queries))
-            f.write(f"\n\nTEXT:\n{scene.text}\n")
+            f.write(f"\n\nNARRATION / TEXT:\n{scene.text}\n")
 
         entry = {
             "index": scene.index, "slug": scene.slug(),
+            "section": scene.section,
             "summary": scene.summary, "text": scene.text,
+            "on_screen_text": scene.on_screen,
+            "editor_notes": scene.notes,
             "image_queries": scene.image_queries,
             "clip_queries": scene.clip_queries,
             "clips": [], "images": [],

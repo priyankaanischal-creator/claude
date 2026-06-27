@@ -1,15 +1,16 @@
-# Scene 15
+# Scene 15  [THE GLAMOUR]
 
-SUMMARY: Where he lands: face-down in the fountain, dead, beneath the lit statue reading 'The World Is Yours' - the promise turned punchline.
+SUMMARY: "It dresses him in white… marble mansion, a literal pet tiger, neon Miami…"
+
+ON-SCREEN TEXT: (no overlay)
+
+EDITOR NOTES: Glamour reel. Let the visuals prove the argument — this is WHY people put the poster up.
 
 IMAGE QUERIES:
-  - Scarface The World Is Yours statue fountain ending
-  - Scarface 1983 Tony Montana dead fountain final shot
-  - The World Is Yours globe statue Scarface
+  - Tony Montana Scarface Miami
 
 CLIP QUERIES:
-  - Scarface ending The World Is Yours fountain statue
-  - Scarface Tony Montana falls into fountain ending
+  - Tony Montana Scarface Miami scene
 
-TEXT:
-Tony lands face-down in the fountain, dead, directly beneath a lit statue inscribed 'The World Is Yours' - the same promise from the blimp, now hanging over his corpse like a punchline.
+NARRATION / TEXT:
+"It dresses him in white… marble mansion, a literal pet tiger, neon Miami…"

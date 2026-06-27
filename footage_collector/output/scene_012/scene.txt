@@ -1,15 +1,20 @@
-# Scene 12
+# Scene 12  [THE STRATEGIST]
 
-SUMMARY: The empire was already rotting - addiction, paranoia, taxes. But the refusal turns Sosa from partner into executioner.
+SUMMARY: "The first real test… a drug buy that turns into a Colombian taking a chainsaw t
+
+ON-SCREEN TEXT: "THE ONE WHOSE NERVE DOESN’T BREAK."
+
+EDITOR NOTES: Brutal. Don’t linger gratuitously — the point is Tony’s composure, NOT the gore. Focus camera on Tony’s face during the horror.
 
 IMAGE QUERIES:
-  - Scarface Alejandro Sosa Bolivia villain still
-  - Scarface 1983 Tony Montana paranoid mansion scene
-  - Scarface Tony Montana arguing phone scene
+  - Tony Montana Scarface Chainsaw Apartment still
+  - Tony Montana Scarface Angel
+  - Tony Montana Scarface Hector
 
 CLIP QUERIES:
-  - Scarface Sosa phone call betrayal scene
-  - Scarface Tony Montana Sosa Bolivia mansion scene
+  - Tony Montana Scarface Chainsaw Apartment scene
+  - Tony Montana Scarface Angel scene
+  - Tony Montana Scarface Hector scene
 
-TEXT:
-The empire is already collapsing from addiction, paranoia and tax trouble, but refusing the hit turns Sosa into an executioner; the one line Tony won't cross is what his world can't allow.
+NARRATION / TEXT:
+"The first real test… a drug buy that turns into a Colombian taking a chainsaw to Tony’s friend…"

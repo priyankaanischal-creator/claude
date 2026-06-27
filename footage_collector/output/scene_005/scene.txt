@@ -1,15 +1,17 @@
-# Scene 5
+# Scene 5  [THE WRONG KIND OF TERROR]
 
-SUMMARY: Origin: the 1980 Mariel boatlift - 125,000 Cubans to Florida, Castro emptying prisons. Tony off the boat, a dishwasher meant for bigger things.
+SUMMARY: "Most of the great movie villains scare you through control… quiet, precise, hol
+
+ON-SCREEN TEXT: (no overlay)
+
+EDITOR NOTES: Fast, minimal. These are contrast-beats, not deep references. Just enough to establish "the quiet villain."
 
 IMAGE QUERIES:
-  - Mariel boatlift 1980 Cuban refugees overloaded boats
-  - Cuban refugees Miami 1980 historical photo
-  - Scarface 1983 Tony Montana refugee camp tent scene
+  - Hannibal Lecter Anton Chigurh Hans Landa
+  - Hannibal Lecter
 
 CLIP QUERIES:
-  - Scarface 1983 opening Mariel boatlift scene
-  - Scarface Tony Montana dishwasher Chi Chi scene
+  - Hannibal Lecter Anton Chigurh Hans Landa archival footage
 
-TEXT:
-In 1980 around 125,000 Cubans arrived in Florida during the Mariel boatlift while Castro emptied some prisons; Tony comes off the boat a criminal, hates his dishwashing job, and says he is meant for bigger things.
+NARRATION / TEXT:
+"Most of the great movie villains scare you through control… quiet, precise, hold eye contact a beat too long…"

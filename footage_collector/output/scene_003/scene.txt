@@ -1,15 +1,16 @@
-# Scene 3
+# Scene 3  [COLD OPEN]
 
-SUMMARY: Great villains scare through control. Tony is frighteningly IN control - the immigration interrogation, deals, contract killing, taking the empire.
+SUMMARY: "…a story film teachers love to tell… they listened to all of it. And they still
+
+ON-SCREEN TEXT: "THEY STILL WANTED TO BE TONY MONTANA."
+
+EDITOR NOTES: The contrast IS the hook. Slow the edit right down after the rapid montage. Let the fountain image breathe.
 
 IMAGE QUERIES:
-  - Scarface 1983 Tony Montana interrogation scene still
-  - Al Pacino Scarface suit serious negotiation
-  - Scarface Tony Montana dominating room scene
+  - Scarface
 
 CLIP QUERIES:
-  - Scarface immigration interrogation Freedom Town scene
-  - Scarface Tony Montana meeting Frank Lopez scene
+  - Scarface archival footage
 
-TEXT:
-Unlike a man with no control, Tony dominates rooms and deals - the immigration interrogation, a contract killing without shaking hands, reading rivals and taking an entire empire.
+NARRATION / TEXT:
+"…a story film teachers love to tell… they listened to all of it. And they still wanted to be Tony Montana."

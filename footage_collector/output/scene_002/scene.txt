@@ -1,15 +1,20 @@
-# Scene 2
+# Scene 2  [COLD OPEN]
 
-SUMMARY: The warning became the dream. What actually makes Tony terrifying - not the chainsaw or 'say hello to my little friend'.
+SUMMARY: "Walk into enough gyms, barbershops… Rappers take his name… a Camorra boss repor
+
+ON-SCREEN TEXT: TONY MONTANA (Future, 2011)  ·  NAPLES REPLICA MANSION  ·  MONTANA MANAGEMENT
+
+EDITOR NOTES: Keep this fast and factual. These are proof-of-impact beats, not deep dives. 1-2 seconds per flash.
 
 IMAGE QUERIES:
-  - Scarface 1983 Tony Montana intense stare dramatic still
-  - Al Pacino Scarface dark cinematic portrait
-  - Scarface Tony Montana shadow moody lighting
+  - Tony Montana
+  - Montana Management
+  - Tony Montana Naples Camorra Montana Management
 
 CLIP QUERIES:
-  - Scarface 1983 say hello to my little friend scene
-  - Scarface Tony Montana close up monologue
+  - Tony Montana scene
+  - Montana Management scene
+  - Tony Montana Naples Camorra Montana Management archival footage
 
-TEXT:
-Scarface is a warning that became the dream; the film is cleverer than it looks. What makes Tony terrifying isn't the chainsaw or the famous line.
+NARRATION / TEXT:
+"Walk into enough gyms, barbershops… Rappers take his name… a Camorra boss reportedly built a replica mansion… Saddam Hussein’s regime named a company Montana Management…"

@@ -1,15 +1,17 @@
-# Scene 11
+# Scene 11  [THE STRATEGIST]
 
-SUMMARY: The bomb in the car: a hit on a journalist, but the target's wife and children get in. Tony won't push the button - he kills Sosa's man instead.
+SUMMARY: "Oliver Stone was deep in his own cocaine addiction when he took the job… moved 
+
+ON-SCREEN TEXT: OLIVER STONE  ·  WROTE SCARFACE SOBER, AN OCEAN FROM HIS ADDICTION
+
+EDITOR NOTES: Production-fact beat. Keep it tight — 15 seconds max. The fact earns its place because addiction IS the theme.
 
 IMAGE QUERIES:
-  - Scarface 1983 New York car bomb scene still
-  - Scarface Tony Montana car bomb hesitation scene
-  - Scarface Alberto the Shadow car scene
+  - Oliver Stone Paris Scarface
+  - Oliver Stone
 
 CLIP QUERIES:
-  - Scarface car bomb journalist scene won't kill kids
-  - Scarface Tony kills Alberto car scene
+  - Oliver Stone Paris Scarface archival footage
 
-TEXT:
-On a hit ordered by Sosa, the journalist target gets into the car with his wife and children, and Tony - the chainsaw survivor - refuses to push the button, turning on Sosa's man instead.
+NARRATION / TEXT:
+"Oliver Stone was deep in his own cocaine addiction when he took the job… moved to Paris… wrote the whole thing stone-cold sober."

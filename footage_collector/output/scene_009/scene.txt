@@ -1,15 +1,17 @@
-# Scene 9
+# Scene 9  [THE WRONG KIND OF TERROR]
 
-SUMMARY: Tony as the one honest voice - the restaurant scene: 'You need people like me... say goodnight to the bad guy.'
+SUMMARY: "In 1980, around a hundred and twenty-five thousand Cubans arrive in Florida dur
+
+ON-SCREEN TEXT: MARIEL BOATLIFT — 1980  ·  125,000 CUBANS
+
+EDITOR NOTES: Documentary tone. Ground the character in real history.
 
 IMAGE QUERIES:
-  - Scarface restaurant scene Tony Montana Elvira still
-  - Scarface 1983 say goodnight to the bad guy scene
-  - Al Pacino Scarface restaurant tuxedo scene
+  - Mariel Florida
+  - Mariel
 
 CLIP QUERIES:
-  - Scarface say goodnight to the bad guy restaurant scene
-  - Scarface you need people like me scene
+  - Mariel Florida archival footage
 
-TEXT:
-In an expensive restaurant, wrecked on his own product and surrounded by respectable hypocrites, Tony stands up: you need people like me to point at - say goodnight to the bad guy.
+NARRATION / TEXT:
+"In 1980, around a hundred and twenty-five thousand Cubans arrive in Florida during the Mariel boatlift…"

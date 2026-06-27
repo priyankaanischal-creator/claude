@@ -1,15 +1,19 @@
-# Scene 16
+# Scene 16  [THE GLAMOUR]
 
-SUMMARY: The joke was baked in: a remake of the 1932 Scarface (Howard Hawks, loosely Al Capone), a censored cautionary tale subtitled 'The Shame of the Nation'.
+SUMMARY: "…The ratings board first branded the movie X… The surface tells you how electri
+
+ON-SCREEN TEXT: RATED X  →  BUT LOOK AT HIM.
+
+EDITOR NOTES: The contrast is the point. X-rating fact earns its place because it proves the film was SO seductive even the censors recoiled.
 
 IMAGE QUERIES:
-  - Scarface 1932 Howard Hawks Paul Muni still
-  - Al Capone 1930s gangster historical photo
-  - Scarface 1932 The Shame of the Nation poster
+  - Mpaa Rating still
+  - Excessive And Cumulative Violence And Language still
+  - mpaa rating
 
 CLIP QUERIES:
-  - Scarface 1932 original film Paul Muni scene
-  - Al Capone documentary 1930s Chicago footage
+  - Mpaa Rating scene
+  - Excessive And Cumulative Violence And Language scene
 
-TEXT:
-Pacino made it because he loved the original 1932 Scarface by Howard Hawks, a censored cautionary tale loosely built on Al Capone and subtitled 'The Shame of the Nation' - the warning was in the story's DNA for fifty years.
+NARRATION / TEXT:
+"…The ratings board first branded the movie X… The surface tells you how electrifying destruction can look."

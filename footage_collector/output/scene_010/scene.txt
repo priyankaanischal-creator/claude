@@ -1,15 +1,16 @@
-# Scene 10
+# Scene 10  [THE WRONG KIND OF TERROR]
 
-SUMMARY: The cruel joke: he gets the mansion, the wife and the empire, and is completely alone. Elvira drifts through it numb and bored.
+SUMMARY: "…he says it out loud: he is meant for bigger things."
+
+ON-SCREEN TEXT: (no overlay)
+
+EDITOR NOTES: Quick. Sets up the rise.
 
 IMAGE QUERIES:
-  - Scarface Elvira Michelle Pfeiffer mansion still
-  - Scarface Tony Montana Elvira bored dinner scene
-  - Scarface 1983 lonely mansion interior wide shot
+  - Tony Montana Scarface Manny
 
 CLIP QUERIES:
-  - Scarface Elvira dinner argument restaurant scene
-  - Scarface Tony and Elvira mansion scene
+  - Tony Montana Scarface Manny scene
 
-TEXT:
-Tony gets everything - the mansion, Elvira, the empire - and is miserable and alone inside it, because an appetite can only be fed, never satisfied.
+NARRATION / TEXT:
+"…he says it out loud: he is meant for bigger things."
