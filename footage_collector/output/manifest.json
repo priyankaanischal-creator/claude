@@ -2,7 +2,7 @@
   "title": "WHAT MAKES TONY MONTANA SO TERRIFYING",
   "context": "Scarface 1983 Tony Montana",
   "mode": "plan (scarface_plan.json)",
-  "generated_at": "2026-06-27T19:50:40.935502+00:00",
+  "generated_at": "2026-06-27T20:02:18.151748+00:00",
   "settings": {
     "clip_duration": 6.0,
     "clips_per_scene": 0,
@@ -35,10 +35,10 @@
         },
         {
           "path": "output/scene_001/image_02.jpg",
-          "source_url": "https://wallpaperaccess.com/full/658845.jpg",
-          "query": "Al Pacino Scarface cigar close up still",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://i.pinimg.com/originals/6f/29/59/6f29590f79de760de2d3220e6422e331.jpg",
+          "query": "Tony Montana Scarface gold ring white suit portrait",
+          "width": 7552,
+          "height": 4576
         },
         {
           "path": "output/scene_001/image_03.jpg",
@@ -74,31 +74,31 @@
       "images": [
         {
           "path": "output/scene_002/image_01.jpg",
-          "source_url": "https://wallpapercat.com/w/full/9/b/9/310642-3840x2160-desktop-4k-scarface-wallpaper-photo.jpg",
-          "query": "Scarface 1983 Tony Montana intense stare dramatic still",
-          "width": 3840,
-          "height": 2160
-        },
-        {
-          "path": "output/scene_002/image_02.jpg",
           "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
           "query": "Scarface 1983 Tony Montana intense stare dramatic still",
           "width": 3840,
           "height": 2160
         },
         {
-          "path": "output/scene_002/image_03.jpg",
-          "source_url": "https://4kwallpapers.com/images/wallpapers/scarface-al-pacino-5k-8k-3840x2160-13463.jpg",
+          "path": "output/scene_002/image_02.jpg",
+          "source_url": "https://4kwallpapers.com/images/wallpapers/al-pacino-scarface-5k-3840x2160-13435.jpg",
           "query": "Al Pacino Scarface dark cinematic portrait",
           "width": 3840,
           "height": 2160
         },
         {
+          "path": "output/scene_002/image_03.png",
+          "source_url": "https://i.pinimg.com/originals/05/c9/34/05c93437bea03a57035912180a40172e.png",
+          "query": "Scarface Tony Montana shadow moody lighting",
+          "width": 5511,
+          "height": 3115
+        },
+        {
           "path": "output/scene_002/image_04.jpg",
-          "source_url": "https://4kwallpapers.com/images/wallpapers/al-pacino-scarface-5k-3840x2160-13435.jpg",
-          "query": "Al Pacino Scarface dark cinematic portrait",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://static.sky.it/editorialimages/6998a7461504586985cac09eec84dd0b108b19fa/skytg24/it/spettacolo/cinema/2020/06/08/scarface-film/15-scarface-web.jpg?im=Resize",
+          "query": "Scarface 1983 Tony Montana intense stare dramatic still",
+          "width": 3300,
+          "height": 2177
         }
       ]
     },
@@ -120,31 +120,31 @@
       "images": [
         {
           "path": "output/scene_003/image_01.jpg",
-          "source_url": "https://wallpaper.dog/large/20548247.jpg",
-          "query": "Scarface 1983 Tony Montana interrogation scene still",
-          "width": 3840,
-          "height": 2160
-        },
-        {
-          "path": "output/scene_003/image_02.jpg",
           "source_url": "https://image.tmdb.org/t/p/original/xXNSdudRSsqpN1N498YN1kvvb1q.jpg",
           "query": "Scarface 1983 Tony Montana interrogation scene still",
           "width": 3840,
           "height": 2160
         },
         {
+          "path": "output/scene_003/image_02.jpg",
+          "source_url": "https://wallpaperaccess.com/full/747374.jpg",
+          "query": "Scarface 1983 Tony Montana interrogation scene still",
+          "width": 3100,
+          "height": 2102
+        },
+        {
           "path": "output/scene_003/image_03.jpg",
-          "source_url": "https://i.pinimg.com/originals/11/70/8e/11708efdf4ae5385e7390ba450b1ed2e.jpg?nii=t",
-          "query": "Scarface Tony Montana dominating room scene",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/05/mixcollage-06-may-2024-06-55-pm-88.jpg",
+          "query": "Al Pacino Scarface suit serious negotiation",
+          "width": 3000,
+          "height": 1500
         },
         {
           "path": "output/scene_003/image_04.jpg",
-          "source_url": "https://m.media-amazon.com/images/M/MV5BNGY3YTZmY2YtNGVjZS00ZDMxLWFmYjAtYzhmYmU0NjJkOWQzXkEyXkFqcGc@._V1_.jpg",
-          "query": "Al Pacino Scarface suit serious negotiation",
-          "width": 4096,
-          "height": 2914
+          "source_url": "https://i.etsystatic.com/32400093/r/il/bfc5fc/3939295452/il_fullxfull.3939295452_jst5.jpg",
+          "query": "Scarface Tony Montana dominating room scene",
+          "width": 3000,
+          "height": 2119
         }
       ]
     },
@@ -173,24 +173,24 @@
         },
         {
           "path": "output/scene_004/image_02.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
-          "query": "Scarface 1983 Miami skyline night cinematic",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
+          "query": "Tony Montana Scarface looking out over Miami window",
+          "width": 4600,
+          "height": 3034
         },
         {
-          "path": "output/scene_004/image_03.png",
-          "source_url": "https://wallpapercave.com/wp/wp2610756.png",
-          "query": "Scarface The World Is Yours blimp Miami scene",
-          "width": 8004,
-          "height": 4502
+          "path": "output/scene_004/image_03.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/ulrM7v3rmcOE0WYWF48vResVemc.jpg",
+          "query": "Scarface 1983 Miami skyline night cinematic",
+          "width": 2720,
+          "height": 1530
         },
         {
           "path": "output/scene_004/image_04.jpg",
-          "source_url": "https://m.media-amazon.com/images/M/MV5BNGY3YTZmY2YtNGVjZS00ZDMxLWFmYjAtYzhmYmU0NjJkOWQzXkEyXkFqcGc@._V1_.jpg",
-          "query": "Scarface 1983 Miami skyline night cinematic",
-          "width": 4096,
-          "height": 2914
+          "source_url": "https://wallpapercave.com/wp/wp2610739.jpg",
+          "query": "Scarface The World Is Yours blimp Miami scene",
+          "width": 2880,
+          "height": 1800
         }
       ]
     },
@@ -226,17 +226,17 @@
         },
         {
           "path": "output/scene_005/image_03.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
-          "query": "Scarface 1983 Tony Montana refugee camp tent scene",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2163,g_auto/dpr_auto/f_auto/q_auto:eco/v1/Man_Moment_Machine-3840x2160-1-scaled_myr0cb?_a=BAVMn6DY0",
+          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
           "width": 3840,
-          "height": 2160
+          "height": 2163
         },
         {
           "path": "output/scene_005/image_04.jpg",
-          "source_url": "https://i.pinimg.com/originals/11/70/8e/11708efdf4ae5385e7390ba450b1ed2e.jpg?nii=t",
-          "query": "Scarface 1983 Tony Montana refugee camp tent scene",
+          "source_url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_3840,h_2443,g_auto/dpr_auto/f_auto/q_auto:eco/v1/mariel-boatlift-gettyimages-998443434?_a=BAVAZGID0",
+          "query": "Mariel boatlift 1980 Cuban refugees overloaded boats",
           "width": 3840,
-          "height": 2160
+          "height": 2443
         }
       ]
     },
@@ -272,17 +272,17 @@
         },
         {
           "path": "output/scene_006/image_03.jpg",
+          "source_url": "https://www.raicultura.it/dl/img/2021/09/09/1631176544979_JFK_1991.jpg",
+          "query": "Oliver Stone director 1980s portrait",
+          "width": 3978,
+          "height": 2645
+        },
+        {
+          "path": "output/scene_006/image_04.jpg",
           "source_url": "https://deadline.com/wp-content/uploads/2022/09/GettyImages-1393598367.jpg",
           "query": "Oliver Stone director 1980s portrait",
           "width": 4500,
           "height": 3001
-        },
-        {
-          "path": "output/scene_006/image_04.jpg",
-          "source_url": "https://deadline.com/wp-content/uploads/2022/09/Wall-Street-Money-Never-Sleeps-2010.jpg?resize=320",
-          "query": "Oliver Stone director 1980s portrait",
-          "width": 3508,
-          "height": 2328
         }
       ]
     },
@@ -304,31 +304,31 @@
       "images": [
         {
           "path": "output/scene_007/image_01.jpg",
-          "source_url": "https://wallpapercg.com/download/scarface-5k-wallpaper-5120x2880-17914.jpg",
-          "query": "Scarface 1983 chainsaw scene bathroom still",
-          "width": 5120,
-          "height": 2880
+          "source_url": "http://afterdarknessart.com/cdn/shop/files/IMG_2141.jpg?v=1696453269",
+          "query": "Scarface Tony Montana shootout window scene",
+          "width": 3840,
+          "height": 2400
         },
         {
           "path": "output/scene_007/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/11/70/8e/11708efdf4ae5385e7390ba450b1ed2e.jpg?nii=t",
-          "query": "Scarface Tony Montana shootout window scene",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://wallpaperaccess.com/full/8162672.jpg",
+          "query": "Roberto Duran boxer 1980s black and white",
+          "width": 3600,
+          "height": 2430
         },
         {
           "path": "output/scene_007/image_03.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp15484632.jpg",
-          "query": "Scarface Tony Montana shootout window scene",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://llero.net/wp-content/uploads/2016/06/Duran-Cover.jpg",
+          "query": "Roberto Duran boxer 1980s black and white",
+          "width": 3605,
+          "height": 2448
         },
         {
           "path": "output/scene_007/image_04.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
+          "source_url": "https://i.etsystatic.com/25268223/r/il/05ed0c/3537065314/il_fullxfull.3537065314_k4ir.jpg",
           "query": "Scarface Tony Montana shootout window scene",
-          "width": 3840,
-          "height": 2160
+          "width": 3000,
+          "height": 1570
         }
       ]
     },
@@ -364,15 +364,15 @@
         },
         {
           "path": "output/scene_008/image_03.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/fGuD1rB68ipHg3kSCYrTJ7Nfn9Y.jpg",
+          "source_url": "https://i.pinimg.com/originals/16/3b/c4/163bc4561b3c1033a25c56ea99c23ebc.jpg",
           "query": "Scarface 1983 Miami neon nightclub Babylon",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_008/image_04.jpg",
-          "source_url": "https://cowboystatedaily.imgix.net/Billings-Castle-21-6.28.25.jpg?ixlib=js-3.8.0&q=75&auto=format,compress&fit=clip&w=3840",
-          "query": "Tony Montana marble mansion office desk wide shot",
+          "source_url": "https://image.tmdb.org/t/p/original/7BupR7uH9oo2qmbvwYXSlkq3TAl.jpg",
+          "query": "Scarface 1983 Miami neon nightclub Babylon",
           "width": 3840,
           "height": 2160
         }
@@ -395,32 +395,32 @@
       "clips": [],
       "images": [
         {
-          "path": "output/scene_009/image_01.jpg",
-          "source_url": "https://i.pinimg.com/originals/16/3b/c4/163bc4561b3c1033a25c56ea99c23ebc.jpg",
-          "query": "Scarface restaurant scene Tony Montana Elvira still",
+          "path": "output/scene_009/image_01.webp",
+          "source_url": "https://reviewsonreels.ca/wp-content/uploads/2025/08/bad-guys-2-movie-review-1.webp",
+          "query": "Scarface 1983 say goodnight to the bad guy scene",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_009/image_02.jpg",
-          "source_url": "https://wallpapercat.com/w/full/9/b/9/310642-3840x2160-desktop-4k-scarface-wallpaper-photo.jpg",
-          "query": "Scarface restaurant scene Tony Montana Elvira still",
+          "source_url": "https://image.tmdb.org/t/p/original/w3WcJHavAwc5D3hj0rOB0Z15wzF.jpg",
+          "query": "Scarface 1983 say goodnight to the bad guy scene",
           "width": 3840,
           "height": 2160
         },
         {
           "path": "output/scene_009/image_03.jpg",
-          "source_url": "https://wallpaperaccess.com/full/658845.jpg",
+          "source_url": "https://wallpapercave.com/wp/wp15641280.jpg",
           "query": "Scarface 1983 say goodnight to the bad guy scene",
           "width": 3840,
           "height": 2160
         },
         {
-          "path": "output/scene_009/image_04.webp",
-          "source_url": "https://reviewsonreels.ca/wp-content/uploads/2025/08/bad-guys-2-movie-review-1.webp",
+          "path": "output/scene_009/image_04.png",
+          "source_url": "https://i.pinimg.com/originals/30/91/c1/3091c1a9fe99e965658f08bf53fec3d3.png",
           "query": "Scarface 1983 say goodnight to the bad guy scene",
-          "width": 3840,
-          "height": 2160
+          "width": 3838,
+          "height": 2134
         }
       ]
     },
@@ -442,31 +442,31 @@
       "images": [
         {
           "path": "output/scene_010/image_01.jpg",
-          "source_url": "https://wallpapercat.com/w/full/9/b/9/310642-3840x2160-desktop-4k-scarface-wallpaper-photo.jpg",
-          "query": "Scarface Tony Montana Elvira bored dinner scene",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/45AVT4HTFBERNKYFLTFIFYVFGU.jpg",
+          "query": "Scarface Elvira Michelle Pfeiffer mansion still",
+          "width": 4305,
+          "height": 2809
         },
         {
           "path": "output/scene_010/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
-          "query": "Scarface Tony Montana Elvira bored dinner scene",
-          "width": 4600,
-          "height": 3034
-        },
-        {
-          "path": "output/scene_010/image_03.jpg",
           "source_url": "https://i.pinimg.com/originals/94/21/58/942158b52ff3d7e073fd766fac29989f.jpg",
           "query": "Scarface Elvira Michelle Pfeiffer mansion still",
           "width": 3507,
           "height": 2341
         },
         {
-          "path": "output/scene_010/image_04.png",
+          "path": "output/scene_010/image_03.png",
           "source_url": "https://i.pinimg.com/originals/ca/07/a5/ca07a5bc8825fbcfdb8aef69854d782e.png",
           "query": "Scarface Tony Montana Elvira bored dinner scene",
           "width": 3158,
           "height": 1759
+        },
+        {
+          "path": "output/scene_010/image_04.jpg",
+          "source_url": "https://external-preview.redd.it/kIE_kD3Wf-Phe6KlAEQ0s7-CQ0cibNAY_Dtl360UrhI.jpg?auto=webp&s=e188c6dc1726a996c6badb1f2ded6b5075907cf1",
+          "query": "Scarface 1983 lonely mansion interior wide shot",
+          "width": 2896,
+          "height": 1936
         }
       ]
     },
@@ -488,31 +488,31 @@
       "images": [
         {
           "path": "output/scene_011/image_01.jpg",
-          "source_url": "https://motionbgs.com/media/8260/scarface-tony-montana.3840x2160.jpg",
-          "query": "Scarface Tony Montana car bomb hesitation scene",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://preview.redd.it/1ta6h8k4r0n91.jpg?auto=webp&s=b410001637cc39084d35959f2505e4d6ab86380f",
+          "query": "Scarface 1983 New York car bomb scene still",
+          "width": 4032,
+          "height": 2268
         },
         {
-          "path": "output/scene_011/image_02.png",
-          "source_url": "https://i.pinimg.com/originals/05/c9/34/05c93437bea03a57035912180a40172e.png",
-          "query": "Scarface Alberto the Shadow car scene",
-          "width": 5511,
-          "height": 3115
-        },
-        {
-          "path": "output/scene_011/image_03.jpg",
-          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
-          "query": "Scarface Tony Montana car bomb hesitation scene",
-          "width": 4600,
-          "height": 3034
-        },
-        {
-          "path": "output/scene_011/image_04.jpg",
+          "path": "output/scene_011/image_02.jpg",
           "source_url": "https://www.flyingspares.com/media/ves/blog/DSSTN.JPG",
           "query": "Scarface Alberto the Shadow car scene",
           "width": 4512,
           "height": 3000
+        },
+        {
+          "path": "output/scene_011/image_03.jpg",
+          "source_url": "https://static.vecteezy.com/system/resources/previews/027/103/315/large_2x/eerie-night-scene-with-moonlit-forest-mist-and-dark-ambiance-free-photo.jpg",
+          "query": "Scarface Alberto the Shadow car scene",
+          "width": 3497,
+          "height": 1960
+        },
+        {
+          "path": "output/scene_011/image_04.webp",
+          "source_url": "https://www.sonicstadium.org/uploads/monthly_2025_09/large.Shadow.webp.8dc0469949159ac88f50ebf61ee6c78a.webp",
+          "query": "Scarface Alberto the Shadow car scene",
+          "width": 3456,
+          "height": 1944
         }
       ]
     },
@@ -534,31 +534,31 @@
       "images": [
         {
           "path": "output/scene_012/image_01.jpg",
-          "source_url": "https://www.dpzone.in/wp-content/uploads/3/Scarface-Wallpaper-49.jpg",
+          "source_url": "https://sportshub.cbsistatic.com/i/2025/02/12/f1dfc78d-f211-4b9e-932c-c600393610ee/sosa-1.jpg",
           "query": "Scarface Alejandro Sosa Bolivia villain still",
-          "width": 3840,
-          "height": 2160
+          "width": 6960,
+          "height": 3480
         },
         {
           "path": "output/scene_012/image_02.jpg",
-          "source_url": "https://i.pinimg.com/originals/11/70/8e/11708efdf4ae5385e7390ba450b1ed2e.jpg?nii=t",
+          "source_url": "https://i.etsystatic.com/47045543/r/il/9376ac/5610335097/il_fullxfull.5610335097_bs0s.jpg",
           "query": "Scarface Tony Montana arguing phone scene",
-          "width": 3840,
-          "height": 2160
+          "width": 3000,
+          "height": 2000
         },
         {
           "path": "output/scene_012/image_03.jpg",
-          "source_url": "https://i.pinimg.com/originals/43/7b/ca/437bca5b8bc6d16dc54a8f15e8e8e72b.jpg",
-          "query": "Scarface Tony Montana arguing phone scene",
-          "width": 4600,
-          "height": 3034
+          "source_url": "https://preview.redd.it/saw-this-damn-movie-a-million-times-and-i-cant-believe-that-v0-mvh05u2h1a2a1.jpg?auto=webp&s=aa51b19c6448a358dabfeadf778d82758a629792",
+          "query": "Scarface Alejandro Sosa Bolivia villain still",
+          "width": 3000,
+          "height": 1437
         },
         {
-          "path": "output/scene_012/image_04.jpg",
-          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/Tony-Montana-at-his-desk-in-Scarface.jpg",
-          "query": "Scarface Alejandro Sosa Bolivia villain still",
-          "width": 3248,
-          "height": 1624
+          "path": "output/scene_012/image_04.webp",
+          "source_url": "https://img.gta5-mods.com/q95/images/scarface-1983-tony-montana-replaces-trevor-sp-legacy/e4f314-3.jpg",
+          "query": "Scarface 1983 Tony Montana paranoid mansion scene",
+          "width": 2560,
+          "height": 1440
         }
       ]
     },
@@ -580,28 +580,28 @@
       "images": [
         {
           "path": "output/scene_013/image_01.jpg",
-          "source_url": "https://image.tmdb.org/t/p/original/xXNSdudRSsqpN1N498YN1kvvb1q.jpg",
+          "source_url": "https://www.wearemoviegeeks.com/wp-content/uploads/scarface-121408802_JK_3748_rgb.jpg",
+          "query": "Scarface Manny Ribera Steven Bauer still",
+          "width": 3000,
+          "height": 2001
+        },
+        {
+          "path": "output/scene_013/image_02.png",
+          "source_url": "https://wallpaperaccess.com/full/621354.png",
           "query": "Scarface 1983 Tony shoots Manny street scene",
-          "width": 3840,
-          "height": 2160
+          "width": 2880,
+          "height": 1800
         },
         {
-          "path": "output/scene_013/image_02.jpg",
-          "source_url": "https://wallpaperaccess.com/full/621291.jpg",
-          "query": "Scarface Manny Ribera Steven Bauer still",
-          "width": 3100,
-          "height": 2009
-        },
-        {
-          "path": "output/scene_013/image_03.jpg",
-          "source_url": "https://wallpapercave.com/wp/uKk0bYE.jpg",
-          "query": "Scarface Manny Ribera Steven Bauer still",
-          "width": 3100,
-          "height": 2102
+          "path": "output/scene_013/image_03.png",
+          "source_url": "https://wallpaperaccess.com/full/5064787.png",
+          "query": "Scarface 1983 Tony shoots Manny street scene",
+          "width": 2880,
+          "height": 1800
         },
         {
           "path": "output/scene_013/image_04.png",
-          "source_url": "https://wallpaperaccess.com/full/621354.png",
+          "source_url": "https://i0.wp.com/notesonfilm1.com/wp-content/uploads/2018/01/screen-shot-2017-12-31-at-12-30-52.png",
           "query": "Scarface 1983 Tony shoots Manny street scene",
           "width": 2880,
           "height": 1800
@@ -626,31 +626,31 @@
       "images": [
         {
           "path": "output/scene_014/image_01.jpg",
-          "source_url": "https://www.dpzone.in/wp-content/uploads/3/Scarface-Wallpaper-49.jpg",
-          "query": "Scarface cocaine mountain desk Tony Montana scene",
-          "width": 3840,
-          "height": 2160
-        },
-        {
-          "path": "output/scene_014/image_02.jpg",
           "source_url": "https://cdn.kinocheck.com/i/usl1wfs9dk.jpg",
           "query": "Scarface 1983 final shootout M16 grenade launcher",
           "width": 3840,
           "height": 2160
         },
         {
-          "path": "output/scene_014/image_03.jpg",
+          "path": "output/scene_014/image_02.jpg",
           "source_url": "https://img-new.cgtrader.com/items/4347329/9088209926/m16-m203-grenade-launcher-3d-model-9088209926.jpg",
           "query": "Scarface 1983 final shootout M16 grenade launcher",
           "width": 3840,
           "height": 2160
         },
         {
-          "path": "output/scene_014/image_04.jpg",
+          "path": "output/scene_014/image_03.jpg",
           "source_url": "https://i.pinimg.com/originals/48/9b/2c/489b2c8119f5904b29bbe11597e2bc36.jpg",
           "query": "Scarface say hello to my little friend balcony still",
           "width": 4096,
           "height": 2304
+        },
+        {
+          "path": "output/scene_014/image_04.jpg",
+          "source_url": "https://external-preview.redd.it/say-hello-to-my-little-friends-v0-qJTiBVPWRo2W4qhkUQzcjSdi51rHGRUGakyL8jox0cQ.png?format=pjpg&auto=webp&s=8245eb9936ea7445f0427d7f07849eb31285c882",
+          "query": "Scarface say hello to my little friend balcony still",
+          "width": 3340,
+          "height": 1836
         }
       ]
     },
@@ -672,10 +672,10 @@
       "images": [
         {
           "path": "output/scene_015/image_01.jpg",
-          "source_url": "http://afterdarknessart.com/cdn/shop/files/IMG_2368.jpg?v=1700004816",
-          "query": "The World Is Yours globe statue Scarface",
-          "width": 3840,
-          "height": 2400
+          "source_url": "https://i.pinimg.com/originals/61/02/40/610240084dabc42e05c9503907be0fcb.jpg",
+          "query": "Scarface The World Is Yours statue fountain ending",
+          "width": 4096,
+          "height": 2304
         },
         {
           "path": "output/scene_015/image_02.png",
@@ -685,15 +685,15 @@
           "height": 2530
         },
         {
-          "path": "output/scene_015/image_03.jpg",
-          "source_url": "https://wallpaperaccess.com/full/747374.jpg",
-          "query": "Scarface 1983 Tony Montana dead fountain final shot",
-          "width": 3100,
-          "height": 2102
+          "path": "output/scene_015/image_03.png",
+          "source_url": "https://s.studiobinder.com/wp-content/uploads/2022/06/Scarface-Script-Teardown-Ending-StudioBinder-Screenwriting-Software.png",
+          "query": "Scarface The World Is Yours statue fountain ending",
+          "width": 2880,
+          "height": 1800
         },
         {
           "path": "output/scene_015/image_04.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp2610739.jpg",
+          "source_url": "https://wallpaperset.com/w/full/4/6/e/510141.jpg",
           "query": "Scarface The World Is Yours statue fountain ending",
           "width": 2880,
           "height": 1800
@@ -764,31 +764,31 @@
       "images": [
         {
           "path": "output/scene_017/image_01.jpg",
-          "source_url": "https://wallpapercave.com/wp/wp9442500.jpg",
+          "source_url": "https://i.redd.it/cb0yrtxp6ew71.jpg",
           "query": "Scarface Tony Montana white suit poster on wall gym",
-          "width": 3840,
-          "height": 2160
+          "width": 3462,
+          "height": 2309
         },
         {
           "path": "output/scene_017/image_02.jpg",
-          "source_url": "https://images.moviesanywhere.com/movie-hero/0feedb7cc49a815b48edf77c651be774.jpeg?r=16x9&w=3840",
-          "query": "Scarface 1983 Tony Montana iconic final portrait",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://i.etsystatic.com/42278183/r/il/19c1a7/4858271642/il_1080xN.4858271642_alaq.jpg",
+          "query": "Tony Montana Scarface ambition poster bedroom",
+          "width": 3000,
+          "height": 2002
         },
         {
           "path": "output/scene_017/image_03.jpg",
-          "source_url": "https://admin.sportshackster.com/WallPaperMedia/PlayerWallPaperImage/Scarface-22_63865039630481.9.jpg",
-          "query": "Scarface 1983 Tony Montana iconic final portrait",
-          "width": 3840,
-          "height": 2160
+          "source_url": "https://wallpaperaccess.com/full/749169.jpg",
+          "query": "Scarface Tony Montana white suit poster on wall gym",
+          "width": 2899,
+          "height": 1920
         },
         {
           "path": "output/scene_017/image_04.jpg",
-          "source_url": "https://i.pinimg.com/originals/6f/29/59/6f29590f79de760de2d3220e6422e331.jpg",
+          "source_url": "https://wallpaperaccess.com/full/621260.jpg",
           "query": "Scarface Tony Montana white suit poster on wall gym",
-          "width": 7552,
-          "height": 4576
+          "width": 2686,
+          "height": 1797
         }
       ]
     }

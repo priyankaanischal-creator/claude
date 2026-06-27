@@ -239,6 +239,7 @@ def main(argv=None) -> int:
     totals = {"clips": 0, "images": 0, "clip_fail": 0}
     t0 = time.time()
     last_idx = specs[-1].index if specs else 0
+    dedup = ic.DedupState()  # shared across ALL scenes -> no repeated images
 
     for n, scene in enumerate(specs, 1):
         scene_dir = os.path.join(args.out, scene.slug())
@@ -301,6 +302,7 @@ def main(argv=None) -> int:
                     scene.image_queries, scene_dir,
                     count=args.images_per_scene,
                     min_width=args.min_image_width,
+                    dedup=dedup,
                 )
             except Exception as e:
                 log(f"    [img] error: {type(e).__name__}: {e}")
