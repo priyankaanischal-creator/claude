@@ -1,0 +1,7 @@
+# Scene 3
+
+QUERY: Tony Montana Scarface cigar
+KEYWORDS: cigar, pinky
+
+TEXT:
+A cigar. A gold pinky ring.

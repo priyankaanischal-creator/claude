@@ -1,0 +1,7 @@
+# Scene 18
+
+QUERY: Tony Montana Scarface what’s
+KEYWORDS: what’s, coming, house, wants
+
+TEXT:
+Not a house. He wants what’s coming to him — the world, and everything in it.

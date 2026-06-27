@@ -1,0 +1,7 @@
+# Scene 15
+
+QUERY: Tony Montana Scarface everyone
+KEYWORDS: everyone, problem, control, himself
+
+TEXT:
+His problem is the brakes. Tony can control everyone in the world except himself.

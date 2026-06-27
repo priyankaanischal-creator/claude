@@ -1,0 +1,5 @@
+yt-dlp>=2025.1.1
+ddgs>=9.0.0
+requests>=2.31.0
+# System dependencies (install separately, NOT via pip):
+#   ffmpeg, ffprobe   -> https://ffmpeg.org/download.html

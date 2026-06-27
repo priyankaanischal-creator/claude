@@ -1,0 +1,7 @@
+# Scene 6
+
+QUERY: Tony Montana Scarface scarface
+KEYWORDS: scarface, montana, warning, wanted
+
+TEXT:
+And they still wanted to be Tony Montana. Scarface is a warning.

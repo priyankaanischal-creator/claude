@@ -1,0 +1,7 @@
+# Scene 1
+
+QUERY: Tony Montana Scarface montana
+KEYWORDS: montana, popular, since
+
+TEXT:
+Tony Montana has been dead since 1983. He has never been more popular.
