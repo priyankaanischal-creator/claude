@@ -1,0 +1,16 @@
+# Scene 3  [COLD OPEN]
+
+SUMMARY: "You have been asking the wrong question. The Thing already gave you its answer…
+
+IMAGE QUERIES:
+  - The Thing 1982 Final Shot
+  - The Thing 1982 macready
+  - The Thing 1982 childs firelight
+
+CLIP QUERIES:
+  - The Thing 1982 Final Shot scene
+  - The Thing 1982 macready scene
+  - The Thing 1982 childs firelight scene
+
+NARRATION / TEXT:
+"You have been asking the wrong question. The Thing already gave you its answer… the ending stops being a puzzle to solve, and becomes one of the most quietly devastating moments in all of horror."

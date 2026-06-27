@@ -185,7 +185,18 @@ def _polish_query(s: str) -> str:
         core = " ".join(words[:10])
     if not core:
         return ""
-    return f"{core} scene" if had_scene else core
+    out = f"{core} scene" if had_scene else core
+    # collapse duplicate words (case-insensitive), keep first occurrence. This
+    # removes redundancy when the visual line repeats the subject/topic, e.g.
+    # "The Thing 1982 Final Shot The Thing 1982" -> "The Thing 1982 Final Shot".
+    seen, deduped = set(), []
+    for w in out.split():
+        k = w.lower()
+        if k in seen:
+            continue
+        seen.add(k)
+        deduped.append(w)
+    return " ".join(deduped)
 
 
 _BAD_QUOTE_WORDS = {

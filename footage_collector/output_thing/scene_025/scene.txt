@@ -1,0 +1,16 @@
+# Scene 25  [CLOSE]
+
+SUMMARY: "Is the ending a horror story about two men who can no longer trust each other, 
+
+IMAGE QUERIES:
+  - The Thing 1982 Final Shot
+  - The Thing 1982 macready
+  - The Thing 1982 childs two-shot
+
+CLIP QUERIES:
+  - The Thing 1982 Final Shot scene
+  - The Thing 1982 macready scene
+  - The Thing 1982 childs two-shot scene
+
+NARRATION / TEXT:
+"Is the ending a horror story about two men who can no longer trust each other, or the single moment of grace in a movie full of monsters…? Subscribe…"
