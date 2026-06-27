@@ -96,8 +96,16 @@ class App:
         ttk.Combobox(opt, textvariable=self.cookies_var, width=12, state="readonly",
                      values=["none", "chrome", "edge", "firefox", "brave", "opera"]).grid(
             row=1, column=2, padx=6, pady=6)
-        ttk.Label(opt, text="(pick the browser where you're logged into YouTube)").grid(
+        ttk.Label(opt, text="(browser jisme YouTube logged-in ho; us browser ko BAND rakho)").grid(
             row=1, column=3, columnspan=3, sticky="w", padx=6)
+
+        ttk.Label(opt, text="OR cookies.txt file\n(most reliable)").grid(
+            row=2, column=0, columnspan=2, sticky="w", padx=6, pady=6)
+        self.cookies_file_var = tk.StringVar()
+        ttk.Entry(opt, textvariable=self.cookies_file_var, width=30).grid(
+            row=2, column=2, columnspan=2, padx=6, pady=6, sticky="we")
+        ttk.Button(opt, text="Browse…",
+                   command=lambda: self._pick(self.cookies_file_var)).grid(row=2, column=4, padx=6)
 
         # buttons
         row += 1
@@ -176,7 +184,9 @@ class App:
             cmd += ["--context", self.context_var.get().strip()]
         if self.title_var.get().strip():
             cmd += ["--title", self.title_var.get().strip()]
-        if self.cookies_var.get() != "none":
+        if self.cookies_file_var.get().strip():
+            cmd += ["--cookies", self.cookies_file_var.get().strip()]
+        elif self.cookies_var.get() != "none":
             cmd += ["--cookies-from-browser", self.cookies_var.get()]
 
         self._append("\n$ " + " ".join(f'"{c}"' if " " in c else c for c in cmd) + "\n\n")

@@ -72,18 +72,35 @@ App window me:
 
 ---
 
-## STEP 5 — Clips ke liye "YouTube login" wala step (important)
+## STEP 5 — Clips ke liye "cookies" (SABSE ZAROORI step)
+
 YouTube datacenter/anjaan jagah se download block karta hai
-("Sign in to confirm you're not a bot"). Solution: aap apne **browser ki login**
-use karoge.
+("Sign in to confirm you're not a bot"). Iska ek hi solution hai: YouTube ko
+apni **login (cookies)** do. 2 tareeke hain — **Method A recommended hai**.
 
-- App me **YouTube login** dropdown me wo browser choose karo jisme aap **abhi
-  YouTube pe logged-in** ho (e.g. `chrome`).
-- Bas. Tool us browser ki cookies use karke clips download kar lega.
+### ✅ Method A — cookies.txt file (sabse reliable, har browser pe chalti hai)
+Naya Chrome cookies ko encrypt karta hai, isliye seedha browser-read aksar fail
+hota hai. cookies.txt file is problem ko poori tarah bypass kar deti hai.
 
-> Tip: Clips download karte waqt **wo browser band rakho** (Chrome cookies kabhi
-> locked hote hain agar browser khula ho). Sirf YouTube pe ek baar login hona chahiye.
-> Images ke liye ye step zaroori nahi — wo waise bhi download ho jaati hain.
+1. Chrome/Edge me ye free extension install karo: **"Get cookies.txt LOCALLY"**
+   (Chrome Web Store me search karo).
+2. `https://www.youtube.com` kholo aur **logged-in** raho.
+3. Extension icon dabao → **Export** / "Export As" → ek `cookies.txt` file save hogi
+   (jaise `Downloads\cookies.txt`).
+4. App me **"OR cookies.txt file"** field me wahi file Browse karke choose karo.
+5. Generate dabao. Bas! Clips download honi chahiye.
+
+> cookies.txt ek private file hai (aapki login). Kisi ke saath share mat karna.
+
+### Method B — browser se direct (try kar sakte ho, par kam reliable)
+1. App me **YouTube login** dropdown me browser choose karo (jaise `firefox`).
+2. ⚠️ Wo browser **poori tarah BAND** karo (Chrome khula ho to cookies lock ho jati hain).
+3. **Firefox** is method me Chrome se zyada reliable hai.
+
+> Agar Method B pe phir bhi "Sign in to confirm you're not a bot" aaye, to
+> Method A (cookies.txt) use karo — wo pakka kaam karega.
+
+> **Images ke liye cookies ki zaroorat NAHI** — wo waise bhi download ho jaati hain.
 
 ---
 
@@ -110,8 +127,8 @@ Har scene ka apna folder — editing ke time ready "visual buffet".
 |--------|-----|
 | "Python nahi mila" / 'python' is not recognized | Python install nahi hua ya PATH tick nahi kiya. Step 2 dobara, PATH tick zaroor karo. |
 | setup.bat me ffmpeg download fail | Internet check karo. Ya manual: ffmpeg Windows build download karke `ffmpeg.exe` + `ffprobe.exe` ko `footage_collector\bin\` me daal do. |
-| Clips download nahi ho rahi, "Sign in to confirm you're not a bot" | App me sahi **browser** choose karo (jisme YouTube logged-in ho), aur wo browser **band** rakho. |
-| "could not find cookies" | Galat browser select kiya, ya us browser me YouTube login nahi. Sahi browser choose karo. |
+| Clips download nahi ho rahi, "Sign in to confirm you're not a bot" | **cookies.txt file use karo (Method A, Step 5)** — ye pakka kaam karta hai. Browser-method aksar naye Chrome pe fail hota hai. |
+| "could not copy chrome cookie database" / "Permission denied" | Chrome khula hai ya encrypted cookies. Chrome band karo, ya behtar: **cookies.txt file** (Method A) use karo. |
 | Images aa rahi par clips nahi | Normal — sabse pehle YouTube login wala step set karo. Images bina login ke aati hain. |
 | App window khulti hi nahi (Linux) | `sudo apt install python3-tk` chalao. |
 
@@ -131,9 +148,11 @@ python collector.py ^
   --title "WHAT THE THING'S ENDING REALLY MEANS" ^
   --out output ^
   --clips-per-scene 2 --images-per-scene 4 --clip-duration 5 ^
-  --cookies-from-browser chrome
+  --cookies "C:/Users/Dell/Downloads/cookies.txt"
 ```
 (Windows me `^` line-continuation hai; Mac/Linux me `\` use karo.)
+`--cookies <file>` sabse reliable hai. Browser-direct chahiye to uski jagah
+`--cookies-from-browser firefox` use karo (browser band rakho).
 
 Sirf images chahiye to `--clips-per-scene 0` aur `--cookies-from-browser` hata do.
 

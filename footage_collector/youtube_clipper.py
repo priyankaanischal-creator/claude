@@ -257,6 +257,33 @@ def _ffprobe_duration(path: str) -> float:
         return 0.0
 
 
+def _err_reason(proc) -> str:
+    """Pull a short, human-readable failure reason out of yt-dlp output."""
+    text = (getattr(proc, "stderr", "") or "") + "\n" + (getattr(proc, "stdout", "") or "")
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    for ln in reversed(lines):
+        if "ERROR" in ln or "error" in ln.lower():
+            return ln[:220]
+    return (lines[-1][:220] if lines else "unknown error")
+
+
+def check_tools() -> dict:
+    """Verify yt-dlp and ffmpeg are usable; used for a startup preflight line."""
+    info = {}
+    try:
+        p = _run(_YTDLP + ["--version"], timeout=60)
+        info["yt_dlp"] = p.stdout.strip() if p.returncode == 0 else "MISSING (pip install yt-dlp)"
+    except Exception:
+        info["yt_dlp"] = "MISSING (pip install yt-dlp)"
+    ff = _exe("ffmpeg")
+    try:
+        p = _run([ff, "-version"], timeout=30)
+        info["ffmpeg"] = (ff if p.returncode == 0 else "MISSING")
+    except Exception:
+        info["ffmpeg"] = "MISSING"
+    return info
+
+
 def download_section(
     video_id: str,
     start: float,
@@ -267,8 +294,9 @@ def download_section(
     normalize_169: bool = True,
     target_w: int = 1920,
     target_h: int = 1080,
-) -> bool:
-    """Download just [start, start+duration] of the video and normalise to 16:9 mp4."""
+) -> tuple:
+    """Download [start, start+duration] and normalise to 16:9 mp4.
+    Returns (ok: bool, reason: str)."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     end = start + duration
     workdir = tempfile.mkdtemp(prefix="ytclip_")
@@ -280,14 +308,14 @@ def download_section(
         "--force-keyframes-at-cuts",
         "-f", f"bv*[height<={max_height}]+ba/b[height<={max_height}]/b",
         "--merge-output-format", "mp4",
-        "--no-warnings", "--quiet",
+        "--no-warnings",
         "-o", raw_tmpl,
     ] + _ffmpeg_location_args() + auth.args()
     try:
         proc = _run(cmd, timeout=300)
     except subprocess.TimeoutExpired:
         shutil.rmtree(workdir, ignore_errors=True)
-        return False
+        return False, "yt-dlp timed out"
 
     raw = None
     for fn in os.listdir(workdir):
@@ -295,11 +323,11 @@ def download_section(
             raw = os.path.join(workdir, fn)
             break
     if not raw or os.path.getsize(raw) == 0:
+        reason = _err_reason(proc)
         shutil.rmtree(workdir, ignore_errors=True)
-        return False
+        return False, reason
 
-    # Re-trim to exact duration, normalise to a clean 16:9 1080p mp4 so every
-    # clip drops straight onto a landscape timeline without resizing.
+    # Re-trim to exact duration, normalise to a clean 16:9 1080p mp4.
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     ff = [_exe("ffmpeg"), "-y", "-i", raw, "-t", f"{duration:.2f}"]
     if normalize_169:
@@ -315,13 +343,15 @@ def download_section(
         out_path,
     ]
     try:
-        _run(ff, timeout=180)
+        ffproc = _run(ff, timeout=180)
     except subprocess.TimeoutExpired:
         shutil.rmtree(workdir, ignore_errors=True)
-        return False
+        return False, "ffmpeg timed out"
 
     shutil.rmtree(workdir, ignore_errors=True)
-    return os.path.exists(out_path) and os.path.getsize(out_path) > 0
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+        return True, ""
+    return False, _err_reason(ffproc) or "ffmpeg produced no output"
 
 
 # --- top-level orchestration ----------------------------------------------
@@ -354,8 +384,9 @@ def collect_clip(
     candidates = search_videos(query, limit=search_n, auth=auth)
     candidates = [c for c in candidates if c["id"] not in exclude_ids]
     if not candidates:
-        return None
+        return None, "no YouTube search results"
 
+    last_reason = "download failed"
     workdir = tempfile.mkdtemp(prefix="ytsubs_")
     try:
         # Score every candidate by subtitle keyword match.
@@ -383,7 +414,7 @@ def collect_clip(
             if vdur and start + duration > vdur:
                 start = max(0.0, vdur - duration - 1)
 
-            ok = download_section(vid, start, duration, out_path, max_height, auth)
+            ok, reason = download_section(vid, start, duration, out_path, max_height, auth)
             if ok:
                 return ClipResult(
                     path=out_path,
@@ -394,8 +425,9 @@ def collect_clip(
                     duration=duration,
                     matched_text=matched,
                     match_score=score,
-                )
-        return None
+                ), ""
+            last_reason = reason or last_reason
+        return None, last_reason
     finally:
         shutil.rmtree(workdir, ignore_errors=True)
 
@@ -408,7 +440,7 @@ if __name__ == "__main__":
     for c in cands:
         print(" ", c)
     if cands:
-        res = collect_clip(
+        res, reason = collect_clip(
             q,
             keywords=["hello", "little", "friend"],
             out_path="/tmp/test_clip/clip.mp4",
@@ -416,3 +448,4 @@ if __name__ == "__main__":
             search_n=3,
         )
         print("RESULT:", res)
+        print("REASON:", reason)

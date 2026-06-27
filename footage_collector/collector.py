@@ -291,6 +291,18 @@ def main(argv=None) -> int:
                 log(f"      CLIP: {q}")
         return 0
 
+    # Preflight: make sure the tools clips need are actually usable.
+    if args.clips_per_scene > 0:
+        tools = yt.check_tools()
+        log(f"  yt-dlp : {tools['yt_dlp']}")
+        log(f"  ffmpeg : {tools['ffmpeg']}")
+        if "MISSING" in tools["ffmpeg"]:
+            log("  [!] ffmpeg MISSING -> clips cannot be cut. Run setup.bat, or put")
+            log("      ffmpeg.exe + ffprobe.exe in the tool's  bin\\  folder.")
+        if "MISSING" in str(tools["yt_dlp"]):
+            log("  [!] yt-dlp MISSING -> run:  pip install yt-dlp")
+        log("=" * 66)
+
     auth = yt.YtAuth(
         cookies_file=args.cookies,
         cookies_from_browser=args.cookies_from_browser,
@@ -367,7 +379,7 @@ def main(argv=None) -> int:
             out_path = os.path.join(scene_dir, f"clip_{ci + 1:02d}.mp4")
             kw = (query.split() + scene.keywords)
             try:
-                res = yt.collect_clip(
+                res, reason = yt.collect_clip(
                     query, kw, out_path,
                     duration=args.clip_duration,
                     search_n=args.search_n,
@@ -377,7 +389,7 @@ def main(argv=None) -> int:
                 )
             except Exception as e:
                 log(f"    [clip] error: {type(e).__name__}: {e}")
-                res = None
+                res, reason = None, str(e)
             if res:
                 used_video_ids.add(res.video_id)
                 entry["clips"].append(res.to_dict())
@@ -387,7 +399,7 @@ def main(argv=None) -> int:
                     f"{res.title[:46]} @ {res.start}s (match {res.match_score})")
             else:
                 totals["clip_fail"] += 1
-                log(f"    [clip] none for: {query}")
+                log(f"    [clip] none for: {query}  ({reason})")
 
         # --- images: pooled across all image queries ---
         if args.images_per_scene > 0:
