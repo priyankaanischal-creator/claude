@@ -21,6 +21,7 @@ if errorlevel 1 (
 echo [1/3] Python packages install ho rahe hain...
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -m pip install -U yt-dlp
 if errorlevel 1 (
   echo [X] pip install fail hua. Internet check karo aur dobara try karo.
   pause

@@ -302,30 +302,55 @@ def download_section(
     workdir = tempfile.mkdtemp(prefix="ytclip_")
     raw_tmpl = os.path.join(workdir, "raw.%(ext)s")
     section = f"*{start:.2f}-{end:.2f}"
-    cmd = _YTDLP + [
-        url,
-        "--download-sections", section,
-        "--force-keyframes-at-cuts",
-        "-f", f"bv*[height<={max_height}]+ba/b[height<={max_height}]/b",
-        "--merge-output-format", "mp4",
-        "--no-warnings",
-        "-o", raw_tmpl,
-    ] + _ffmpeg_location_args() + auth.args()
-    try:
-        proc = _run(cmd, timeout=300)
-    except subprocess.TimeoutExpired:
-        shutil.rmtree(workdir, ignore_errors=True)
-        return False, "yt-dlp timed out"
 
+    # Try several format selectors. YouTube + an out-of-date yt-dlp often throws
+    # "Requested format is not available"; falling back to plain best usually works.
+    fmt_candidates = [
+        f"bv*[height<={max_height}]+ba/b[height<={max_height}]",
+        "bv*+ba/b",
+        "b",
+        "best",
+    ]
+
+    proc = None
     raw = None
-    for fn in os.listdir(workdir):
-        if fn.startswith("raw"):
-            raw = os.path.join(workdir, fn)
+    last_reason = "download failed"
+    for fmt in fmt_candidates:
+        for fn in os.listdir(workdir):           # clear any partial leftovers
+            try:
+                os.remove(os.path.join(workdir, fn))
+            except OSError:
+                pass
+        cmd = _YTDLP + [
+            url,
+            "--download-sections", section,
+            "--force-keyframes-at-cuts",
+            "-f", fmt,
+            "--merge-output-format", "mp4",
+            "--no-warnings",
+            "-o", raw_tmpl,
+        ] + _ffmpeg_location_args() + auth.args()
+        try:
+            proc = _run(cmd, timeout=300)
+        except subprocess.TimeoutExpired:
+            shutil.rmtree(workdir, ignore_errors=True)
+            return False, "yt-dlp timed out"
+
+        raw = None
+        for fn in os.listdir(workdir):
+            if fn.startswith("raw"):
+                raw = os.path.join(workdir, fn)
+                break
+        if raw and os.path.getsize(raw) > 0:
+            break  # got it
+        last_reason = _err_reason(proc)
+        # only worth trying other formats for format errors; otherwise stop early
+        if "format is not available" not in last_reason.lower():
             break
+
     if not raw or os.path.getsize(raw) == 0:
-        reason = _err_reason(proc)
         shutil.rmtree(workdir, ignore_errors=True)
-        return False, reason
+        return False, last_reason
 
     # Re-trim to exact duration, normalise to a clean 16:9 1080p mp4.
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
