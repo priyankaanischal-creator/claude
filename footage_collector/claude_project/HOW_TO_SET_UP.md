@@ -31,5 +31,19 @@ visual instructor file.
   `Visual / Exact Clip to Use:` line to use a sharper CAPS scene name, or add a
   real `Clip Links:` line, then re-run the tool.
 - Claude may not know real YouTube links reliably; that's fine — the strong
-  scene names + Image Search terms are the reliable backbone, and the tool
-  searches + verifies anyway.
+  scene names + `Spoken Line:` (exact dialogue) + Image Search terms are the
+  reliable backbone, and the tool searches + verifies anyway.
+
+## BEST for real YouTube links: use a web-searching AI (Genspark / Perplexity / ChatGPT-with-search)
+A normal Claude Project cannot browse YouTube, so it relies on `Spoken Line:`.
+But tools that actually search the web (e.g. **Genspark**) can return REAL links
+with timestamps. To use that route:
+1. Open **GENSPARK_PROMPT.md**, copy the whole prompt.
+2. Paste it into Genspark, fill the Topic line, and paste your clean script.
+3. It returns the visual instructor file WITH real `Clip Links:` + timestamps.
+4. Save as `.txt` and run it in the tool exactly the same way.
+
+The tool verifies every provided link and, using your `Spoken Line:`, refines to
+the exact moment inside it — and silently falls back to search for any bad link.
+So mixing Genspark links + Spoken Line gives the highest accuracy.
+

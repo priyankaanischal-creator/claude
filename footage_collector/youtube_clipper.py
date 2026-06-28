@@ -656,14 +656,23 @@ def clip_from_reference(
         if verify and sub and kwmatch == 0 and any(len(k) >= 4 for k in keywords):
             return None, "provided link did not match scene transcript (falling back)"
 
-        if start is None:
+        # Decide the start. If a provided link came with a coarse/large range,
+        # but we found the exact dialogue line in the transcript, prefer that
+        # precise moment. Otherwise honour the provided timestamp.
+        refined = (kwmatch >= 100 and best_start is not None)
+        if refined:
+            start = max(0.0, best_start - PRE_ROLL)
+            dur = duration
+        elif start is not None:
+            dur = duration
+            if end and end > start:
+                span = end - start
+                dur = span if span <= 15 else duration  # ignore "full scene" ranges
+        else:
             start = best_start if best_start is not None else 0.0
             if start > PRE_ROLL:
                 start -= PRE_ROLL
-
-        dur = duration
-        if end and end > start:
-            dur = min(end - start, 20.0)
+            dur = duration
 
         bucket = f"{vid}@{int(start // 3)}"
         if used_sections is not None and bucket in used_sections:

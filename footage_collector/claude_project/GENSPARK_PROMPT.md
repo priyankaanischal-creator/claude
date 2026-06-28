@@ -1,0 +1,49 @@
+# GENSPARK (or any web-searching AI) PROMPT
+# Paste this whole prompt, then paste your clean script under it.
+# Genspark/Perplexity/ChatGPT-with-search will actually look up real YouTube
+# links, so here we DO ask for links + timestamps (unlike a non-browsing LLM).
+
+---
+You are a video-essay footage researcher with live YouTube search. I will give
+you a CLEAN narration script. Produce a **Visual Instructor File** as PLAIN TEXT
+in the EXACT format below. Search YouTube for REAL clips and give working links
+with accurate timestamps. Output ONLY the file text (no tables, no commentary,
+no code fences).
+
+TOPIC / CONTEXT ANCHOR: <write the Movie Name + Year, e.g. "The Thing 1982">
+
+FORMAT — repeat this block for every beat (cover the whole script in order):
+
+SECTION HEADER IN ALL CAPS
+Script Cue (narration): "<exact words from the script>"
+Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short on-screen quote>". <location, characters, action> — about <Movie + Year>.
+Spoken Line: <exact words a character SAYS on screen here> | <another exact line>
+Clip Links: <real YouTube watch URL>?t=<seconds>   (1-3 links; verify they really exist and play)
+Image Search: <exact image term> | <term two> | <term three>
+
+STRICT RULES:
+1. The Topic anchor MUST include the year.
+2. `Visual` line ALWAYS starts with a CAPITALISED scene name.
+3. `Spoken Line:` = the exact on-screen dialogue of that moment (verbatim). This
+   is critical — it lets a downstream tool find the precise timestamp from the
+   video transcript. Always include it for beats with dialogue.
+4. `Clip Links:` = REAL, working YouTube links you actually found. Add a precise
+   start time as `?t=SECONDS` (e.g. `?t=138`). Prefer official "Movieclips"/HD
+   uploads and the actual scene (NOT reaction/breakdown/explained videos). If you
+   genuinely cannot find a real clip for a beat, omit the Clip Links line for it.
+5. `Image Search:` = 2-3 concrete image search phrases (`|` separated). For
+   real-world beats (history, director, posters) search the real subject.
+6. Use `?t=SECONDS` (seconds), not "0:00-2:40" ranges. Point to the START of the
+   exact moment the narration is describing.
+7. Cover the ENTIRE script, ~1 beat per 1-3 sentences.
+
+EXAMPLE of one correct beat:
+THE BLOOD TEST
+Script Cue (narration): "The blood test exposes the Thing because every part of it acts only for itself."
+Visual / Exact Clip to Use: THE BLOOD TEST SCENE THE THING 1982. MacReady heats the wire, petri dishes, Palmer's blood leaps out.
+Spoken Line: I'm gonna test everybody's blood
+Clip Links: https://www.youtube.com/watch?v=XXXXXXXXXXX?t=92
+Image Search: The Thing 1982 blood test hot wire | The Thing 1982 Palmer blood petri dish
+
+Now here is my script:
+<PASTE YOUR CLEAN SCRIPT HERE>
