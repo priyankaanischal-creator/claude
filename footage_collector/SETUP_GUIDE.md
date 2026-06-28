@@ -127,7 +127,7 @@ Har scene ka apna folder — editing ke time ready "visual buffet".
 |--------|-----|
 | "Python nahi mila" / 'python' is not recognized | Python install nahi hua ya PATH tick nahi kiya. Step 2 dobara, PATH tick zaroor karo. |
 | setup.bat me ffmpeg download fail | Internet check karo. Ya manual: ffmpeg Windows build download karke `ffmpeg.exe` + `ffprobe.exe` ko `footage_collector\bin\` me daal do. |
-| Clips: "Requested format is not available" | yt-dlp purana hai (YouTube ne system badla). **`update_ytdlp.bat` double-click karo** (ya `python -m pip install -U yt-dlp`), phir dobara chalao. |
+| Clips: "Requested format is not available" | yt-dlp purana hai (YouTube ne system badla). **`update_tools.bat` double-click karo** (ya `python -m pip install -U yt-dlp`), phir dobara chalao. |
 | Clips download nahi ho rahi, "Sign in to confirm you're not a bot" | **cookies.txt file use karo (Method A, Step 5)** — ye pakka kaam karta hai. Browser-method aksar naye Chrome pe fail hota hai. |
 | "could not copy chrome cookie database" / "Permission denied" | Chrome khula hai ya encrypted cookies. Chrome band karo, ya behtar: **cookies.txt file** (Method A) use karo. |
 | Images aa rahi par clips nahi | Normal — sabse pehle YouTube login wala step set karo. Images bina login ke aati hain. |
