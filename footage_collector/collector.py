@@ -76,6 +76,7 @@ class SceneSpec:
     on_screen: str = ""
     notes: str = ""
     clip_links: List[str] = field(default_factory=list)
+    spoken_lines: List[str] = field(default_factory=list)
 
     def slug(self) -> str:
         return f"scene_{self.index:03d}"
@@ -141,6 +142,7 @@ def specs_from_instructor(instructor_path, args) -> tuple:
             summary=b.narration[:80], section=b.section,
             on_screen=b.on_screen, notes=b.notes,
             clip_links=b.clip_links,
+            spoken_lines=b.spoken_lines,
         )
         for b in beats
     ]
@@ -389,7 +391,8 @@ def main(argv=None) -> int:
             try:
                 res, reason = yt.clip_from_reference(
                     ref, kw, out_path, duration=args.clip_duration,
-                    auth=auth, used_sections=clip_sections)
+                    auth=auth, used_sections=clip_sections,
+                    phrases=scene.spoken_lines)
             except Exception as e:
                 res, reason = None, f"{type(e).__name__}: {e}"
             if res:
@@ -418,6 +421,7 @@ def main(argv=None) -> int:
                     auth=auth,
                     exclude_ids=used_video_ids,
                     used_sections=clip_sections,
+                    phrases=scene.spoken_lines,
                 )
             except Exception as e:
                 log(f"    [clip] error: {type(e).__name__}: {e}")

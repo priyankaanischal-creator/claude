@@ -253,10 +253,14 @@ def best_timestamp(
     duration: float,
     workdir: str,
     auth: YtAuth = DEFAULT_AUTH,
+    phrases: Optional[List[str]] = None,
 ) -> Optional[tuple]:
     """
-    Find the start time (seconds) of the best-matching subtitle window for the
-    given keywords. Returns (start_sec, matched_text, score) or None.
+    Find the start time (seconds) of the best-matching subtitle window.
+    If `phrases` (exact spoken lines) are given, a contiguous phrase match
+    locks onto that exact moment (huge score) - this is how we hit the precise
+    timestamp from dialogue the LLM provided, without needing a timestamp.
+    Returns (start_sec, matched_text, score) or None.
     """
     sub_path = _fetch_subtitles(video_id, workdir, auth)
     if not sub_path:
@@ -266,16 +270,35 @@ def best_timestamp(
         return None
 
     kw = [k.lower() for k in keywords if len(k) >= 4]
-    if not kw:
+    norm_phrases = []
+    for p in (phrases or []):
+        pn = re.sub(r"[^a-z0-9 ]", "", p.lower()).strip()
+        pn = re.sub(r"\s+", " ", pn)
+        if len(pn) >= 6:
+            norm_phrases.append(pn)
+
+    if not kw and not norm_phrases:
         return None
 
     best = None  # (score, start, text)
     for (start, end, text) in cues:
         low = text.lower()
+        low_norm = re.sub(r"[^a-z0-9 ]", "", low)
+        low_norm = re.sub(r"\s+", " ", low_norm)
         score = sum(1 for k in kw if k in low)
+        # exact dialogue phrase match = strong lock on the precise moment
+        for pn in norm_phrases:
+            if pn in low_norm:
+                score += 100
+            else:
+                # partial: most words of the phrase present in this cue
+                words = [w for w in pn.split() if len(w) >= 4]
+                if words:
+                    hit = sum(1 for w in words if w in low_norm)
+                    if hit >= max(2, len(words) * 0.6):
+                        score += 20
         if score == 0:
             continue
-        # prefer cues whose window roughly fits our clip length
         if best is None or score > best[0]:
             best = (score, start, text)
 
@@ -436,6 +459,7 @@ def collect_clip(
     auth: YtAuth = DEFAULT_AUTH,
     exclude_ids: Optional[set] = None,
     used_sections: Optional[set] = None,
+    phrases: Optional[List[str]] = None,
 ) -> tuple:
     """
     Full pipeline for one scene clip:
@@ -466,7 +490,7 @@ def collect_clip(
         for cand in candidates:
             vid = cand["id"]
             vdur = cand["duration"] or 0.0
-            ts = best_timestamp(vid, keywords, duration, workdir, auth)
+            ts = best_timestamp(vid, keywords, duration, workdir, auth, phrases=phrases)
             if ts is not None:
                 m_start, matched, kscore = ts
             else:
@@ -589,6 +613,7 @@ def clip_from_reference(
     auth: YtAuth = DEFAULT_AUTH,
     used_sections: Optional[set] = None,
     verify: bool = True,
+    phrases: Optional[List[str]] = None,
 ) -> tuple:
     """
     Try to use an LLM/human-provided YouTube link (+ optional timestamp) for a
@@ -608,9 +633,20 @@ def clip_from_reference(
         if sub:
             cues = _parse_vtt(sub)
             kw = [k.lower() for k in keywords if len(k) >= 4]
+            norm_phrases = []
+            for p in (phrases or []):
+                pn = re.sub(r"[^a-z0-9 ]", "", p.lower()).strip()
+                pn = re.sub(r"\s+", " ", pn)
+                if len(pn) >= 6:
+                    norm_phrases.append(pn)
             best = None
             for (s, e, txt) in cues:
-                sc = sum(1 for k in kw if k in txt.lower())
+                low = txt.lower()
+                low_norm = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", "", low))
+                sc = sum(1 for k in kw if k in low)
+                for pn in norm_phrases:
+                    if pn in low_norm:
+                        sc += 100
                 if sc > 0 and (best is None or sc > best[0]):
                     best = (sc, s, txt)
             if best:

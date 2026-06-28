@@ -39,6 +39,7 @@ _LABELS = {
     "narration": re.compile(r"^\s*Script Cue\s*\(narration\)\s*:\s*(.*)$", re.I),
     "visual": re.compile(r"^\s*Visual\s*/?\s*Exact Clip to Use\s*:\s*(.*)$", re.I),
     "clip_links": re.compile(r"^\s*(?:Clip Links?|Clips?|Video Links?|YouTube|YT Links?)\s*:\s*(.*)$", re.I),
+    "spoken": re.compile(r"^\s*(?:Spoken Line|Spoken Lines|Dialogue|Exact Dialogue|Line)\s*:\s*(.*)$", re.I),
     "image_terms": re.compile(r"^\s*(?:Image Search|Image Terms?|Image Queries|Images?)\s*:\s*(.*)$", re.I),
     "onscreen": re.compile(r"^\s*On-?Screen Text\s*:\s*(.*)$", re.I),
     "notes": re.compile(r"^\s*Editor Notes\s*:\s*(.*)$", re.I),
@@ -75,6 +76,7 @@ class Beat:
     notes: str = ""
     is_film: bool = True
     clip_links: List[str] = field(default_factory=list)
+    spoken_lines: List[str] = field(default_factory=list)
     image_terms: List[str] = field(default_factory=list)
     image_queries: List[str] = field(default_factory=list)
     clip_queries: List[str] = field(default_factory=list)
@@ -107,6 +109,14 @@ def _split_terms(raw: str) -> List[str]:
     return [p.strip() for p in parts if p.strip()]
 
 
+def _split_spoken(raw: str) -> List[str]:
+    """Split Spoken Line(s) on | only (lines may contain commas)."""
+    if not raw:
+        return []
+    parts = re.split(r"\s*\|\s*", raw.strip())
+    return [p.strip().strip('"“”\u2018\u2019') for p in parts if p.strip()]
+
+
 def _looks_like_section(line: str) -> bool:
     s = line.strip()
     if not s or any(p.match(line) for p in _LABELS.values()):
@@ -131,7 +141,7 @@ def parse_beats(text: str) -> List[Beat]:
 
     def _new(sec):
         return {"section": sec, "narration": "", "visual": "", "onscreen": "",
-                "notes": "", "clip_links": "", "image_terms": ""}
+                "notes": "", "clip_links": "", "image_terms": "", "spoken": ""}
 
     def flush():
         nonlocal cur
@@ -144,6 +154,7 @@ def parse_beats(text: str) -> List[Beat]:
                 on_screen=cur["onscreen"].strip(),
                 notes=cur["notes"].strip(),
                 clip_links=_split_links(cur["clip_links"]),
+                spoken_lines=_split_spoken(cur["spoken"]),
                 image_terms=_split_terms(cur["image_terms"]),
             ))
         cur = None
@@ -429,6 +440,17 @@ def build_queries(beat: Beat, subject: str, max_q: int = 3) -> None:
 
     beat.clip_queries = dedup(clip_q)
     beat.image_queries = dedup(img_q)
+
+    # Spoken lines (exact movie dialogue) help the tool lock the precise
+    # timestamp via the transcript. Use explicit Spoken Line(s) plus any
+    # double-quoted dialogue written in the Visual line.
+    vquotes = _quotes(beat.visual, allow_double=True)
+    seenp, sp = set(), []
+    for p in list(beat.spoken_lines) + vquotes:
+        if p and p.lower() not in seenp:
+            seenp.add(p.lower())
+            sp.append(p)
+    beat.spoken_lines = sp
 
     # Explicit image search terms from the instructor file take priority.
     if beat.image_terms:

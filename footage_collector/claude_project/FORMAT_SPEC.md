@@ -13,8 +13,9 @@ Topic / context anchor: <Movie Name + Year>
 SECTION HEADER (ALL CAPS, no punctuation)
 Script Cue (narration): "<exact narration words>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short quote>". <concrete words>, about <Movie + Year>.
-Clip Links: <real youtube url ?t=sec>, <real youtube url 1:23-1:30>      (optional)
-Image Search: <term one> | <term two> | <term three>                     (recommended)
+Spoken Line: <exact on-screen dialogue> | <another exact line>             (KEY for clip accuracy)
+Image Search: <term one> | <term two> | <term three>                      (recommended)
+Clip Links: <real youtube url ?t=sec>                                      (optional, only if known)
 ```
 
 ## How each line is used by the tool
@@ -22,8 +23,9 @@ Image Search: <term one> | <term two> | <term three>                     (recomm
 |------|----------|-------|
 | `Script Cue (narration):` | famous short quotes (clip search) | exact script words |
 | `Visual / Exact Clip to Use:` | clip + image queries | CAPS scene name = strongest signal |
-| `Clip Links:` | tries these exact links FIRST | verified; bad links → auto fallback to search |
+| `Spoken Line:` | **finds exact timestamp** via transcript match | exact on-screen dialogue; best accuracy |
 | `Image Search:` | image queries (priority) | `|`-separated; concrete visual terms |
+| `Clip Links:` | tries these exact links FIRST | verified; bad links → auto fallback to search |
 | `On-Screen Text:` / `Editor Notes:` | ignored by tool | kept only for a human editor |
 
 ## Timestamp formats accepted in Clip Links
@@ -36,6 +38,8 @@ Image Search: <term one> | <term two> | <term three>                     (recomm
 1. Topic anchor MUST include the **year** (disambiguates titles).
 2. Visual line ALWAYS starts with a CAPS scene name.
 3. Quotes ≤ 6 words.
-4. Provide `Image Search:` for every beat. Provide `Clip Links:` only when sure.
-5. Real-world beats (history/interviews/posters) → search the real subject.
-6. Cover the whole script in order; ~1 beat per 1–3 sentences.
+4. **`Spoken Line:` = exact on-screen dialogue → the tool finds the precise
+   timestamp from it. Give it for every dialogue beat (most important field).**
+5. Provide `Image Search:` for every beat. Provide `Clip Links:` only when sure.
+6. Real-world beats (history/interviews/posters) → search the real subject.
+7. Cover the whole script in order; ~1 beat per 1–3 sentences.

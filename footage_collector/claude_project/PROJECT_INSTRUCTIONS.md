@@ -29,18 +29,23 @@ Topic / context anchor: <MOVIE NAME + YEAR>
 <SECTION HEADER IN ALL CAPS>
 Script Cue (narration): "<exact words copied from the script>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short famous quote>". <concrete location, character, action words> — all about <MOVIE + YEAR>.
-Clip Links: <real YouTube URL with timestamp>, <another real URL>
+Spoken Line: <exact words a character SAYS on screen in that moment> | <another exact line>
 Image Search: <exact image term> | <another exact term> | <third term>
+Clip Links: <real YouTube URL with timestamp>   (ONLY if you truly know it - see honesty rule)
 
 Script Cue (narration): "..."
 Visual / Exact Clip to Use: ...
-Clip Links: ...
+Spoken Line: ...
 Image Search: ...
-
-<NEXT SECTION HEADER IN ALL CAPS>
-Script Cue (narration): "..."
-...
 ```
+
+> ⚠️ **MOST IMPORTANT for accurate clips — `Spoken Line:`**
+> The tool finds the EXACT clip moment by matching dialogue in the video's
+> subtitles. You (an LLM) cannot know real timestamps, but you DO know famous
+> movie dialogue. So for every in-film beat where someone speaks, put the
+> **exact words spoken on screen** in `Spoken Line:`. The tool searches the
+> transcript for those words and cuts there — that is how we get the precise
+> moment WITHOUT a timestamp. This matters more than Clip Links.
 
 ### Line-by-line rules (FOLLOW EXACTLY — the tool parses these labels)
 
@@ -64,14 +69,19 @@ Script Cue (narration): "..."
    c. then **concrete words**: location + character names + the action
       (e.g. MacReady, Childs, flamethrower, couch, snow).
    d. keep everything **about the topic** (the movie + year).
-6. **`Clip Links:`** (OPTIONAL) — 1–3 REAL YouTube links for this exact moment,
-   ideally with a timestamp (`?t=118`) or a range (`1:23-1:30`). See the
-   HONESTY RULE below. If you are not genuinely confident a link is real, OMIT
-   this line entirely. The tool verifies every link and silently falls back to
-   search, so a wrong link is wasted effort.
+6. **`Spoken Line:`** (REQUIRED for any beat with on-screen dialogue) — the
+   EXACT words a character says on screen at this moment, verbatim, separated by
+   ` | ` if more than one. Examples: `Spoken Line: say hello to my little friend`,
+   `Spoken Line: I know I'm human | If you were all these things`. This is the
+   single most powerful field for clip accuracy: the tool matches it against the
+   video transcript and cuts exactly there. Give it whenever dialogue exists. For
+   pure-action beats with no dialogue, omit it (the scene name + keywords work).
 7. **`Image Search:`** (RECOMMENDED) — 2–3 precise image search phrases separated
    by `|`. Each should be likely to return the exact still you want. Include the
    movie + year for in-film shots; for real-world beats search the real subject.
+8. **`Clip Links:`** (OPTIONAL, only if genuinely known) — see the HONESTY RULE.
+   Do NOT invent links/timestamps. A wrong timestamp makes the tool cut the wrong
+   moment, which is worse than nothing. Prefer `Spoken Line:` for precision.
 
 ### OPTIONAL (the tool IGNORES these for searching, but they help a human editor)
 - `On-Screen Text:` and `Editor Notes:` lines may be added after the Visual line.
@@ -96,13 +106,16 @@ Script Cue (narration): "..."
   - director → `Image Search: John Carpenter 1982 portrait | John Carpenter director young`
   - older version → `THE THING FROM ANOTHER WORLD 1951` + that film's search terms.
 
-### C. CLIP LINKS — THE HONESTY RULE (very important)
-You cannot truly browse YouTube, so you must NOT invent video IDs. Only include a
-`Clip Links:` line when you are **highly confident** the link is a real, well-known
-upload (e.g. an iconic, widely-shared clip or an official movie-clip channel).
-**When in doubt, leave `Clip Links:` out** and rely on a strong scene name +
-Image Search — the tool will find the clip by searching. A precise scene name is
-more valuable than a guessed link.
+### C. CLIP LINKS — THE HONESTY RULE (read carefully)
+You cannot browse YouTube, so you do NOT know real video IDs or timestamps.
+**Do not invent them.** A fabricated link wastes time (it fails verification) and
+a fabricated timestamp makes the tool cut the WRONG moment. So:
+- If you are NOT genuinely certain a link is real → **omit `Clip Links:` entirely.**
+- Instead, ALWAYS give a precise `Spoken Line:` (exact on-screen dialogue) — the
+  tool uses it to locate the exact moment itself. This is the reliable way to get
+  the right timestamp without guessing one.
+- (If the user later runs an LLM/tool that can actually browse YouTube, real links
+  can be added then. From a normal Claude Project, rely on Spoken Line.)
 
 ### D. IMAGE SEARCH — always provide these
 These are reliable (the tool just searches images), so give 2–3 strong terms for
@@ -120,8 +133,9 @@ EVERY beat. Make them concrete and visual ("macready flamethrower snow", not
 - [ ] ALL-CAPS section headers grouping the beats.
 - [ ] Every beat has `Script Cue (narration):` (exact words) and
       `Visual / Exact Clip to Use:` (CAPS scene name first).
+- [ ] Every in-film beat with dialogue has a `Spoken Line:` (exact on-screen words).
 - [ ] Every beat has an `Image Search:` line with 2–3 `|`-separated terms.
-- [ ] `Clip Links:` only where you are confident the link is real (else omitted).
+- [ ] `Clip Links:` only where you are SURE the link is real (else omitted).
 - [ ] Whole script covered, in order.
 - [ ] Output is ONLY the file text (no extra commentary, no code fences).
 
