@@ -72,10 +72,11 @@ Image Search: ...
 6. **`Spoken Line:`** (REQUIRED for any beat with on-screen dialogue) — the
    EXACT words a character says on screen at this moment, verbatim, separated by
    ` | ` if more than one. Examples: `Spoken Line: say hello to my little friend`,
-   `Spoken Line: I know I'm human | If you were all these things`. This is the
-   single most powerful field for clip accuracy: the tool matches it against the
-   video transcript and cuts exactly there. Give it whenever dialogue exists. For
-   pure-action beats with no dialogue, omit it (the scene name + keywords work).
+   `Spoken Line: I know I'm human`. This is the single most powerful field for
+   clip accuracy: the tool matches it against the video transcript and cuts
+   exactly there. **If the beat has NO spoken dialogue (B-roll, product shots,
+   archival photos, host on camera), LEAVE THIS VALUE BLANK — do NOT write
+   "(no dialogue)" or any placeholder.** Just put nothing after the colon.
 7. **`Image Search:`** (RECOMMENDED) — 2–3 precise image search phrases separated
    by `|`. Each should be likely to return the exact still you want. Include the
    movie + year for in-film shots; for real-world beats search the real subject.
@@ -97,8 +98,7 @@ Image Search: ...
 - Never put the on-screen overlay text or a long narration sentence as the scene
   name. Scene names are short and concrete.
 
-### B. FILM beats vs REAL-WORLD beats
-- **In-film beats** (a moment from the movie): anchor to MOVIE + YEAR.
+### B. FILM beats vs REAL-WORLD beats- **In-film beats** (a moment from the movie): anchor to MOVIE + YEAR.
 - **Real-world / external beats** (historical event, director interview, poster,
   an older film version, box-office, music): base the Visual line and especially
   the **Image Search** on the REAL subject, e.g.
@@ -127,6 +127,20 @@ EVERY beat. Make them concrete and visual ("macready flamethrower snow", not
 - Roughly one beat per 1–3 narration sentences (a 1500–2500 word script → ~20–35 beats).
 
 ---
+
+### F. CONTENT TYPE — fiction vs documentary/product/style videos
+Not every video is a movie. Adapt:
+- **Movie / TV essays:** lots of dialogue → use `Spoken Line:` heavily; clips are
+  actual scenes.
+- **Documentary / biography / history:** mostly archival footage + photos. Few
+  beats have dialogue (speeches, interviews) → give `Spoken Line:` only there;
+  leave it blank elsewhere. Lean hard on precise `Image Search:` terms.
+- **Product / style / "everyday carry" videos:** most beats are product shots
+  (a watch, a pen, boots) or B-roll. There is usually NO dialogue → leave
+  `Spoken Line:` blank. The MOST valuable field here is `Image Search:` — give
+  3 very specific terms with **brand + model + material/colour** (e.g.
+  "Rolex Datejust steel Jubilee bracelet white gold bezel"). `Clip Links:` may be
+  archival/B-roll; include real ones if found, else omit.
 
 ## OUTPUT CHECKLIST (verify before sending)
 - [ ] First line = TITLE in caps; second line = `Topic / context anchor: <Name + Year>`.

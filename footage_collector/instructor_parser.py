@@ -109,12 +109,32 @@ def _split_terms(raw: str) -> List[str]:
     return [p.strip() for p in parts if p.strip()]
 
 
+_SPOKEN_PLACEHOLDER = re.compile(
+    r"no dialogue|host on-?camera|original footage|b-?roll|voice ?over|"
+    r"narration only|product (?:shot|flat|close|montage)|screen (?:capture|recording)|"
+    r"graphic|flat-?lay|montage|photo comparison|side-?by-?side|product",
+    re.I,
+)
+
+
 def _split_spoken(raw: str) -> List[str]:
-    """Split Spoken Line(s) on | only (lines may contain commas)."""
+    """Split Spoken Line(s) on | only (lines may contain commas). Drop common
+    placeholders like '(no dialogue - B-roll)' / '(host on-camera)' that some
+    LLMs write when there is no real on-screen dialogue."""
     if not raw:
         return []
     parts = re.split(r"\s*\|\s*", raw.strip())
-    return [p.strip().strip('"“”\u2018\u2019') for p in parts if p.strip()]
+    out = []
+    for p in parts:
+        p = p.strip().strip('"“”\u2018\u2019')
+        if not p:
+            continue
+        if p.startswith("(") and p.endswith(")"):
+            continue
+        if _SPOKEN_PLACEHOLDER.search(p):
+            continue
+        out.append(p)
+    return out
 
 
 def _looks_like_section(line: str) -> bool:

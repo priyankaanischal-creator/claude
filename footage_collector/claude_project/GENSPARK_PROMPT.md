@@ -24,9 +24,11 @@ Image Search: <exact image term> | <term two> | <term three>
 STRICT RULES:
 1. The Topic anchor MUST include the year.
 2. `Visual` line ALWAYS starts with a CAPITALISED scene name.
-3. `Spoken Line:` = the exact on-screen dialogue of that moment (verbatim). This
-   is critical — it lets a downstream tool find the precise timestamp from the
-   video transcript. Always include it for beats with dialogue.
+3. `Spoken Line:` = the exact on-screen dialogue of that moment (verbatim). It
+   lets a downstream tool find the precise timestamp from the video transcript.
+   Always include it for beats with dialogue. If the beat has NO dialogue
+   (B-roll, product shots, archival photos), LEAVE IT BLANK — never write
+   "(no dialogue)" or any placeholder text.
 4. `Clip Links:` = REAL, working YouTube links you actually found. Add a precise
    start time as `?t=SECONDS` (e.g. `?t=138`). Prefer official "Movieclips"/HD
    uploads and the actual scene (NOT reaction/breakdown/explained videos). If you

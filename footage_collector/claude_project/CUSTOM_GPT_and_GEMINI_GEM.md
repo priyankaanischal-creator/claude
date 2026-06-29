@@ -56,7 +56,9 @@ RULES (follow exactly):
 1. `Visual` line ALWAYS starts with a CAPITALISED scene name.
 2. `Spoken Line:` = the EXACT on-screen dialogue of that moment (verbatim). This
    is the MOST important field — a downstream tool uses it to find the precise
-   timestamp from the video transcript. Always include it when dialogue exists.
+   timestamp from the video transcript. Include it whenever dialogue exists. If
+   the beat has NO dialogue (B-roll, product shots, archival photos, host on
+   camera), LEAVE IT BLANK — do not write "(no dialogue)" or any placeholder.
 3. `Clip Links:` = use your WEB SEARCH to find a REAL, working YouTube link for
    that exact scene (prefer official "Movieclips"/HD uploads and the actual
    scene, NOT reaction/breakdown/"explained" videos). Add `?t=SECONDS` as your
