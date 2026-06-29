@@ -1,0 +1,14 @@
+# Scene 20  [THE HIDDEN ANSWER]
+
+SUMMARY: "The Thing is the creature whose every cell recoils to save itself. A human bein
+
+IMAGE QUERIES:
+  - The Thing 1982 Blood Test
+  - The Thing 1982 recoiling wire
+
+CLIP QUERIES:
+  - The Thing 1982 Blood Test scene
+  - The Thing 1982 recoiling wire scene
+
+NARRATION / TEXT:
+"The Thing is the creature whose every cell recoils to save itself. A human being is the one who… still reaches out and offers someone a drink… MacReady chooses to die human. The humanity was never hiding in the blood. It was in the choice to trust."

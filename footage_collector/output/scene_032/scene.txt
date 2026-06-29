@@ -1,0 +1,18 @@
+# Scene 32  [THE FOUNTAIN]
+
+SUMMARY: "The man who wanted the world drowns in three feet of water…"
+
+ON-SCREEN TEXT: "DROWNED IN THREE FEET OF WATER."
+
+EDITOR NOTES: Devastating simplicity. This is the punchline.
+
+IMAGE QUERIES:
+  - Tony Montana Scarface fountain inscription
+  - Tony Montana Scarface itself
+
+CLIP QUERIES:
+  - Tony Montana Scarface fountain inscription scene
+  - Tony Montana Scarface itself scene
+
+NARRATION / TEXT:
+"The man who wanted the world drowns in three feet of water…"

@@ -1,0 +1,18 @@
+# Scene 10  [THE WRONG KIND OF TERROR]
+
+SUMMARY: "…he says it out loud: he is meant for bigger things."
+
+ON-SCREEN TEXT: (no overlay)
+
+EDITOR NOTES: Quick. Sets up the rise.
+
+IMAGE QUERIES:
+  - Tony Montana Scarface manny washing
+  - Tony Montana Scarface dishes food
+
+CLIP QUERIES:
+  - Tony Montana Scarface manny washing scene
+  - Tony Montana Scarface dishes food scene
+
+NARRATION / TEXT:
+"…he says it out loud: he is meant for bigger things."

@@ -1,0 +1,18 @@
+# Scene 19  [THE GLAMOUR]
+
+SUMMARY: "…He has everything… and he is completely alone inside it… an appetite can’t be 
+
+ON-SCREEN TEXT: "MORE NEVER TURNS INTO ENOUGH."
+
+EDITOR NOTES: Slow, cold. The glamour is over. Emptiness.
+
+IMAGE QUERIES:
+  - Tony Montana Scarface alone mansion
+  - Tony Montana Scarface empty dining
+
+CLIP QUERIES:
+  - Tony Montana Scarface alone mansion scene
+  - Tony Montana Scarface empty dining scene
+
+NARRATION / TEXT:
+"…He has everything… and he is completely alone inside it… an appetite can’t be satisfied, only fed…"

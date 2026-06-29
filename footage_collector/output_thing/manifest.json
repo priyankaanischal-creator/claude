@@ -1,0 +1,1250 @@
+{
+  "title": "WHAT THE THING'S ENDING REALLY MEANS",
+  "context": "The Thing 1982",
+  "mode": "instructor (the_thing_visual_instructor.txt)",
+  "generated_at": "2026-06-27T21:07:14.101230+00:00",
+  "settings": {
+    "clip_duration": 5.0,
+    "clips_per_scene": 0,
+    "images_per_scene": 4,
+    "min_image_width": 1280
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "slug": "scene_001",
+      "section": "COLD OPEN",
+      "summary": "\"For more than forty years, people have been asking the same question about the ",
+      "text": "\"For more than forty years, people have been asking the same question about the ending of The Thing. Who was human?\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Shot",
+        "The Thing 1982 macready",
+        "The Thing 1982 childs sitting"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Shot scene",
+        "The Thing 1982 macready scene",
+        "The Thing 1982 childs sitting scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_001/image_01.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/add3EGc4JDljt0lTvKjbX760KSJ.jpg",
+          "query": "The Thing 1982 Final Shot",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_001/image_02.jpg",
+          "source_url": "https://www.syfy.com/sites/syfy/files/2146_00919.jpg",
+          "query": "The Thing 1982 macready",
+          "width": 4600,
+          "height": 3034
+        },
+        {
+          "path": "output_thing/scene_001/image_03.jpg",
+          "source_url": "https://www.syfy.com/sites/syfy/files/2146_00323.jpg",
+          "query": "The Thing 1982 childs sitting",
+          "width": 4600,
+          "height": 3034
+        },
+        {
+          "path": "output_thing/scene_001/image_04.jpg",
+          "source_url": "https://images8.alphacoders.com/129/1294916.jpg",
+          "query": "The Thing 1982 Final Shot",
+          "width": 3541,
+          "height": 1992
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "scene_002",
+      "section": "COLD OPEN",
+      "summary": "\"MacReady offers Childs a drink. They share a tired, defeated laugh. And then th",
+      "text": "\"MacReady offers Childs a drink. They share a tired, defeated laugh. And then the screen goes dark… Whole communities have spent decades freezing that final frame and scanning it for proof.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending Bottle Scene",
+        "The Thing 1982 ending bottle",
+        "The Thing 1982 macready"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending Bottle Scene",
+        "The Thing 1982 macready scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_002/image_01.jpg",
+          "source_url": "https://prod-images.tcm.com/Master-Profile-Images/thething1982.19000.jpg",
+          "query": "The Thing 1982 Ending Bottle Scene",
+          "width": 3500,
+          "height": 2280
+        },
+        {
+          "path": "output_thing/scene_002/image_02.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/heartbreaking-deaths-in-invincible.jpg",
+          "query": "The Thing 1982 Ending Bottle Scene",
+          "width": 3000,
+          "height": 1500
+        },
+        {
+          "path": "output_thing/scene_002/image_03.png",
+          "source_url": "https://zombie.nyc3.digitaloceanspaces.com/2025/02/the_thing_r_logo.png",
+          "query": "The Thing 1982 ending bottle",
+          "width": 2421,
+          "height": 1362
+        },
+        {
+          "path": "output_thing/scene_002/image_04.jpg",
+          "source_url": "https://madabouthorror.co.uk/wp-content/uploads/2023/11/Last-Stand-Maccready9-scaled-1.jpg",
+          "query": "The Thing 1982 macready",
+          "width": 2560,
+          "height": 1707
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "scene_003",
+      "section": "COLD OPEN",
+      "summary": "\"You have been asking the wrong question. The Thing already gave you its answer…",
+      "text": "\"You have been asking the wrong question. The Thing already gave you its answer… the ending stops being a puzzle to solve, and becomes one of the most quietly devastating moments in all of horror.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Shot",
+        "The Thing 1982 macready",
+        "The Thing 1982 childs firelight"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Shot scene",
+        "The Thing 1982 macready scene",
+        "The Thing 1982 childs firelight scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_003/image_01.jpg",
+          "source_url": "https://i.redd.it/m4b2li7yams61.jpg",
+          "query": "The Thing 1982 childs firelight",
+          "width": 3400,
+          "height": 2381
+        },
+        {
+          "path": "output_thing/scene_003/image_02.jpg",
+          "source_url": "https://i.pinimg.com/originals/81/43/8b/81438b64f2b80461c121e42473597de1.jpg",
+          "query": "The Thing 1982 childs firelight",
+          "width": 3100,
+          "height": 1500
+        },
+        {
+          "path": "output_thing/scene_003/image_03.jpg",
+          "source_url": "https://image.lexica.art/full_jpg/15953023-0ba7-45dc-a7e1-4bb6e7e385e6",
+          "query": "The Thing 1982 Final Shot",
+          "width": 3072,
+          "height": 2048
+        },
+        {
+          "path": "output_thing/scene_003/image_04.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/split-image-of-macready-and-childs-at-the-end-of-the-thing.jpg",
+          "query": "The Thing 1982 Final Shot",
+          "width": 3000,
+          "height": 1500
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "scene_004",
+      "section": "THE QUESTION THAT WILL NOT DIE",
+      "summary": "\"Carpenter built an ending designed to keep you awake at night… you cannot see C",
+      "text": "\"Carpenter built an ending designed to keep you awake at night… you cannot see Childs breathing… a faint light… his coat… the bottle.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending Clues",
+        "The Thing 1982 childs"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending Clues scene",
+        "The Thing 1982 childs scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_004/image_01.jpg",
+          "source_url": "https://m.media-amazon.com/images/M/MV5BMDg3MGZiODItYTVlYi00N2M0LWFjZTctNjRjZjgzNmM1MWE2XkEyXkFqcGc@._V1_.jpg",
+          "query": "The Thing 1982 childs",
+          "width": 3406,
+          "height": 2352
+        },
+        {
+          "path": "output_thing/scene_004/image_02.jpg",
+          "source_url": "https://gamingbolt.com/wp-content/uploads/2024/08/the-thing-6-scaled.jpg",
+          "query": "The Thing 1982 childs",
+          "width": 2560,
+          "height": 1440
+        },
+        {
+          "path": "output_thing/scene_004/image_03.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/webgame-wreck-playstation-vita.jpg",
+          "query": "The Thing 1982 Ending Clues",
+          "width": 2160,
+          "height": 1215
+        },
+        {
+          "path": "output_thing/scene_004/image_04.jpg",
+          "source_url": "https://bamfstyle.com/wp-content/uploads/2023/01/ThingChilds-Social.jpg",
+          "query": "The Thing 1982 childs",
+          "width": 2200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "scene_005",
+      "section": "THE QUESTION THAT WILL NOT DIE",
+      "summary": "\"He knows which one of them is the Thing, and that he will never tell… he confir",
+      "text": "\"He knows which one of them is the Thing, and that he will never tell… he confirmed in public that yes, one of them was a Thing. One of them… he built the entire movie to make absolutely certain that you never will.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 John Carpenter",
+        "The Thing 1982 director interview"
+      ],
+      "clip_queries": [
+        "The Thing 1982 John Carpenter scene",
+        "The Thing 1982 director interview scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_005/image_01.jpg",
+          "source_url": "https://items.gog.com/2024NOVEMBER/THETHING_1.jpg",
+          "query": "The Thing 1982 director interview",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_005/image_02.jpg",
+          "source_url": "https://wallpaperaccess.com/full/1737894.jpg",
+          "query": "The Thing 1982 John Carpenter",
+          "width": 2560,
+          "height": 1440
+        },
+        {
+          "path": "output_thing/scene_005/image_03.jpg",
+          "source_url": "https://wallpaperbat.com/img/151869-the-thing-1982-desktop-wallpaper.jpg",
+          "query": "The Thing 1982 John Carpenter",
+          "width": 2552,
+          "height": 1442
+        },
+        {
+          "path": "output_thing/scene_005/image_04.jpg",
+          "source_url": "https://media.pitchfork.com/photos/5e8f24011a3ea30008764f08/2:1/w_2560,c_limit/John-Carpenter.jpg",
+          "query": "The Thing 1982 John Carpenter",
+          "width": 2560,
+          "height": 1280
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "scene_006",
+      "section": "WHY YOU CANNOT SOLVE IT",
+      "summary": "\"Almost every one of them falls apart under pressure. The missing breath is a tr",
+      "text": "\"Almost every one of them falls apart under pressure. The missing breath is a trick of the lighting… The light in the eye… only the blood test… The coat is a continuity detail… Every clue has a second, more boring explanation.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending",
+        "The Thing 1982 childs breathing"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending scene",
+        "The Thing 1982 childs breathing scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_006/image_01.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7459681-Leah-Raeder-Quote-The-thing-about-not-breathing-is-no-one-tells.jpg",
+          "query": "The Thing 1982 childs breathing",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_006/image_02.png",
+          "source_url": "http://rsprespira.jogjaprov.go.id/wp-content/uploads/2023/06/Deep-Breathing-1.png",
+          "query": "The Thing 1982 childs breathing",
+          "width": 6042,
+          "height": 3250
+        },
+        {
+          "path": "output_thing/scene_006/image_03.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/04/breath-of-the-wild-switch-2.jpg",
+          "query": "The Thing 1982 childs breathing",
+          "width": 3840,
+          "height": 1920
+        },
+        {
+          "path": "output_thing/scene_006/image_04.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/03/shoresy-season-5-still-has-a-major-character-to-introduce-after-season-4-s-big-romance-twist.jpg",
+          "query": "The Thing 1982 Ending",
+          "width": 2800,
+          "height": 1400
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "slug": "scene_007",
+      "section": "WHY YOU CANNOT SOLVE IT",
+      "summary": "\"Hunting for clues is missing the point. Russell put it perfectly… bring the aud",
+      "text": "\"Hunting for clues is missing the point. Russell put it perfectly… bring the audience all the way back to square one. To leave you exactly where the characters are. Knowing nothing. Sure of no one.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Kurt Russell",
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 interview macready"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Kurt Russell scene",
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 interview macready scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_007/image_01.jpg",
+          "source_url": "https://i.redd.it/lptkqkxqzqo51.jpg",
+          "query": "The Thing 1982 Blood Test Scene",
+          "width": 4500,
+          "height": 3000
+        },
+        {
+          "path": "output_thing/scene_007/image_02.jpg",
+          "source_url": "https://i.redd.it/99xyyuys1f381.jpg",
+          "query": "The Thing 1982 Kurt Russell",
+          "width": 3500,
+          "height": 2280
+        },
+        {
+          "path": "output_thing/scene_007/image_03.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/collage-of-kurt-russell-as-macready-next-to-the-thing-video-game-poster.jpg",
+          "query": "The Thing 1982 interview macready",
+          "width": 2800,
+          "height": 1400
+        },
+        {
+          "path": "output_thing/scene_007/image_04.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/The-Thing-Blood-Test-Cropped.jpg",
+          "query": "The Thing 1982 Blood Test Scene",
+          "width": 2440,
+          "height": 1220
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "slug": "scene_008",
+      "section": "WHY YOU CANNOT SOLVE IT",
+      "summary": "\"The ending was never a lock waiting for the right key. It was always a mirror.\"",
+      "text": "\"The ending was never a lock waiting for the right key. It was always a mirror.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982",
+        "The Thing 1982 frosted",
+        "The Thing 1982 window firelight"
+      ],
+      "clip_queries": [
+        "The Thing 1982 scene",
+        "The Thing 1982 frosted scene",
+        "The Thing 1982 window firelight scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_008/image_01.jpg",
+          "source_url": "https://posterspy.com/wp-content/uploads/2020/11/C72C54EA-0149-4AC9-92C3-B2DB6BF9650E-scaled.jpeg",
+          "query": "The Thing 1982",
+          "width": 2560,
+          "height": 1768
+        },
+        {
+          "path": "output_thing/scene_008/image_02.jpg",
+          "source_url": "https://images.alphacoders.com/112/1121004.jpg",
+          "query": "The Thing 1982",
+          "width": 2000,
+          "height": 1125
+        },
+        {
+          "path": "output_thing/scene_008/image_03.jpg",
+          "source_url": "https://wallpaperbat.com/img/18086404-movie-the-thing-1982-hd-wallpaper.jpg",
+          "query": "The Thing 1982",
+          "width": 2000,
+          "height": 1125
+        },
+        {
+          "path": "output_thing/scene_008/image_04.jpg",
+          "source_url": "https://ilarge.lisimg.com/image/3897682/1118full-the-thing-(1982)-screenshot.jpg",
+          "query": "The Thing 1982",
+          "width": 1988,
+          "height": 1118
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "slug": "scene_009",
+      "section": "THE THING'S REAL WEAPON",
+      "summary": "\"The Thing's true weapon was never its teeth. It was paranoia… It simply gets in",
+      "text": "\"The Thing's true weapon was never its teeth. It was paranoia… It simply gets in among them, wears their faces, and waits. And the men do the rest. They turn on each other.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Paranoia Scenes",
+        "The Thing 1982 paranoia",
+        "The Thing 1982 tied couch"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Paranoia Scenes scene",
+        "The Thing 1982 paranoia scene",
+        "The Thing 1982 tied couch scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_009/image_01.jpg",
+          "source_url": "https://ilarge.lisimg.com/image/3897684/1118full-the-thing-(1982)-screenshot.jpg",
+          "query": "The Thing 1982 Paranoia Scenes",
+          "width": 1988,
+          "height": 1118
+        },
+        {
+          "path": "output_thing/scene_009/image_02.jpg",
+          "source_url": "https://ilarge.lisimg.com/image/3897692/1118full-the-thing-(1982)-screenshot.jpg",
+          "query": "The Thing 1982 Paranoia Scenes",
+          "width": 1988,
+          "height": 1118
+        },
+        {
+          "path": "output_thing/scene_009/image_03.jpg",
+          "source_url": "https://ilarge.lisimg.com/image/3897698/1118full-the-thing-(1982)-screenshot.jpg",
+          "query": "The Thing 1982 Paranoia Scenes",
+          "width": 1988,
+          "height": 1118
+        },
+        {
+          "path": "output_thing/scene_009/image_04.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/05/the-thing-1982-kurt-russell-as-macready.jpeg",
+          "query": "The Thing 1982 Paranoia Scenes",
+          "width": 2160,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "slug": "scene_010",
+      "section": "THE THING'S REAL WEAPON",
+      "summary": "\"The film opens from the creature's own point of view… hidden inside the body of",
+      "text": "\"The film opens from the creature's own point of view… hidden inside the body of a dog… the one thing every person at that outpost instinctively trusts.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Opening Dog Chase",
+        "The Thing 1982 It's imitating a dog",
+        "The Thing 1982 opening chase"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Opening Dog Chase scene",
+        "The Thing 1982 It's imitating a dog scene",
+        "The Thing 1982 opening chase scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_010/image_01.jpg",
+          "source_url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.imitatingthedog.co.uk/wp-content/uploads/2024/01/Frankenstein-in-rehearsals.-Nedum-Okonyia.-Photo-by-Ed-Waring_5_11zon.jpg",
+          "query": "The Thing 1982 It's imitating a dog",
+          "width": 5000,
+          "height": 3333
+        },
+        {
+          "path": "output_thing/scene_010/image_02.jpg",
+          "source_url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.imitatingthedog.co.uk/wp-content/uploads/2024/01/Frankenstein-in-rehearsals.-Nedum-Okonyia.-Photo-by-Ed-Waring-3_13_11zon.jpg",
+          "query": "The Thing 1982 It's imitating a dog",
+          "width": 5000,
+          "height": 3333
+        },
+        {
+          "path": "output_thing/scene_010/image_03.jpg",
+          "source_url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.imitatingthedog.co.uk/wp-content/uploads/2024/01/Frankenstein-in-rehearsals.-Nedum-Okonyia-_-Georgia-Mae-Myers.-Photo-by-Ed-Waring-4_16_11zon.jpg",
+          "query": "The Thing 1982 It's imitating a dog",
+          "width": 5000,
+          "height": 3333
+        },
+        {
+          "path": "output_thing/scene_010/image_04.png",
+          "source_url": "https://www.delpireandco.com/wp-content/uploads/2026/01/dog-chasing-3-scaled.png",
+          "query": "The Thing 1982 Opening Dog Chase",
+          "width": 2560,
+          "height": 1699
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "slug": "scene_011",
+      "section": "THE THING'S REAL WEAPON",
+      "summary": "\"Rob Bottin gave it one rule. It should never look the same way twice… The forml",
+      "text": "\"Rob Bottin gave it one rule. It should never look the same way twice… The formlessness is the whole horror. You cannot fight, and you cannot trust, what refuses to hold a shape.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Rob Bottin Practical Effects",
+        "The Thing 1982 Kennel Dog-Thing Transformation",
+        "The Thing 1982 bottin practical"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Rob Bottin Practical Effects scene",
+        "The Thing 1982 Kennel Dog-Thing Transformation scene",
+        "The Thing 1982 bottin practical scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_011/image_01.jpg",
+          "source_url": "https://external-preview.redd.it/zTKSNCsuP1nHT1o93RxfQN6rXnf9hx7FUrEATGUtiTM.png?format=pjpg&auto=webp&s=6ecc9d725b6dbf83e49533e887182dcb89108d2f",
+          "query": "The Thing 1982 Kennel Dog-Thing Transformation",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_011/image_02.jpg",
+          "source_url": "https://zombie.nyc3.digitaloceanspaces.com/2026/03/THINGEX_logo-banner-scaled.jpg",
+          "query": "The Thing 1982 Rob Bottin Practical Effects",
+          "width": 2880,
+          "height": 1463
+        },
+        {
+          "path": "output_thing/scene_011/image_03.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/04/msi_claw_review.jpg",
+          "query": "The Thing 1982 Kennel Dog-Thing Transformation",
+          "width": 2160,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_011/image_04.jpg",
+          "source_url": "https://i0.wp.com/jackedinmovies.com/wp-content/uploads/2021/10/Rob-Bottin-1.jpg?resize=1920,1080&ssl=1",
+          "query": "The Thing 1982 Rob Bottin Practical Effects",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "slug": "scene_012",
+      "section": "THE THING'S REAL WEAPON",
+      "summary": "\"The blood test… a piece of the Thing, threatened with a hot wire, will recoil t",
+      "text": "\"The blood test… a piece of the Thing, threatened with a hot wire, will recoil to save itself… The Thing is exposed because every part of it acts only for itself… the exact opposite of what makes us human.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 blood test",
+        "The Thing 1982 macready"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 macready scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_012/image_01.jpg",
+          "source_url": "https://i.redd.it/ehdbvlxnb9b31.jpg",
+          "query": "The Thing 1982 Blood Test Scene",
+          "width": 2220,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_012/image_02.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/wm/2024/10/john-carpenter-comments-about-the-thing-ending-prove-infected-theories-wrong.jpg",
+          "query": "The Thing 1982 blood test",
+          "width": 2160,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_012/image_03.jpg",
+          "source_url": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/05/kurt-russell-as-macready-in-the-thing.jpg",
+          "query": "The Thing 1982 macready",
+          "width": 2160,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_012/image_04.jpg",
+          "source_url": "https://images8.alphacoders.com/610/thumb-1920-610409.jpg",
+          "query": "The Thing 1982 Blood Test Scene",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "slug": "scene_013",
+      "section": "THE THING'S REAL WEAPON",
+      "summary": "\"By the end… the Thing has turned a group of men into a room full of isolated, f",
+      "text": "\"By the end… the Thing has turned a group of men into a room full of isolated, frightened, lonely individuals who cannot connect, cannot trust, and will die alone… It turned them into things.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982",
+        "The Thing 1982 isolation",
+        "The Thing 1982 separated suspicious"
+      ],
+      "clip_queries": [
+        "The Thing 1982 scene",
+        "The Thing 1982 isolation scene",
+        "The Thing 1982 separated suspicious scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_013/image_01.jpg",
+          "source_url": "https://images4.alphacoders.com/129/1294915.jpg",
+          "query": "The Thing 1982 isolation",
+          "width": 2000,
+          "height": 1125
+        },
+        {
+          "path": "output_thing/scene_013/image_02.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/qTg8fjne0MdVKKtXLWw72qwKZBr.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_013/image_03.jpg",
+          "source_url": "https://images4.alphacoders.com/566/566605.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_013/image_04.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/9wMpq46dKTPiXq4CnotFmjaufih.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "slug": "scene_014",
+      "section": "THE MOVIE THE WORLD WAS NOT READY FOR",
+      "summary": "\"When The Thing came out in the summer of 1982, audiences hated it… It opened tw",
+      "text": "\"When The Thing came out in the summer of 1982, audiences hated it… It opened two weeks after E.T.… Carpenter handed people the exact opposite… The critics were brutal.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982",
+        "The Thing 1982 barf-bag movie",
+        "The Thing 1982 theatrical"
+      ],
+      "clip_queries": [
+        "The Thing 1982 scene",
+        "The Thing 1982 barf-bag movie scene",
+        "The Thing 1982 theatrical scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_014/image_01.jpg",
+          "source_url": "https://www.barfboutique.com/cdn/shop/files/happy-hour-vomit-bags-barf-boutique_4590x2649.jpg?v=1685255709",
+          "query": "The Thing 1982 barf-bag movie",
+          "width": 4590,
+          "height": 2648
+        },
+        {
+          "path": "output_thing/scene_014/image_02.webp",
+          "source_url": "https://static.wikia.nocookie.net/battlefordreamisland/images/4/4b/CloudYAY_Team_Poster.png/revision/latest?cb=20240715092106",
+          "query": "The Thing 1982 barf-bag movie",
+          "width": 3706,
+          "height": 2042
+        },
+        {
+          "path": "output_thing/scene_014/image_03.jpg",
+          "source_url": "https://www.barfboutique.com/cdn/shop/files/morning-sickness-pregnancy-bags-barf-boutique-panel_4040x1967.jpg?v=1685207981",
+          "query": "The Thing 1982 barf-bag movie",
+          "width": 4040,
+          "height": 1966
+        },
+        {
+          "path": "output_thing/scene_014/image_04.jpg",
+          "source_url": "https://www.barfboutique.com/cdn/shop/files/rainbow-toilets-vomit-bags-barf-boutique-panel_4500x2133.jpg?v=1685206448",
+          "query": "The Thing 1982 barf-bag movie",
+          "width": 4500,
+          "height": 2131
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "slug": "scene_015",
+      "section": "THE MOVIE THE WORLD WAS NOT READY FOR",
+      "summary": "\"The film flopped. Universal tore up his contract… The exact cut people now call",
+      "text": "\"The film flopped. Universal tore up his contract… The exact cut people now call one of the greatest horror movies ever made is the same one audiences walked out of… The movie did not change. The culture around it did.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982",
+        "The Thing 1982 poster",
+        "The Thing 1982 office failure"
+      ],
+      "clip_queries": [
+        "The Thing 1982 scene",
+        "The Thing 1982 poster scene",
+        "The Thing 1982 office failure scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_015/image_01.webp",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/79367322-b021-4d01-8326-5412f081095c/John+Carpenter+Hints+at+Who+Turns+Into+The+Thing+at+The+End+of+The+Movie+and+a+Fan+Has+Worked+it+Out.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_015/image_02.jpg",
+          "source_url": "https://wallpaperaccess.com/full/1737882.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_015/image_03.jpg",
+          "source_url": "https://m.media-amazon.com/images/M/MV5BZTA1MzUyMzItMmIyMi00MDQ4LWFlNjMtOWVkODliYTA0MGJjXkEyXkFqcGc@._V1_.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_015/image_04.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/2FIF8Ai94vCKzCQk7x9TL8qWLas.jpg",
+          "query": "The Thing 1982",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "slug": "scene_016",
+      "section": "THE MOVIE THE WORLD WAS NOT READY FOR",
+      "summary": "\"The first movie version, back in 1951, played as a Cold War parable… By 1982, w",
+      "text": "\"The first movie version, back in 1951, played as a Cold War parable… By 1982, with a quiet and frightening new epidemic… drawing one another's blood to find out who is clean and who is contaminated… The fear underneath… never dates.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 From Another World 1951",
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 Who Goes There?"
+      ],
+      "clip_queries": [
+        "The Thing 1982 From Another World 1951 scene",
+        "The Thing 1982 Blood Test Scene",
+        "The Thing 1982 Who Goes There? scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_016/image_01.jpg",
+          "source_url": "https://cinesthesia.net/wp-content/uploads/2016/07/filming-ice-block.jpg",
+          "query": "The Thing 1982 From Another World 1951",
+          "width": 3577,
+          "height": 2430
+        },
+        {
+          "path": "output_thing/scene_016/image_02.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/86c7iP0oI3niF1LFniPZvxqlNwu.jpg",
+          "query": "The Thing 1982 From Another World 1951",
+          "width": 2800,
+          "height": 1575
+        },
+        {
+          "path": "output_thing/scene_016/image_03.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/iQWfHeRukVYWyqR402rbbSnTrAD.jpg",
+          "query": "The Thing 1982 From Another World 1951",
+          "width": 2729,
+          "height": 1534
+        },
+        {
+          "path": "output_thing/scene_016/image_04.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/bpHn5LvehW4WQ7cp8V2kU3dLiwX.jpg",
+          "query": "The Thing 1982 From Another World 1951",
+          "width": 2706,
+          "height": 1521
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "slug": "scene_017",
+      "section": "THE HIDDEN ANSWER",
+      "summary": "\"The hidden answer… is not in anyone's eyes, or breath, or coat. It is in MacRea",
+      "text": "\"The hidden answer… is not in anyone's eyes, or breath, or coat. It is in MacReady's hands.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending Bottle",
+        "The Thing 1982 close-up"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending Bottle scene",
+        "The Thing 1982 close-up scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_017/image_01.jpg",
+          "source_url": "https://static.vecteezy.com/system/resources/previews/021/862/633/large_2x/close-up-realistic-honey-bee-collecting-pollen-created-with-generative-ai-free-photo.jpeg",
+          "query": "The Thing 1982 close-up",
+          "width": 2940,
+          "height": 1960
+        },
+        {
+          "path": "output_thing/scene_017/image_02.jpg",
+          "source_url": "https://comicbook.com/wp-content/uploads/sites/4/2026/05/Marvel-Cosmic-Invasion-Cyclops-Thing-1.jpg",
+          "query": "The Thing 1982 close-up",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "path": "output_thing/scene_017/image_03.jpg",
+          "source_url": "https://www.fangoria.com/wp-content/uploads/2024/12/Thing_KeyArt_008SR-Logo-scaled.jpg",
+          "query": "The Thing 1982 close-up",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "path": "output_thing/scene_017/image_04.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/fortnite-og-renegade-raider-skull-trooper-key-art.jpg",
+          "query": "The Thing 1982 Ending Bottle",
+          "width": 2200,
+          "height": 1100
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "slug": "scene_018",
+      "section": "THE HIDDEN ANSWER",
+      "summary": "\"Earlier, the men realize the Thing can spread through the smallest amount of co",
+      "text": "\"Earlier, the men realize the Thing can spread through the smallest amount of contact… prepare your own food. Eat only out of cans… sharing a drink is how you die.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Prepare Your Own Meals Scene",
+        "The Thing 1982",
+        "The Thing 1982 everybody should prepare their own meals"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Prepare Your Own Meals Scene",
+        "The Thing 1982 scene",
+        "The Thing 1982 everybody should prepare their own meals scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_018/image_01.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/1716520-John-F-Kennedy-Quote-One-person-can-make-a-difference-and-everyone.jpg",
+          "query": "The Thing 1982 everybody should prepare their own meals",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_018/image_02.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/962051-Josh-Hutcherson-Quote-Everybody-has-their-own-problems-No-matter.jpg",
+          "query": "The Thing 1982 everybody should prepare their own meals",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_018/image_03.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/8320004-Alan-Kay-Quote-People-who-are-really-serious-about-software-should-make-their-own.jpg",
+          "query": "The Thing 1982 everybody should prepare their own meals",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_018/image_04.jpg",
+          "source_url": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1NLEgk.img?w=4579&h=2576&m=4&q=79",
+          "query": "The Thing 1982 everybody should prepare their own meals",
+          "width": 4579,
+          "height": 2576
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "slug": "scene_019",
+      "section": "THE HIDDEN ANSWER",
+      "summary": "\"He does not reach for a weapon. He does not demand a test. He takes a sip, and ",
+      "text": "\"He does not reach for a weapon. He does not demand a test. He takes a sip, and he holds out the bottle to a man he cannot possibly be sure of. He shares it. He laughs… He chooses to share.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Bottle Pass",
+        "The Thing 1982 bottle pass",
+        "The Thing 1982 macready"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Bottle Pass scene",
+        "The Thing 1982 bottle pass scene",
+        "The Thing 1982 macready scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_019/image_01.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/06/the-finals-season-7-screenshot-4.jpg",
+          "query": "The Thing 1982 Final Bottle Pass",
+          "width": 2200,
+          "height": 1100
+        },
+        {
+          "path": "output_thing/scene_019/image_02.jpg",
+          "source_url": "https://images8.alphacoders.com/129/thumb-1920-1294917.jpg",
+          "query": "The Thing 1982 Final Bottle Pass",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_019/image_03.jpg",
+          "source_url": "https://img.asmedia.epimg.net/resizer/v2/ZSAB6RNAHBE5ZC5SHTX2WYF6KU.jpg?auth=96608698c067283bf0aa2b3bbf79f756d0f24143d44ad9a1eb8e8345e43f77b8&width=1920",
+          "query": "The Thing 1982 Final Bottle Pass",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_019/image_04.jpg",
+          "source_url": "https://www.hdwallpapers.org/uploads/converted/24/01/13/503859116-The_Thing_1982_Horror_Movie-kZX-1920x1080-MM-90.jpg",
+          "query": "The Thing 1982 Final Bottle Pass",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "slug": "scene_020",
+      "section": "THE HIDDEN ANSWER",
+      "summary": "\"The Thing is the creature whose every cell recoils to save itself. A human bein",
+      "text": "\"The Thing is the creature whose every cell recoils to save itself. A human being is the one who… still reaches out and offers someone a drink… MacReady chooses to die human. The humanity was never hiding in the blood. It was in the choice to trust.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Blood Test",
+        "The Thing 1982 recoiling wire"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Blood Test scene",
+        "The Thing 1982 recoiling wire scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_020/image_01.jpg",
+          "source_url": "https://assets-prd.ignimgs.com/2022/07/29/the-thing-1-1659103660935.jpg",
+          "query": "The Thing 1982 Blood Test",
+          "width": 4203,
+          "height": 2876
+        },
+        {
+          "path": "output_thing/scene_020/image_02.jpg",
+          "source_url": "https://image.tmdb.org/t/p/original/iaugjJ8GygMOhghlRSl21BHUlng.jpg",
+          "query": "The Thing 1982 Blood Test",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_020/image_03.jpg",
+          "source_url": "https://cdnb.artstation.com/p/assets/images/images/042/153/659/large/greco-westermann-artstation-norris-thing.jpg?1634906620",
+          "query": "The Thing 1982 Blood Test",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_020/image_04.jpg",
+          "source_url": "https://cdni.fancaps.net/file/fancaps-movieimages/6500239.jpg",
+          "query": "The Thing 1982 Blood Test",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "slug": "scene_021",
+      "section": "THE HIDDEN ANSWER",
+      "summary": "\"Ennio Morricone scored the film… a single, low heartbeat of a note, repeating, ",
+      "text": "\"Ennio Morricone scored the film… a single, low heartbeat of a note, repeating, alone in the dark… the sound of one pulse, still beating, in a place where everything else has gone cold.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending",
+        "The Thing 1982 macready childs"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending scene",
+        "The Thing 1982 macready childs scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_021/image_01.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/02/shrek-5-trailer-image.jpg",
+          "query": "The Thing 1982 Ending",
+          "width": 2800,
+          "height": 1400
+        },
+        {
+          "path": "output_thing/scene_021/image_02.jpg",
+          "source_url": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt89e102f17225a649/6998c1b67323afb4ed2bbfbb/the-thing.jpg?branch=production&width=2400&quality=75&auto=webp&crop=16:9",
+          "query": "The Thing 1982 macready childs",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "path": "output_thing/scene_021/image_03.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/03/matt-damon-in-the-odyssey-juxtaposed-with-an-army-in-troy.jpg",
+          "query": "The Thing 1982 Ending",
+          "width": 2160,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_021/image_04.jpg",
+          "source_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/03/untitled-8.jpg",
+          "query": "The Thing 1982 Ending",
+          "width": 2160,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "slug": "scene_022",
+      "section": "YOU ARE THE FINAL HOST",
+      "summary": "\"The film does to you exactly what the Thing does to them… By the end, you could",
+      "text": "\"The film does to you exactly what the Thing does to them… By the end, you could not trust anyone on the screen… when the movie cut to black without an answer, you did not let it go… You became the final host.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Shot",
+        "The Thing 1982 dark",
+        "The Thing 1982 macready childs"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Shot scene",
+        "The Thing 1982 dark scene",
+        "The Thing 1982 macready childs scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_022/image_01.webp",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/5c95f8d416b640656eb7765a/1724327553247-RYUT5A2S9MM3F20BGEJ1/The+Thing+Remastered+-+August+Screenshot+(5).png",
+          "query": "The Thing 1982 dark",
+          "width": 2500,
+          "height": 1406
+        },
+        {
+          "path": "output_thing/scene_022/image_02.jpg",
+          "source_url": "https://cdn.suwalls.com/wallpapers/movies/the-thing-8379-2560x1600.jpg",
+          "query": "The Thing 1982 dark",
+          "width": 2560,
+          "height": 1600
+        },
+        {
+          "path": "output_thing/scene_022/image_03.jpg",
+          "source_url": "https://cdni.fancaps.net/file/fancaps-movieimages/6499887.jpg",
+          "query": "The Thing 1982 Final Shot",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "path": "output_thing/scene_022/image_04.jpg",
+          "source_url": "https://cdni.fancaps.net/file/fancaps-movieimages/6501456.jpg",
+          "query": "The Thing 1982 Final Shot",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "slug": "scene_023",
+      "section": "YOU ARE THE FINAL HOST",
+      "summary": "\"That is the Thing talking… could you still do what MacReady did? Could you sit ",
+      "text": "\"That is the Thing talking… could you still do what MacReady did? Could you sit down in the cold, next to someone you are not sure of, and choose to share the bottle anyway?\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Ending Bottle Offer",
+        "The Thing 1982 ending bottle",
+        "The Thing 1982 offer"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Ending Bottle Offer scene",
+        "The Thing 1982 ending bottle scene",
+        "The Thing 1982 offer scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_023/image_01.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/07/halo-show-cropped.jpg",
+          "query": "The Thing 1982 Ending Bottle Offer",
+          "width": 2200,
+          "height": 1100
+        },
+        {
+          "path": "output_thing/scene_023/image_02.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/11/new-york-times-connections-hints-and-answers-game-rant-30-percent-20.jpg",
+          "query": "The Thing 1982 Ending Bottle Offer",
+          "width": 2200,
+          "height": 1100
+        },
+        {
+          "path": "output_thing/scene_023/image_03.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/turtle-beach-stealth-pivot-controller-review.jpg",
+          "query": "The Thing 1982 Ending Bottle Offer",
+          "width": 2200,
+          "height": 1100
+        },
+        {
+          "path": "output_thing/scene_023/image_04.jpg",
+          "source_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2025/02/kingdom-come-deliverance-2-henry-horse-lake.jpg",
+          "query": "The Thing 1982 Ending Bottle Offer",
+          "width": 2200,
+          "height": 1100
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "slug": "scene_024",
+      "section": "YOU ARE THE FINAL HOST",
+      "summary": "\"That warmth, offered out into the freezing dark, with no proof and no safety, i",
+      "text": "\"That warmth, offered out into the freezing dark, with no proof and no safety, is the only thing in the entire film that the Thing could never imitate. And the movie ends by quietly asking whether you have any of it left.\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Shot",
+        "The Thing 1982 firelight",
+        "The Thing 1982 slowly dying"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Shot scene",
+        "The Thing 1982 firelight scene",
+        "The Thing 1982 slowly dying scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_024/image_01.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7666780-Lina-J-Potter-Quote-The-death-of-a-loved-one-is-a-terrible-thing.jpg",
+          "query": "The Thing 1982 slowly dying",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_024/image_02.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7583128-Kate-Quinn-Quote-She-s-a-hunter-at-heart-The-past-thirty-years-she.jpg",
+          "query": "The Thing 1982 slowly dying",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_024/image_03.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/9066240-Lina-J-Potter-Quote-The-death-of-a-loved-one-is-a-terrible-thing-Even-more-terrible-is.jpg",
+          "query": "The Thing 1982 slowly dying",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "output_thing/scene_024/image_04.jpg",
+          "source_url": "https://quotefancy.com/media/wallpaper/3840x2160/7666781-Lina-J-Potter-Quote-The-death-of-a-loved-one-is-a-terrible-thing.jpg",
+          "query": "The Thing 1982 slowly dying",
+          "width": 3840,
+          "height": 2160
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "slug": "scene_025",
+      "section": "CLOSE",
+      "summary": "\"Is the ending a horror story about two men who can no longer trust each other, ",
+      "text": "\"Is the ending a horror story about two men who can no longer trust each other, or the single moment of grace in a movie full of monsters…? Subscribe…\"",
+      "on_screen_text": "",
+      "editor_notes": "",
+      "image_queries": [
+        "The Thing 1982 Final Shot",
+        "The Thing 1982 macready",
+        "The Thing 1982 childs two-shot"
+      ],
+      "clip_queries": [
+        "The Thing 1982 Final Shot scene",
+        "The Thing 1982 macready scene",
+        "The Thing 1982 childs two-shot scene"
+      ],
+      "clips": [],
+      "images": [
+        {
+          "path": "output_thing/scene_025/image_01.jpg",
+          "source_url": "https://static.vecteezy.com/system/resources/previews/075/604/697/large_2x/childs-hand-showing-two-fingers-in-a-victory-sign-against-a-white-background-studio-shot-free-photo.jpg",
+          "query": "The Thing 1982 childs two-shot",
+          "width": 2940,
+          "height": 1960
+        },
+        {
+          "path": "output_thing/scene_025/image_02.jpg",
+          "source_url": "https://s.studiobinder.com/wp-content/uploads/2025/06/High-Angle-Shot-Example-and-Definition-Back-to-the-Future.jpeg",
+          "query": "The Thing 1982 childs two-shot",
+          "width": 2400,
+          "height": 1212
+        },
+        {
+          "path": "output_thing/scene_025/image_03.jpg",
+          "source_url": "https://cdn.amomama.com/ce725ea0bde87e2ec769253fb60ce799e814d460f91d10e1d2a95f2b8d6d2486.jpg",
+          "query": "The Thing 1982 childs two-shot",
+          "width": 2400,
+          "height": 1200
+        },
+        {
+          "path": "output_thing/scene_025/image_04.jpg",
+          "source_url": "https://www.totalprosports.com/wp-content/uploads/2025/09/Kobe-Bryant-Chris-Childs.jpg",
+          "query": "The Thing 1982 childs two-shot",
+          "width": 2000,
+          "height": 1100
+        }
+      ]
+    }
+  ]
+}

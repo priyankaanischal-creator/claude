@@ -1,0 +1,16 @@
+# Scene 1  [COLD OPEN]
+
+SUMMARY: "For more than forty years, people have been asking the same question about the 
+
+IMAGE QUERIES:
+  - The Thing 1982 Final Shot
+  - The Thing 1982 macready
+  - The Thing 1982 childs sitting
+
+CLIP QUERIES:
+  - The Thing 1982 Final Shot scene
+  - The Thing 1982 macready scene
+  - The Thing 1982 childs sitting scene
+
+NARRATION / TEXT:
+"For more than forty years, people have been asking the same question about the ending of The Thing. Who was human?"

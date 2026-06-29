@@ -1,0 +1,16 @@
+# Scene 8  [WHY YOU CANNOT SOLVE IT]
+
+SUMMARY: "The ending was never a lock waiting for the right key. It was always a mirror."
+
+IMAGE QUERIES:
+  - The Thing 1982
+  - The Thing 1982 frosted
+  - The Thing 1982 window firelight
+
+CLIP QUERIES:
+  - The Thing 1982 scene
+  - The Thing 1982 frosted scene
+  - The Thing 1982 window firelight scene
+
+NARRATION / TEXT:
+"The ending was never a lock waiting for the right key. It was always a mirror."

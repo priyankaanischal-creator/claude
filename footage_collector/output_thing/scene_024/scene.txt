@@ -1,0 +1,16 @@
+# Scene 24  [YOU ARE THE FINAL HOST]
+
+SUMMARY: "That warmth, offered out into the freezing dark, with no proof and no safety, i
+
+IMAGE QUERIES:
+  - The Thing 1982 Final Shot
+  - The Thing 1982 firelight
+  - The Thing 1982 slowly dying
+
+CLIP QUERIES:
+  - The Thing 1982 Final Shot scene
+  - The Thing 1982 firelight scene
+  - The Thing 1982 slowly dying scene
+
+NARRATION / TEXT:
+"That warmth, offered out into the freezing dark, with no proof and no safety, is the only thing in the entire film that the Thing could never imitate. And the movie ends by quietly asking whether you have any of it left."

@@ -1,0 +1,20 @@
+# Scene 38  [CLOSE]
+
+SUMMARY: "The World Is Yours was never a promise. It was always the punchline."
+
+ON-SCREEN TEXT: "ALWAYS THE PUNCHLINE."
+
+EDITOR NOTES: Cut to black. Silence. Hold 2 seconds.
+
+IMAGE QUERIES:
+  - Tony Montana Scarface the world is yours
+  - Tony Montana Scarface inscription fountain
+  - Tony Montana Scarface black
+
+CLIP QUERIES:
+  - Tony Montana Scarface the world is yours scene
+  - Tony Montana Scarface inscription fountain scene
+  - Tony Montana Scarface black scene
+
+NARRATION / TEXT:
+"The World Is Yours was never a promise. It was always the punchline."
