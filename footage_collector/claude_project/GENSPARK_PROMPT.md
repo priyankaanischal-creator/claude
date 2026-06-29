@@ -18,7 +18,8 @@ SECTION HEADER IN ALL CAPS
 Script Cue (narration): "<exact words from the script>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short on-screen quote>". <location, characters, action> — about <Movie + Year>.
 Spoken Line: <exact words a character SAYS on screen here> | <another exact line>
-Clip Links: <real YouTube watch URL>?t=<seconds>   (1-3 links; verify they really exist and play)
+Clip Links: https://youtu.be/<VIDEO_ID>?t=<seconds>   (short youtu.be form, ONE ? )
+Image Links: <direct image URL .jpg/.png>, <another>   (OPTIONAL: real hotlinkable image files)
 Image Search: <exact image term> | <term two> | <term three>
 
 STRICT RULES:
@@ -33,11 +34,22 @@ STRICT RULES:
    start time as `?t=SECONDS` (e.g. `?t=138`). Prefer official "Movieclips"/HD
    uploads and the actual scene (NOT reaction/breakdown/explained videos). If you
    genuinely cannot find a real clip for a beat, omit the Clip Links line for it.
-5. `Image Search:` = 2-3 concrete image search phrases (`|` separated). For
+4. `Clip Links:` = REAL, working YouTube links you actually found. **Use the
+   format `https://youtu.be/VIDEO_ID?t=SECONDS`** (short youtu.be form with ONE
+   `?`). Never write `youtube.com/watch?v=ID?t=60` (two `?` breaks the timestamp;
+   if you must use the long form, use `&t=60`). Prefer official "Movieclips"/HD
+   uploads and the actual scene (NOT reaction/breakdown/explained videos). If you
+   genuinely cannot find a real clip for a beat, omit the Clip Links line for it.
+5. `Image Links:` (OPTIONAL, very useful when search images are wrong) = 2-3
+   DIRECT image file URLs (ending .jpg/.png/.webp), publicly viewable/hotlinkable,
+   showing EXACTLY the described thing. Prefer Wikimedia/Wikipedia, official
+   stores, stable CDN URLs. The tool downloads these first, falls back to Image
+   Search. Only include URLs you actually found; else omit.
+6. `Image Search:` = 2-3 concrete image search phrases (`|` separated). For
    real-world beats (history, director, posters) search the real subject.
-6. Use `?t=SECONDS` (seconds), not "0:00-2:40" ranges. Point to the START of the
-   exact moment the narration is describing.
-7. Cover the ENTIRE script, ~1 beat per 1-3 sentences.
+7. `Spoken Line:` = exact on-screen dialogue; leave BLANK if no dialogue.
+8. Use `?t=SECONDS` (seconds). Point to the START of the exact moment.
+9. Cover the ENTIRE script, ~1 beat per 1-3 sentences.
 
 EXAMPLE of one correct beat:
 THE BLOOD TEST

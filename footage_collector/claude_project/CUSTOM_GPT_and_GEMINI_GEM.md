@@ -49,8 +49,9 @@ SECTION HEADER IN ALL CAPS
 Script Cue (narration): "<exact words from the script>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short on-screen quote>". <location, characters, action> — about <Movie + Year>.
 Spoken Line: <exact words a character SAYS on screen here> | <another exact line>
-Clip Links: <real YouTube watch URL you actually found via search>?t=<approx seconds>
 Image Search: <exact image term> | <term two> | <term three>
+Image Links: <direct image URL .jpg/.png>, <another>    (OPTIONAL: real hotlinkable image files)
+Clip Links: https://youtu.be/<VIDEO_ID>?t=<approx seconds>
 
 RULES (follow exactly):
 1. `Visual` line ALWAYS starts with a CAPITALISED scene name.
@@ -61,15 +62,20 @@ RULES (follow exactly):
    camera), LEAVE IT BLANK — do not write "(no dialogue)" or any placeholder.
 3. `Clip Links:` = use your WEB SEARCH to find a REAL, working YouTube link for
    that exact scene (prefer official "Movieclips"/HD uploads and the actual
-   scene, NOT reaction/breakdown/"explained" videos). Add `?t=SECONDS` as your
-   best estimate of the start. You cannot watch the video, so the timestamp may
-   be rough — that's OK, the tool refines it using Spoken Line. **Never invent a
-   URL: only include a link you actually found. If you can't find one, omit the
-   Clip Links line for that beat.**
-4. `Image Search:` = 2–3 concrete image search phrases (`|` separated). For
+   scene, NOT reaction/breakdown/"explained" videos). **Use the format
+   `https://youtu.be/VIDEO_ID?t=SECONDS`** (short youtu.be form, ONE `?`). Never
+   write `youtube.com/watch?v=ID?t=60` (two `?` breaks the timestamp). The
+   timestamp may be rough — the tool refines it using Spoken Line. **Never invent
+   a URL: only include a link you actually found. If you can't find one, omit it.**
+4. `Image Links:` (OPTIONAL, great when search images come out wrong) = 2–3
+   DIRECT image file URLs (ending .jpg/.png/.webp) that are publicly viewable /
+   hotlinkable and show EXACTLY the described thing. Prefer Wikimedia/Wikipedia,
+   official stores, or stable CDN URLs. The tool downloads these first and falls
+   back to Image Search. Only include URLs you actually found; else omit.
+5. `Image Search:` = 2–3 concrete image search phrases (`|` separated). For
    real-world beats (history, director, posters, older films) search the real
    subject, not the movie.
-5. Topic anchor MUST include the year.
+6. Topic anchor MUST include the year.
 
 EXAMPLE of one correct beat:
 THE BLOOD TEST

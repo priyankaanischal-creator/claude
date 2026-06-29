@@ -39,6 +39,7 @@ _LABELS = {
     "narration": re.compile(r"^\s*Script Cue\s*\(narration\)\s*:\s*(.*)$", re.I),
     "visual": re.compile(r"^\s*Visual\s*/?\s*Exact Clip to Use\s*:\s*(.*)$", re.I),
     "clip_links": re.compile(r"^\s*(?:Clip Links?|Clips?|Video Links?|YouTube|YT Links?)\s*:\s*(.*)$", re.I),
+    "image_links": re.compile(r"^\s*(?:Image Links?|Image URLs?|Img Links?|Picture Links?)\s*:\s*(.*)$", re.I),
     "spoken": re.compile(r"^\s*(?:Spoken Line|Spoken Lines|Dialogue|Exact Dialogue|Line)\s*:\s*(.*)$", re.I),
     "image_terms": re.compile(r"^\s*(?:Image Search|Image Terms?|Image Queries|Images?)\s*:\s*(.*)$", re.I),
     "onscreen": re.compile(r"^\s*On-?Screen Text\s*:\s*(.*)$", re.I),
@@ -76,6 +77,7 @@ class Beat:
     notes: str = ""
     is_film: bool = True
     clip_links: List[str] = field(default_factory=list)
+    image_links: List[str] = field(default_factory=list)
     spoken_lines: List[str] = field(default_factory=list)
     image_terms: List[str] = field(default_factory=list)
     image_queries: List[str] = field(default_factory=list)
@@ -96,6 +98,19 @@ def _split_links(raw: str) -> List[str]:
     for p in parts:
         p = p.strip().strip("()<>[]")
         if "youtu" in p.lower() and p.lower().startswith("http"):
+            out.append(p)
+    return out
+
+
+def _split_img_links(raw: str) -> List[str]:
+    """Pull direct image URLs out of an Image Links line."""
+    if not raw:
+        return []
+    parts = re.split(r"[\s,;|]+", raw.strip())
+    out = []
+    for p in parts:
+        p = p.strip().strip("()<>[]")
+        if p.lower().startswith("http"):
             out.append(p)
     return out
 
@@ -161,7 +176,8 @@ def parse_beats(text: str) -> List[Beat]:
 
     def _new(sec):
         return {"section": sec, "narration": "", "visual": "", "onscreen": "",
-                "notes": "", "clip_links": "", "image_terms": "", "spoken": ""}
+                "notes": "", "clip_links": "", "image_terms": "", "spoken": "",
+                "image_links": ""}
 
     def flush():
         nonlocal cur
@@ -174,6 +190,7 @@ def parse_beats(text: str) -> List[Beat]:
                 on_screen=cur["onscreen"].strip(),
                 notes=cur["notes"].strip(),
                 clip_links=_split_links(cur["clip_links"]),
+                image_links=_split_img_links(cur["image_links"]),
                 spoken_lines=_split_spoken(cur["spoken"]),
                 image_terms=_split_terms(cur["image_terms"]),
             ))

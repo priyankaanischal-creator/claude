@@ -76,6 +76,7 @@ class SceneSpec:
     on_screen: str = ""
     notes: str = ""
     clip_links: List[str] = field(default_factory=list)
+    image_links: List[str] = field(default_factory=list)
     spoken_lines: List[str] = field(default_factory=list)
 
     def slug(self) -> str:
@@ -142,6 +143,7 @@ def specs_from_instructor(instructor_path, args) -> tuple:
             summary=b.narration[:80], section=b.section,
             on_screen=b.on_screen, notes=b.notes,
             clip_links=b.clip_links,
+            image_links=b.image_links,
             spoken_lines=b.spoken_lines,
         )
         for b in beats
@@ -454,18 +456,30 @@ def main(argv=None) -> int:
             if shot_idx:
                 log(f"    [shot] {totals['frames']} frame(s) grabbed from clips so far")
 
-        # --- images: pooled across all image queries ---
+        # --- images: provided Image Links first, then search to fill ---
         if args.images_per_scene > 0:
-            try:
-                imgs = ic.collect_images(
-                    scene.image_queries, scene_dir,
-                    count=args.images_per_scene,
-                    min_width=args.min_image_width,
-                    dedup=dedup,
-                )
-            except Exception as e:
-                log(f"    [img] error: {type(e).__name__}: {e}")
-                imgs = []
+            imgs = []
+            if scene.image_links:
+                try:
+                    imgs += ic.collect_image_links(
+                        scene.image_links, scene_dir,
+                        count=args.images_per_scene, dedup=dedup, name_prefix="image")
+                except Exception as e:
+                    log(f"    [img] link error: {type(e).__name__}: {e}")
+                if imgs:
+                    log(f"    [img] {len(imgs)} from provided Image Links")
+            remaining = args.images_per_scene - len(imgs)
+            if remaining > 0:
+                try:
+                    imgs += ic.collect_images(
+                        scene.image_queries, scene_dir,
+                        count=remaining,
+                        min_width=args.min_image_width,
+                        dedup=dedup,
+                        name_prefix=("image" if not imgs else "image_s"),
+                    )
+                except Exception as e:
+                    log(f"    [img] error: {type(e).__name__}: {e}")
             for im in imgs:
                 entry["images"].append(im.to_dict())
             totals["images"] += len(imgs)

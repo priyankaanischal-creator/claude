@@ -222,6 +222,60 @@ def _fetch(url: str, timeout: int = 25) -> Optional[tuple]:
         return None
 
 
+def collect_image_links(
+    urls: Union[str, List[str]],
+    out_dir: str,
+    count: int = 4,
+    dedup: Optional[DedupState] = None,
+    name_prefix: str = "image",
+) -> List[ImageResult]:
+    """
+    Download direct image URLs provided in the instructor file (Image Links).
+    Trusts the user's choice (no aspect/size filter), but still validates it's a
+    real image, skips tiny/broken files, and de-duplicates. Returns what worked;
+    the caller fills any shortfall with search.
+    """
+    if isinstance(urls, str):
+        urls = [urls]
+    if dedup is None:
+        dedup = DedupState()
+    os.makedirs(out_dir, exist_ok=True)
+
+    results: List[ImageResult] = []
+    n = 0
+    for url in urls:
+        if n >= count:
+            break
+        if not url or dedup.url_seen(url):
+            continue
+        fetched = _fetch(url)
+        if not fetched:
+            print(f"    [img] provided link failed: {url[:70]}")
+            continue
+        data, ext = fetched
+        if dedup.is_dup_bytes(data):
+            dedup.add_url(url)
+            continue
+        path = os.path.join(out_dir, f"{name_prefix}_{n + 1:02d}{ext}")
+        try:
+            with open(path, "wb") as f:
+                f.write(data)
+        except OSError:
+            continue
+        dedup.add_url(url)
+        w = h = None
+        try:
+            if _HAVE_PIL:
+                w, h = Image.open(path).size
+        except Exception:
+            pass
+        results.append(ImageResult(path=path, source_url=url,
+                                   query="provided image link", width=w, height=h))
+        n += 1
+        time.sleep(0.1)
+    return results
+
+
 def collect_images(
     queries: Union[str, List[str]],
     out_dir: str,

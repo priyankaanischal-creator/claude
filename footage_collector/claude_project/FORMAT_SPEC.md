@@ -15,7 +15,8 @@ Script Cue (narration): "<exact narration words>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short quote>". <concrete words>, about <Movie + Year>.
 Spoken Line: <exact on-screen dialogue> | <another exact line>             (KEY for clip accuracy)
 Image Search: <term one> | <term two> | <term three>                      (recommended)
-Clip Links: <real youtube url ?t=sec>                                      (optional, only if known)
+Image Links: <direct image url .jpg/.png>, <another>                       (optional, downloaded first)
+Clip Links: https://youtu.be/<VIDEO_ID>?t=<sec>                            (optional; youtu.be form!)
 ```
 
 ## How each line is used by the tool
@@ -23,9 +24,10 @@ Clip Links: <real youtube url ?t=sec>                                      (opti
 |------|----------|-------|
 | `Script Cue (narration):` | famous short quotes (clip search) | exact script words |
 | `Visual / Exact Clip to Use:` | clip + image queries | CAPS scene name = strongest signal |
-| `Spoken Line:` | **finds exact timestamp** via transcript match | exact on-screen dialogue; best accuracy |
-| `Image Search:` | image queries (priority) | `|`-separated; concrete visual terms |
-| `Clip Links:` | tries these exact links FIRST | verified; bad links → auto fallback to search |
+| `Spoken Line:` | **finds exact timestamp** via transcript match | exact dialogue; blank if none |
+| `Image Search:` | image queries | `|`-separated; concrete visual terms |
+| `Image Links:` | downloaded FIRST (before search) | direct image file URLs; search fills rest |
+| `Clip Links:` | tries these exact links FIRST | use `youtu.be/ID?t=sec`; verified; bad → fallback |
 | `On-Screen Text:` / `Editor Notes:` | ignored by tool | kept only for a human editor |
 
 ## Timestamp formats accepted in Clip Links

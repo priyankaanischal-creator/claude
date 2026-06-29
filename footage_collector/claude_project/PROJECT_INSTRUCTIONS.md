@@ -31,7 +31,8 @@ Script Cue (narration): "<exact words copied from the script>"
 Visual / Exact Clip to Use: <CAPS SCENE NAME>. "<short famous quote>". <concrete location, character, action words> — all about <MOVIE + YEAR>.
 Spoken Line: <exact words a character SAYS on screen in that moment> | <another exact line>
 Image Search: <exact image term> | <another exact term> | <third term>
-Clip Links: <real YouTube URL with timestamp>   (ONLY if you truly know it - see honesty rule)
+Image Links: <direct image URL .jpg/.png>, <another>   (OPTIONAL - real, hotlinkable image files)
+Clip Links: https://youtu.be/<VIDEO_ID>?t=<SECONDS>   (ONLY if you truly know it - see honesty rule)
 
 Script Cue (narration): "..."
 Visual / Exact Clip to Use: ...
@@ -81,8 +82,17 @@ Image Search: ...
    by `|`. Each should be likely to return the exact still you want. Include the
    movie + year for in-film shots; for real-world beats search the real subject.
 8. **`Clip Links:`** (OPTIONAL, only if genuinely known) — see the HONESTY RULE.
-   Do NOT invent links/timestamps. A wrong timestamp makes the tool cut the wrong
-   moment, which is worse than nothing. Prefer `Spoken Line:` for precision.
+   **URL FORMAT MUST BE `https://youtu.be/<VIDEO_ID>?t=<SECONDS>`** (the short
+   youtu.be form with ONE `?`). Do NOT write `youtube.com/watch?v=ID?t=60` — that
+   has two `?` and the timestamp breaks. If you use the long form, the timestamp
+   MUST use `&`: `youtube.com/watch?v=ID&t=60`. Do NOT invent links/timestamps.
+9. **`Image Links:`** (OPTIONAL but very useful when search images are wrong) —
+   2–3 **direct image file URLs** (ending in .jpg/.png/.webp) that are publicly
+   viewable / hotlinkable and show EXACTLY the thing described. The tool
+   downloads these first and falls back to `Image Search:` for any that fail.
+   Only include URLs you actually found; if unsure, omit this line and rely on
+   `Image Search:`. Prefer Wikimedia/Wikipedia, official stores, or stable CDN
+   image URLs (these usually allow hotlinking).
 
 ### OPTIONAL (the tool IGNORES these for searching, but they help a human editor)
 - `On-Screen Text:` and `Editor Notes:` lines may be added after the Visual line.
