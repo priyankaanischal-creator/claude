@@ -95,6 +95,13 @@ class App:
         self.frames_var = tk.IntVar(value=2)
         ttk.Spinbox(opt, from_=0, to=6, width=5, textvariable=self.frames_var).grid(row=0, column=7, padx=6)
 
+        ttk.Label(opt, text="Image sources").grid(row=2, column=4, sticky="w", padx=6)
+        self.sources_var = tk.StringVar(value="ddg,wikimedia")
+        ttk.Combobox(opt, textvariable=self.sources_var, width=22, state="readonly",
+                     values=["ddg,wikimedia", "ddg,wikimedia,openverse", "ddg",
+                             "wikimedia", "ddg,wikimedia,openverse,pexels,pixabay"]).grid(
+            row=2, column=5, columnspan=2, padx=6, sticky="w")
+
         ttk.Label(opt, text="YouTube login (for clips)").grid(row=1, column=0, columnspan=2, sticky="w", padx=6, pady=6)
         self.cookies_var = tk.StringVar(value="none")
         ttk.Combobox(opt, textvariable=self.cookies_var, width=12, state="readonly",
@@ -182,7 +189,8 @@ class App:
                "--clips-per-scene", str(self.clips_var.get()),
                "--images-per-scene", str(self.images_var.get()),
                "--clip-duration", str(self.dur_var.get()),
-               "--frames-per-clip", str(self.frames_var.get())]
+               "--frames-per-clip", str(self.frames_var.get()),
+               "--image-sources", self.sources_var.get()]
         if self.script_var.get().strip():
             cmd += ["--script", self.script_var.get().strip()]
         if self.context_var.get().strip():

@@ -159,6 +159,22 @@ Sirf images chahiye to `--clips-per-scene 0` aur `--cookies-from-browser` hata d
 
 ---
 
+## Image sources (NEW — better images, esp. for documentaries)
+The tool can pull images from multiple sources and keep the best:
+- **ddg** (DuckDuckGo) + **wikimedia** (real people/places/history) = default, keyless.
+- **openverse** (Creative-Commons) = keyless, add it for more.
+- **pexels** / **pixabay** = generic stock B-roll; need a FREE API key.
+
+In the app, pick from the **Image sources** dropdown. On the command line:
+`--image-sources ddg,wikimedia,openverse`
+
+To enable Pexels/Pixabay, get a free key and set it before running:
+- Windows (cmd): `set PEXELS_API_KEY=yourkey` then run, or `set PIXABAY_API_KEY=yourkey`
+- Then add them: `--image-sources ddg,wikimedia,pexels,pixabay`
+
+> For documentary/biography videos, **wikimedia** is the most valuable (real
+> subjects, legal, hotlinkable). For movie scene stills, ddg + clip frames win.
+
 ## Naye video ke liye kya karna hai (har baar)
 1. Claude/Gemini se us script ki **visual instructor file** banwao (CAPS scene-name +
    dialogue quotes + concrete words, sab topic se related — example ke liye

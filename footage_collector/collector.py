@@ -212,6 +212,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
                    help="Max video resolution to download")
     p.add_argument("--min-image-width", type=int, default=1280,
                    help="Minimum image width (px) — keeps HD/landscape only")
+    p.add_argument("--image-sources", default="ddg,wikimedia",
+                   help="Image sources, comma-separated: ddg,wikimedia,openverse,pexels,pixabay "
+                        "(pexels/pixabay need a free API key in env)")
 
     p.add_argument("--max-scenes", type=int, default=0,
                    help="Limit number of scenes processed (0 = all)")
@@ -477,6 +480,7 @@ def main(argv=None) -> int:
                         min_width=args.min_image_width,
                         dedup=dedup,
                         name_prefix=("image" if not imgs else "image_s"),
+                        sources=[s.strip() for s in args.image_sources.split(",") if s.strip()],
                     )
                 except Exception as e:
                     log(f"    [img] error: {type(e).__name__}: {e}")

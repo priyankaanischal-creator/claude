@@ -164,24 +164,126 @@ def _ddgs_images(query: str, max_results: int, size: str):
     return []
 
 
+def _ddg_raw(query: str, pool: int) -> List[dict]:
+    raw = []
+    for size in ("Wallpaper", "Large"):
+        raw += _ddgs_images(query, pool, size)
+        if len(raw) >= pool:
+            break
+    return [{"url": r.get("image"), "width": int(r.get("width") or 0),
+             "height": int(r.get("height") or 0)} for r in raw if r.get("image")]
+
+
+def _wikimedia_raw(query: str, pool: int) -> List[dict]:
+    """Keyless Wikimedia Commons image search — best for real people/places/history."""
+    out = []
+    try:
+        r = requests.get("https://commons.wikimedia.org/w/api.php", params={
+            "action": "query", "generator": "search", "gsrsearch": query,
+            "gsrnamespace": 6, "gsrlimit": min(pool, 20), "prop": "imageinfo",
+            "iiprop": "url|size", "iiurlwidth": 1920, "format": "json",
+        }, headers=_HEADERS, timeout=25).json()
+        for p in r.get("query", {}).get("pages", {}).values():
+            ii = (p.get("imageinfo") or [{}])[0]
+            u = ii.get("thumburl") or ii.get("url")
+            if not u or "upload.wikimedia.org" not in u.lower():
+                continue
+            if not u.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp")):
+                continue
+            out.append({"url": u, "width": int(ii.get("thumbwidth") or ii.get("width") or 0),
+                        "height": int(ii.get("thumbheight") or ii.get("height") or 0)})
+    except Exception as e:
+        print(f"    [img] wikimedia error: {type(e).__name__}")
+    return out
+
+
+def _openverse_raw(query: str, pool: int) -> List[dict]:
+    """Keyless Openverse (Creative-Commons) image search."""
+    out = []
+    try:
+        r = requests.get("https://api.openverse.org/v1/images/", params={
+            "q": query, "page_size": min(pool, 20)},
+            headers=_HEADERS, timeout=25).json()
+        for x in r.get("results", []):
+            u = x.get("url")
+            if u:
+                out.append({"url": u, "width": int(x.get("width") or 0),
+                            "height": int(x.get("height") or 0)})
+    except Exception as e:
+        print(f"    [img] openverse error: {type(e).__name__}")
+    return out
+
+
+def _pexels_raw(query: str, pool: int) -> List[dict]:
+    """Pexels stock photos — needs free PEXELS_API_KEY env var. Generic B-roll."""
+    key = os.environ.get("PEXELS_API_KEY")
+    if not key:
+        return []
+    out = []
+    try:
+        r = requests.get("https://api.pexels.com/v1/search", params={
+            "query": query, "per_page": min(pool, 15),
+            "orientation": "landscape", "size": "large"},
+            headers={"Authorization": key}, timeout=25).json()
+        for p in r.get("photos", []):
+            src = p.get("src", {})
+            u = src.get("original") or src.get("large2x")
+            if u:
+                out.append({"url": u, "width": int(p.get("width") or 0),
+                            "height": int(p.get("height") or 0)})
+    except Exception as e:
+        print(f"    [img] pexels error: {type(e).__name__}")
+    return out
+
+
+def _pixabay_raw(query: str, pool: int) -> List[dict]:
+    """Pixabay stock photos — needs free PIXABAY_API_KEY env var. Generic B-roll."""
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return []
+    out = []
+    try:
+        r = requests.get("https://pixabay.com/api/", params={
+            "key": key, "q": query, "per_page": min(pool, 20),
+            "image_type": "photo", "orientation": "horizontal"}, timeout=25).json()
+        for h in r.get("hits", []):
+            u = h.get("largeImageURL") or h.get("webformatURL")
+            if u:
+                out.append({"url": u, "width": int(h.get("imageWidth") or 0),
+                            "height": int(h.get("imageHeight") or 0)})
+    except Exception as e:
+        print(f"    [img] pixabay error: {type(e).__name__}")
+    return out
+
+
+_SOURCES = {
+    "ddg": _ddg_raw, "wikimedia": _wikimedia_raw, "openverse": _openverse_raw,
+    "pexels": _pexels_raw, "pixabay": _pixabay_raw,
+}
+DEFAULT_SOURCES = ["ddg", "wikimedia"]
+
+
 def search_images(
     query: str,
     min_width: int = 1280,
     min_ar: float = 1.4,
     max_ar: float = 2.2,
     pool: int = 80,
+    sources: Optional[List[str]] = None,
 ) -> List[dict]:
-    """Return landscape, high-res image candidates for one query, best first."""
+    """Return landscape, high-res image candidates for one query from one or more
+    sources (ddg, wikimedia, openverse, pexels, pixabay), best first."""
+    sources = sources or DEFAULT_SOURCES
     raw: List[dict] = []
-    for size in ("Wallpaper", "Large"):
-        raw += _ddgs_images(query, pool, size)
-        if len(raw) >= pool:
-            break
+    for s in sources:
+        fn = _SOURCES.get(s)
+        if fn:
+            raw += fn(query, pool)
 
     seen = set()
     cands: List[dict] = []
     for r in raw:
-        url = r.get("image")
+        url = r.get("url")
         if not url:
             continue
         w = int(r.get("width") or 0)
@@ -285,6 +387,7 @@ def collect_images(
     max_ar: float = 2.2,
     name_prefix: str = "image",
     dedup: Optional[DedupState] = None,
+    sources: Optional[List[str]] = None,
 ) -> List[ImageResult]:
     """
     Search across one or more queries and download up to `count` UNIQUE
@@ -302,7 +405,8 @@ def collect_images(
     pooled: List[dict] = []
     local_seen = set()
     for q in queries:
-        for c in search_images(q, min_width=min_width, min_ar=min_ar, max_ar=max_ar):
+        for c in search_images(q, min_width=min_width, min_ar=min_ar, max_ar=max_ar,
+                               sources=sources):
             key = _dedup_key(c["url"])
             if key in local_seen or dedup.url_seen(c["url"]):
                 continue
@@ -344,7 +448,7 @@ def collect_images(
         extra = collect_images(
             queries, out_dir, count=count - n,
             min_width=800, min_ar=1.3, max_ar=2.4,
-            name_prefix=f"{name_prefix}_alt", dedup=dedup,
+            name_prefix=f"{name_prefix}_alt", dedup=dedup, sources=sources,
         )
         results.extend(extra)
 
